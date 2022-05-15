@@ -5,11 +5,11 @@
   border: 0;
   -webkit-transition: .3s;
   transition: .3s;
+  font-family: 'inter';
 }
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -20,7 +20,9 @@ body {
   height: 100vh;
 }
 
-p, h1, h2 {
+p,
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
@@ -73,8 +75,104 @@ a {
 }
 
 .nav {
-  width: 20%;
+  width: 28%;
   background-color: darkcyan;
+}
+
+.navbar .navbar_title {
+  width: 285px;
+  height: 85px;
+  position: absolute;
+  top: 184px;
+  left: 80px;
+}
+
+.navbar .navbar_title .title_p {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.navbar .navbar_content {
+  position: absolute;
+  top: 360px;
+  left: 110px;
+}
+
+.navbar .navbar_content .navbar_target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  margin-bottom: 34px;
+}
+
+.navbar .navbar_content .navbar_target .sort {
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.navbar .navbar_content .navbar_target a {
+  font-size: 30px;
+}
+
+.navbar .navbar_content .navbar_target .about::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  top: 45px;
+  left: 27px;
+  background-color: black;
+}
+
+.navbar .navbar_content .navbar_target .news::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  top: 125px;
+  left: 27px;
+  background-color: black;
+}
+
+.navbar .navbar_content .navbar_target .menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  top: 205px;
+  left: 27px;
+  background-color: black;
+}
+
+.navbar .navbar_content .navbar_target .information::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  top: 285px;
+  left: 27px;
+  background-color: black;
+}
+
+.navbar .navbar_content .navbar_target .booking::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  top: 365px;
+  left: 27px;
+  background-color: black;
+}
+
+.navbar .navbar_icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 800px;
+  left: 155px;
+  gap: 12px;
 }
 
 .titleTag {
@@ -187,7 +285,7 @@ a {
 
 .foodImageSection {
   margin-top: 134px;
-  margin-left: 75.02px;
+  margin-left: 57.02px;
 }
 
 .foodImg {
