@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     border: 0;
+    transition: .3s;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+  }
+  .sectionSize{
+    width: 100%;
+    height: 100vh;
   }
   p,h1,h2{
       margin: 0;
@@ -74,7 +79,7 @@ body {
     margin-left: 64.77px;
 }
 
-        //    proflie
+
 .title{
     padding-left: 167.77px;
     padding-top: 163.38px;
@@ -99,7 +104,10 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+.z-2{
+  z-index: 2;
+}
+   //    proflie
 .profile{
     width: 100%;
     height:100vh;
@@ -112,11 +120,15 @@ body {
     }
     .profile_text{
       position: absolute;
-      margin-left: 46.275%;
       margin-top: 90.01px;
+      @media (min-width: 1400px){
+
+        margin-left: 46.275%;
+      }
+
+
       .profile_p1{
-        
-        height: 197px;
+        position: relative;
         line-height: 66px;
       }
       .profile_p2{
@@ -140,6 +152,51 @@ body {
     left: 39px;
     top: 267.84px;
   }
-   
+  .img2{
+    border-radius: 50%;
+    background-color:  #C4C4C4;
+    width: 288.75px;
+    height: 288.75px;
+    position: absolute;
+    left: 624.49px;
+    top: 745px;
+  }
+  .img3{
+    border-radius: 50%;
+    background-color:  #C4C4C4;
+    width: 405.58px;
+    height: 405.58px;
+    position: absolute;
+    left:  68.77%;
+    top: 154px;
+  }
 }
 
+          //  food
+
+.foodImageSection{
+  margin-top: 134px;
+  margin-left: 75.02px;
+}
+
+
+.foodImg{
+  width: 368.99px;
+  height: 368.99px;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  position: relative;
+  .foodImgTitle{
+    padding-top: 50.1151%;
+  }
+  .foodImgText{
+    letter-spacing: .2em;
+    margin-left: 1em;
+  }
+}
+.foodImg2{
+  margin-bottom: 147.01px;
+}
+.foodImg3{
+  margin-top: 73.5px;
+}

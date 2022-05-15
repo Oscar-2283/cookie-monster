@@ -1,0 +1,42 @@
+      /* text-area */
+.weight-400{
+    font-weight: 400;
+}
+.weight-600{
+    font-weight: 600;
+}
+.font-27{
+    font-size: 27px;
+}
+.font-2-5rem{
+    font-size: 2.5rem;
+}
+.font-1-25rem{
+    font-size: 1.25rem;
+}
+
+
+
+/* about */
+
+@media(max-width:1400px){
+
+    .ml-6rem-1400{
+        margin-left: 6rem;
+    }
+}
+
+
+    /* food */
+@media (min-width:768px){
+
+    .px-375rem{
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    .pt-100px{
+        padding-top: 100px;
+    }
+}
+
+
