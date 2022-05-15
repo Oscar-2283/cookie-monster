@@ -197,17 +197,6 @@ a {
   position: relative;
 }
 
-.mark::after {
-  position: absolute;
-  width: 14.05px;
-  height: 14.05px;
-  background-color: black;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .z-2 {
   z-index: 2;
 }
@@ -311,5 +300,9 @@ a {
 
 .foodImg3 {
   margin-top: 73.5px;
+}
+
+.infor {
+  overflow: hidden;
 }
 /*# sourceMappingURL=index.css.map */
