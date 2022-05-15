@@ -12,7 +12,14 @@ body {
     margin: 0;
     padding: 0;
   }
-
+  p,h1,h2{
+      margin: 0;
+      padding: 0;
+  }
+  a{
+      color: black;
+      text-decoration: none;
+  }
   .swiper {
     width: 100%;
     height: 100vh;
@@ -62,3 +69,77 @@ body {
       width: 20%;
       background-color: darkcyan;
   }
+
+.titleTag{
+    margin-left: 64.77px;
+}
+
+        //    proflie
+.title{
+    padding-left: 167.77px;
+    padding-top: 163.38px;
+}
+.logoTag{
+    height: 53px;
+    width: 53px;
+    border-radius: 50%;
+}
+.mark{
+    width: 36.68px;
+    height: 53px;
+    margin-left: 39.15px;
+    position: relative;
+}
+.mark::after{
+    position: absolute;
+    width: 14.05px;
+    height: 14.05px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.profile{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    p{
+        font-size: 27.98px;
+        letter-spacing: .1em;
+        font-weight: 600;
+        z-index: 2;
+    }
+    .profile_text{
+      position: absolute;
+      margin-left: 46.275%;
+      margin-top: 90.01px;
+      .profile_p1{
+        
+        height: 197px;
+        line-height: 66px;
+      }
+      .profile_p2{
+        margin-top: 42.7px;
+        margin-left: 65.97px;
+        line-height: 65px;
+      }
+      .profile_p3{
+        margin-top: 42.9px;
+        margin-left: 209.03px;
+        line-height: 65.55px;
+      }
+    }
+    
+  .img1{
+    border-radius: 50%;
+    background-color:  #C4C4C4;
+    width: 729.68px;
+    height: 729.68px;
+    position: absolute;
+    left: 39px;
+    top: 267.84px;
+  }
+   
+}
+
