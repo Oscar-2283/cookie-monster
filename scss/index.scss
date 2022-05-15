@@ -71,7 +71,7 @@ body {
   }
 
   .nav{
-      width: 20%;
+      width: 28%;
       background-color: darkcyan;
   }
 
@@ -95,15 +95,7 @@ body {
     margin-left: 39.15px;
     position: relative;
 }
-.mark::after{
-    position: absolute;
-    width: 14.05px;
-    height: 14.05px;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
+
 .z-2{
   z-index: 2;
 }
@@ -176,7 +168,7 @@ body {
 
 .foodImageSection{
   margin-top: 134px;
-  margin-left: 75.02px;
+  margin-left: 57.02px;
 }
 
 
@@ -199,4 +191,11 @@ body {
 }
 .foodImg3{
   margin-top: 73.5px;
+}
+
+
+
+          //  infor
+.infor{
+  overflow: hidden;
 }
