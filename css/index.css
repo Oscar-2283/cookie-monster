@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,7 +6,6 @@
   border: 0;
   -webkit-transition: .3s;
   transition: .3s;
-  font-family: 'inter';
 }
 
 body {
@@ -16,12 +16,21 @@ body {
 }
 
 .sectionSize {
+  margin-top: 150px;
   width: 100%;
   height: 100vh;
 }
 
-p,
-h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
   margin: 0;
   padding: 0;
@@ -29,20 +38,42 @@ h2 {
 
 a {
   color: black;
+}
+
+a:hover {
   text-decoration: none;
+  color: #000;
 }
 
 .swiper {
   width: 100%;
   height: 100vh;
-  margin-right: 25px;
+}
+
+.img1 {
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
+  width: 729.68px;
+  height: 729.68px;
+  position: absolute;
+  left: 39px;
+  top: 267.84px;
+}
+
+.food .foodImageSection {
+  margin-top: 134px;
+  margin-left: 57.02px;
+}
+
+.foodImg2 {
+  margin-bottom: 147.01px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,6 +83,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  width: 44.5%;
 }
 
 .swiper-slide img {
@@ -60,10 +92,6 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.swiper-slide {
-  width: 44.5%;
 }
 
 .swiper-slide:nth-child(2n) {
@@ -77,6 +105,32 @@ a {
 .nav {
   width: 28%;
   background-color: darkcyan;
+}
+
+.navbar .nav {
+  width: 28%;
+  background-color: darkcyan;
+}
+
+title .titleTag {
+  margin-left: 64.77px;
+}
+
+.profile {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.profile p {
+  font-size: 27.98px;
+  letter-spacing: .1em;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.infor {
+  overflow: hidden;
 }
 
 .navbar .navbar_title {
@@ -175,10 +229,6 @@ a {
   gap: 12px;
 }
 
-.titleTag {
-  margin-left: 64.77px;
-}
-
 .title {
   padding-left: 167.77px;
   padding-top: 163.38px;
@@ -197,64 +247,49 @@ a {
   position: relative;
 }
 
-.z-2 {
-  z-index: 2;
+.mark::after {
+  position: absolute;
+  width: 14.05px;
+  height: 14.05px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.profile {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.profile p {
-  font-size: 27.98px;
-  letter-spacing: .1em;
-  font-weight: 600;
-  z-index: 2;
-}
-
-.profile .profile_text {
+.profile_text {
   position: absolute;
   margin-top: 90.01px;
 }
 
 @media (min-width: 1400px) {
-  .profile .profile_text {
+  .profile_text {
     margin-left: 46.275%;
   }
 }
 
-.profile .profile_text .profile_p1 {
+.profile_p1 {
   position: relative;
   line-height: 66px;
 }
 
-.profile .profile_text .profile_p2 {
+.profile_p2 {
   margin-top: 42.7px;
   margin-left: 65.97px;
   line-height: 65px;
 }
 
-.profile .profile_text .profile_p3 {
+.profile_p3 {
   margin-top: 42.9px;
   margin-left: 209.03px;
   line-height: 65.55px;
 }
 
-.profile .img1 {
+.img2 {
   border-radius: 50%;
   background-color: #C4C4C4;
-  width: 729.68px;
-  height: 729.68px;
-  position: absolute;
-  left: 39px;
-  top: 267.84px;
-}
-
-.profile .img2 {
-  border-radius: 50%;
-  background-color: #C4C4C4;
+  background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
   width: 288.75px;
   height: 288.75px;
   position: absolute;
@@ -262,19 +297,15 @@ a {
   top: 745px;
 }
 
-.profile .img3 {
+.img3 {
   border-radius: 50%;
   background-color: #C4C4C4;
+  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
   width: 405.58px;
   height: 405.58px;
   position: absolute;
   left: 68.77%;
   top: 154px;
-}
-
-.foodImageSection {
-  margin-top: 134px;
-  margin-left: 57.02px;
 }
 
 .foodImg {
@@ -286,23 +317,49 @@ a {
 }
 
 .foodImg .foodImgTitle {
-  padding-top: 50.1151%;
+  position: absolute;
+  bottom: -60px;
+  left: 140px;
 }
 
-.foodImg .foodImgText {
+.foodImg .foodimg-p-img {
+  position: absolute;
+  bottom: 20px;
+}
+
+.foodImgText {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
   letter-spacing: .2em;
   margin-left: 1em;
-}
-
-.foodImg2 {
-  margin-bottom: 147.01px;
 }
 
 .foodImg3 {
   margin-top: 73.5px;
 }
 
-.infor {
-  overflow: hidden;
+.foodImg-f {
+  background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+bread);
+}
+
+.foodImg-s {
+  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+meat);
+}
+
+.foodImg-t {
+  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+sauce);
+}
+
+.foodImg-f1 {
+  background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+egg);
+}
+
+.foodImg-s1 {
+  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+milk);
+}
+
+.foodImg-t1 {
+  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
 }
 /*# sourceMappingURL=index.css.map */
