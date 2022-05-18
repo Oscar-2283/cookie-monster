@@ -338,4 +338,8 @@ title .titleTag {
 .foodImg-t1 {
   background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
 }
+
+.menu {
+  background-color: wheat;
+}
 /*# sourceMappingURL=index.css.map */
