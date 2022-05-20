@@ -32,8 +32,7 @@
 }
 
 .menu-list .list1 .number1 {
-  background-color: #aa2198;
-  background-image: url("https://dummyimage.com/706.32/427c82&text=1");
+  background-position: center;
 }
 
 @media (min-width: 768px) {
