@@ -1,0 +1,182 @@
+.menu-section {
+  width: 100%;
+  height: 200vh;
+}
+
+#menu {
+  background-color: wheat;
+  overflow: hidden;
+}
+
+.menu-list {
+  width: 100%;
+  background-color: grey;
+}
+
+.menu-list p {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@media (min-width: 768px) {
+  .menu-list .position-md-absolute {
+    position: absolute;
+  }
+}
+
+.menu-list .list1 {
+  width: 706.32px;
+  height: 706.32px;
+  left: 31.94%;
+  top: 10.47%;
+}
+
+.menu-list .list1 .number1 {
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .menu-list .list1 .tag1 {
+    z-index: 3;
+    width: 360.79px;
+    height: 83.86px;
+    margin-left: 50%;
+    margin-top: 75%;
+    background-color: darkgray;
+    font-size: 22px;
+  }
+}
+
+.menu-list .list2 {
+  width: 409.3px;
+  height: 409.3px;
+  left: 11.25%;
+  top: 70.2%;
+}
+
+.menu-list .list2 .number2 {
+  background-image: url("https://dummyimage.com/409.3/db4fdb/fff&text=2");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list2 .tag2 {
+    z-index: 3;
+    width: 219.46px;
+    height: 64.56px;
+    left: -20%;
+    margin-top: 1rem;
+    background-color: darkgray;
+  }
+}
+
+.menu-list .list3 {
+  width: 661.33px;
+  height: 661.33px;
+  left: 46.93%;
+  top: 57.41%;
+}
+
+.menu-list .list3 .number3 {
+  background-image: url("https://dummyimage.com/661.33/4451a6/fff&text=3");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list3 .tag3 {
+    z-index: 3;
+    width: 267.72px;
+    height: 76.42px;
+    left: -5%;
+    margin-top: 4rem;
+    background-color: darkgray;
+  }
+}
+
+.menu-list .list4 {
+  width: 457.1px;
+  height: 457.1px;
+  left: 73.82%;
+  top: 73.99%;
+}
+
+.menu-list .list4 .number4 {
+  background-image: url("https://dummyimage.com/457.1//db4fdb/fff&text=4");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list4 .tag4 {
+    z-index: 3;
+    width: 496.14px;
+    height: 81.47px;
+    left: -67%;
+    top: 71%;
+    background-color: darkgray;
+  }
+}
+
+.menu-list .list5 {
+  width: 308.18px;
+  height: 308.18px;
+  left: 9.48%;
+  top: 44.92%;
+  z-index: 2;
+}
+
+.menu-list .list5 .number5 {
+  background-image: url("https://dummyimage.com/308.18/44a656/fff&text=5");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list5 .tag5 {
+    z-index: 3;
+    width: 238.67px;
+    height: 60.18px;
+    left: 42%;
+    top: 70%;
+    background-color: darkgray;
+  }
+}
+
+.menu-list .list6 {
+  width: 459.23px;
+  height: 459.23px;
+  left: -3.79%;
+  top: 28.01%;
+}
+
+.menu-list .list6 .number6 {
+  background-image: url("https://dummyimage.com/459.23//db4fdb/fff&text=6");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list6 .tag6 {
+    z-index: 3;
+    width: 243.66px;
+    height: 59.32px;
+    top: -4%;
+    left: 48%;
+    background-color: darkgray;
+  }
+}
+
+.menu-list .list7 {
+  width: 474.68px;
+  height: 474.68px;
+  left: 80.52%;
+  top: 12.73%;
+}
+
+.menu-list .list7 .number7 {
+  background-image: url("https://dummyimage.com/474.68/5c5815/fff&text=7");
+}
+
+@media (min-width: 768px) {
+  .menu-list .list7 .tag7 {
+    z-index: 3;
+    width: 301.6px;
+    height: 79.65px;
+    top: -13%;
+    left: 10%;
+    background-color: darkgray;
+  }
+}
+/*# sourceMappingURL=menu.css.map */
