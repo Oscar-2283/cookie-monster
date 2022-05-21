@@ -1,0 +1,149 @@
+      /* text-area */
+.weight-400{
+    font-weight: 400;
+}
+.weight-600{
+    font-weight: 600;
+}
+.font-17{
+    font-size: 17px;
+}
+.font-22{
+    font-size: 22px;
+}
+.font-27{
+    font-size: 27px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-2-5rem{
+    font-size: 2.5rem;
+}
+.font-1-25rem{
+    font-size: 1.25rem;
+}
+
+
+
+/* about */
+
+@media(max-width:1400px){
+
+    .ml-6rem-1400{
+        margin-left: 6rem;
+    }
+}
+
+
+    /* food */
+@media (min-width:768px){
+
+    .px-375rem{
+        padding-left: 3.75rem;
+        padding-right: 3.75rem;
+    }
+    .pt-100px{
+        padding-top: 100px;
+    }
+}
+
+
+
+
+
+  /* animation */
+
+
+.circle-1 {
+    border-radius:50% 50% 60% 40% / 51% 47% 53% 49%  ;
+    animation: border-animation1 6s infinite linear;
+}
+.circle-2 {
+    border-radius:60% 40% 62% 38% / 56% 49% 51% 44% ;
+    animation: border-animation2 10s infinite linear;
+}
+.circle-3 {
+
+    border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+    animation: border-animation3 8s infinite linear;
+}
+
+
+
+
+
+@keyframes border-animation1 {
+    0% { 
+        transform: scale(1.02);
+    }
+    25%{
+        border-radius: 50% 50% 60% 40% / 35% 35% 65% 65% ;
+    }
+    50%{
+        border-radius: 50% 50% 47% 53% / 54% 35% 65% 46% ;
+        transform: scale(0.93);
+    }
+    75%{
+        border-radius: 50% 50% 47% 53% / 32% 40% 60% 68% ;
+        transform: scale(1);
+    }
+    100%{
+        border-radius: 50% 50% 60% 40% / 51% 47% 53% 49%     ;
+        transform: scale(1.02);
+    }
+}
+@keyframes border-animation2 {
+    0% { 
+        transform: scale(.98);
+    }
+    25%{
+        border-radius: 28% 72% 71% 29% / 56% 62% 38% 44% ;
+    }
+    50%{
+
+        border-radius: 51% 49% 69% 31% / 56% 50% 50% 44% ;
+        transform: scale(1.05);
+    }
+    70%{
+        border-radius:29% 71% 58% 42% / 56% 50% 50% 44% ;
+        transform: scale(1);
+    }
+    100%{
+        border-radius: 60% 40% 62% 38% / 56% 49% 51% 44% ;
+        transform: scale(.98);
+    }
+}
+@keyframes border-animation3 {
+    0% { 
+        transform: scale(1.01);
+    }
+    25%{
+        border-radius: 41% 59% 45% 55% / 66% 66% 34% 34% ;
+    }
+    50%{
+        border-radius: 52% 48% 57% 43% / 47% 50% 50% 53% ;
+    }
+    70%{
+        border-radius: 63% 37% 39% 61% / 64% 63% 37% 36% ;
+        transform: scale(1);
+    }
+    100%{
+        border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+        transform: scale(1.01);
+    }
+}
+
+
+       /* lock scrollBar */
+
+.noscroll{
+    position: fixed;
+
+    width: 100%;
+}
+html.fixWindow{
+    position: fixed;
+    width: 100%;
+}
+

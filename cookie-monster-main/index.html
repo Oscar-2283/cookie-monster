@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- swiper用的link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <!-- booststrap用的link -->
+  <link href="./css/lightbox.css" rel="stylesheet" />
+  <!-- lightbox效果用的link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- AOS效果 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font-awesome的link -->
+  <link rel="shortcut icon" href="./img/0-2 icon/webicon.ico" type="image/x-icon">
+  <!--分頁icon-->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- 整個頁面用的CSS -->
+  <link rel="stylesheet" href="./css/menu.css">
+  <!-- 菜單區域的CSS -->
+  <link rel="stylesheet" href="./css/all.css">
+  <title>一人一伴ともだち</title>
+</head>
+
+<body>
+<!-- 形象banner區  -->
+  <section id="banner" class="index">
+    <!-- Swiper -->
+    <div class="d-flex">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img
+              src="https://dummyimage.com/2000X2000/b8bf7a/f5f5f5.png&text=Banner"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://dummyimage.com/2000X2000/9579bd/f5f5f5.png&text=Banner"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://dummyimage.com/2000X2000/55b5a0/f5f5f5.png&text=Banner"
+              alt=""></div>
+
+        </div>
+      </div>
+      <!-- banner的nav區域 -->
+      <div class="nav">
+        <div class="navbar">
+          <div class="navbar_title">
+            <a href="">
+              <div class="title_p">一人一伴
+                　　ともだち</div>
+          </div>
+          </a>
+          <div class="navbar_content">
+            <div class="navbar_target">
+              <p class="sort">01</p>
+              <a href=""><span class="target about">關於我們</span></a>
+            </div>
+            <div class="navbar_target">
+              <p class="sort">02</p>
+              <a href=""><span class="target news">最新消息</span></a>
+            </div>
+            <div class="navbar_target">
+              <p class="sort">03</p>
+              <a href=""><span class="target menu">菜單</span></a>
+            </div>
+            <div class="navbar_target">
+              <p class="sort">04</p>
+              <a href=""><span class="target information">店家資訊</span></a>
+            </div>
+            <div class="navbar_target">
+              <p class="sort">05</p>
+              <a href=""><span class="target booking">預約訂位</span></a>
+            </div>
+          </div>
+          <div class="navbar_icon"><!-- banner icon區域(用font awesome放) -->
+            <a href=""><img src="./img/icon/facebook.png" alt="fb"></a>
+            <a href=""><img src="./img/icon/ig.png" alt="ig"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 關於我們區 -->
+  <section id="aboutus" class="profile">
+    <div class="d-flex title align-items-center">
+      <!-- 頁面錨點 -->
+      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
+      <p class="titleTag">關於我們</p>
+      <img class="mark" src="./img/Group.svg">
+    </div>
+    <div class="profile_text z-2 ml-6rem-1400"><!-- 三明治照片 -->
+      <p class="profile_p1">
+        一人一伴、<br>
+        <span style="margin-left:1em ;">兩人共用一撇，象徵「共有」</span><br>
+        也傳遞「伴」的概念
+      </p>
+      <p class="profile_p2 ">
+        每個人的心 生下來都只有一半<br>
+        <span style="margin-left:2em">在尋找伴的同時、這個伴，</span><br>
+        <span class="py-2 px-1" style="margin-left:3em; background-color: #C4C4C4;">我們可以是 夥伴，家人，寵物，朋友、</span> <br>
+        <span style="margin-left:1em">任何一個能夠陪伴你的人事物。</span>
+      </p>
+      <p class="profile_p3">
+        <span style="border-bottom: 1px dashed #000;">玉子焼き是我們的招牌</span> <br>
+        <span style="margin-left:3em ;">初次見面、請多多指教。</span>
+      </p>
+    </div>
+    <div class="img1 d-md-b"></div><!-- 兩位老闆的照片 -->
+    <div class="img2"></div><!-- 店內一角照片 -->
+    <div class="img3 "></div><!-- 三明治照片 -->
+
+  </section>
+<!-- 嚴選食材區 -->
+  <section id="food" class="food sectionSize px-375rem pt-100px">
+    <div class="d-flex title align-items-center  position-absolute">
+      <!-- 頁面錨點 -->
+      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
+      <p class="titleTag font-27">嚴選食材</p>
+      <img class="mark" src="./img/Group.svg">
+    </div>
+
+    <div class="row h-auto w-100 h-100  foodImageSection ">
+      <div class="col-6 row align-items-center">
+        <div class="col-6">
+          <div class="foodImg foodImg-f">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">麵包</h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/ad51c2/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">天然酵母麵包，日本日清麵粉</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="foodImg foodImg2 foodImg-s">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">肉品</h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/c46a51/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">澳洲草飼牛肉 國產LYD豬肉</p>
+          </div>
+          <div class="foodImg foodImg3 foodImg-t">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">醬汁 </h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/d9cd5f/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">自製特製醬料日本進口醬汁 </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 row align-items-center">
+        <div class="col-6">
+          <div class="foodImg foodImg-f1">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">雞蛋</h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/68a365/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">天然酵母麵包，日本日清麵粉</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="foodImg foodImg2 foodImg-s1">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">牛奶</h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/548fb3/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">紐西蘭牛乳</p>
+          </div>
+          <div class="foodImg foodImg3 foodImg-t1">
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">蔬果 </h1>
+            <img class="foodimg-p-img" src="https://dummyimage.com/350X75/9354b3/f5f5f5.png&text=sticky+note">
+            <p class="foodImgText font-1-25rem font-weight-bold">季節水果，產銷履歷蔬菜，小農蔬菜</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+<!-- 最新消息區 -->
+  <section id="news" class="news infor sectionSize">
+    <div class="swiper-news-container">
+      <div class="swiper-news-border-line"></div>
+    </div>
+  </section>
+
+  <section id="" class="infor">
+  </section>
+<!-- 菜單區 -->
+  <section id="menu" class=" menu-section position-relative">
+    <div class="d-flex title align-items-center  ">
+      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
+      <p class="titleTag font-27">菜單</p>
+      <img class="mark" src="./img/Group.svg">
+    </div>
+    <div class="d-flex menu-list ">
+      <a  href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="123">
+        <div class="position-md-absolute position list1 " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"         data-aos-anchor-placement="top-center" >
+          <div class="tag1 position-absolute d-flex align-items-center">
+            <p class="p-5 font-22">日式三明治</p>
+          </div>
+          <div class="w-100 h-100 number1 overflow-hidden circle-3 "><img src="./img/1-5菜單/日式三明治.png" width="100%" alt=""></div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="152753">
+        <div class="position-md-absolute list2" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="800"
+        data-aos-anchor-placement="top-center" >
+          <div class="tag2 position-absolute d-flex align-items-center justify-content-center">
+            <p class=" font-22 ">日式漢堡</p>
+          </div>
+          <div class="w-100 h-100 number2 overflow-hidden circle-2">
+            <img src="./img/1-5菜單/日式漢堡.jpg" width="100%" alt="">
+          </div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-02.jpg" data-lightbox="menuListPic"  data-title="12783">      
+        <div class="position-md-absolute list3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300"
+        data-aos-anchor-placement="top-center" >
+          <div class="tag3 position-absolute d-flex align-items-center justify-content-center">
+            <p class="font-22 ">極厚切丹麥</p>
+          </div>
+          <div class="w-100 h-100 number3 overflow-hidden circle-3">
+            <img src="./img/1-5菜單/極厚切丹麥.jpg" width="100%" alt="">
+          </div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-02.jpg" data-lightbox="menuListPic"  data-title="17823">  
+        <div class="position-md-absolute list4 " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400"
+        data-aos-anchor-placement="top-center" >
+            <div class="tag4 position-absolute d-flex align-items-center justify-content-center ">
+              <p class=" font-22 animation-none">主廚限定鹹派 (不定期供應)</p>
+            </div>
+            <div class="w-100 h-100 number4 overflow-hidden circle-1">
+              <img src="./img/1-5菜單/主廚限定鹹派.jpg" width="100%" alt="">
+            </div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-04.jpg" data-lightbox="menuListPic"  data-title="127853">  
+        <div class="position-md-absolute list5" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300"
+        data-aos-anchor-placement="top-center" >
+          <div class="tag5 position-absolute d-flex align-items-center">
+            <p class="pl-5 font-22">飲品</p>
+          </div>
+          <div class="w-100 h-100 number5 overflow-hidden circle-1">
+            <img src="./img/1-5菜單/飲品.jpg" width="100%" alt="">
+          </div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-03.jpg" data-lightbox="menuListPic"  data-title="1786623">    
+        <div class="position-md-absolute list6 " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400"
+        data-aos-anchor-placement="top-center" >
+          <div class="tag6 position-absolute d-flex align-items-center">
+            <p class="pl-5">佐味小食</p>
+          </div>
+          <div class="w-100 h-100 number6 overflow-hidden circle-2">
+            <img src="./img/1-5菜單/佐味小食.webp" width="100%" alt="">
+          </div>
+        </div>
+      </a>
+      <a href="./img/menu/菜單頁面-03.jpg" data-lightbox="menuListPic"  data-title="127527523">     
+        <div class="position-md-absolute list7" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"         data-aos-anchor-placement="top-center" >
+          <div class="tag7 position-absolute d-flex align-items-center ">
+            <p class="pl-5 font-22">限定甜點(可外帶)</p>
+          </div>
+          <div class="w-100 h-100 number7 overflow-hidden circle-2">
+            <img src="./img/1-5菜單/限定甜品.jpg" width="100%" alt="">
+          </div>
+        </div>
+      </a>
+      <div class="d-md-none list8">
+        <div class="tag8 position-absolute">
+          <p>XXXXXX)</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+
+
+
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- swiper的js連結 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+  <!-- boostrap的js連結 -->
+  <script src="./js/lightbox-plus-jquery.js"></script>
+  <!-- lightbox的js連結 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- aos效果的js連結 -->
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- menu lightbox -->
+  <script>
+      lightbox.option({
+        'resizeDuration': 500,
+        'wrapAround': true,
+        'fadeDuration':300,
+        'disableScrolling':true,
+      })
+  </script>
+
+  <!-- AOS -->
+  <script>
+
+//    console.log(menu);
+//   menu.forEach((e)=>{
+
+//   e.addEventListener('click',()=>{
+  
+//   body.classList.add('noscroll')
+  
+// })
+// })
+
+  AOS.init();
+
+
+  </script>
+
+
+</body>
+
+</html>
