@@ -340,7 +340,6 @@ title .titleTag {
 }
 
 .news {
-  background-color: #c17552;
   width: 100%;
   height: 807px;
   position: relative;
@@ -353,7 +352,6 @@ title .titleTag {
 }
 
 .news .swiper-news-container {
-  background-color: #89c152;
   position: relative;
   margin: 0 auto;
   width: 75%;
@@ -362,20 +360,47 @@ title .titleTag {
 
 .news .swiper-news-container::before {
   width: 3px;
-  height: 100%;
-  background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 15.75px, transparent 15.75px, transparent);
-  background-size: 100% 21px;
+  height: 99%;
+  background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+  background-size: 100% 17px;
   background-repeat: repeat-y;
   position: absolute;
-  bottom: 0;
   content: '';
 }
 
 .news .swiper-news-container::after {
   width: 100%;
-  height: 2px;
-  background: linear-gradient(to right, #4a2b0e, #4a2b0e 15.75px, transparent 15.75px, transparent);
-  background-size: 21px 100%;
+  height: 4px;
+  background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+  background-size: 17px 100%;
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  bottom: 0.7em;
+  content: '';
+}
+
+.news .swiper-news-container .swiper-news-border-line {
+  width: 100%;
+  height: 100%;
+}
+
+.news .swiper-news-container .swiper-news-border-line::before {
+  width: 3px;
+  height: 99%;
+  background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+  background-size: 100% 17px;
+  background-repeat: repeat-y;
+  position: absolute;
+  right: 0.1em;
+  content: '';
+}
+
+.news .swiper-news-container .swiper-news-border-line::after {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+  background-size: 17px 100%;
   background-repeat: repeat-x;
   position: absolute;
   content: '';

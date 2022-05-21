@@ -371,40 +371,60 @@ title {
 
 //最新消息區-----------------------
 .news {
-	background-color: rgb(193, 117, 82);
+	// background-color: rgb(193, 117, 82);
 	width: 100%;
 	height: 807px;
 	position: relative;
 	display: flex;
 	align-items: center;
 	.swiper-news-container{
-		background-color: rgb(137, 193, 82);
+		// background-color: rgb(137, 193, 82);
 		position: relative;
 		margin: 0 auto;
 		width: 75%;
 		height: 70%;
-		&::before{
+		&::before{//Left-line
 			width: 3px;
-			height: 100%;
-			background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 15.75px, transparent 15.75px, transparent);
-			background-size: 100% 21px;
+			height: 99%;
+			background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+			background-size: 100% 17px;
 			background-repeat: repeat-y;
 			position: absolute;
-			// top: 0.25em;
-			bottom: 0;
-			// left: -0.42rem;
 			content: '';
 		}
-		&::after{
+		&::after{//Bottom-line
 			width: 100%;
-			height: 2px;
-			background: linear-gradient(to right, #4a2b0e, #4a2b0e 15.75px, transparent 15.75px, transparent);
-			background-size: 21px 100%;
+			height: 4px;
+			background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+			background-size: 17px 100%;
 			background-repeat: repeat-x;
 			position: absolute;
-			// top: 0.25em;
-			// left: -0.42rem;
+			left: 0;
+			bottom: 0.7em;
 			content: '';
+		}
+		.swiper-news-border-line{
+			width: 100%;
+			height: 100%;
+			&::before{//Right-line
+				width: 3px;
+				height: 99%;
+				background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+				background-size: 100% 17px;
+				background-repeat: repeat-y;
+				position: absolute;
+				right: 0.1em;
+				content: '';
+			}
+			&::after{//Top-line
+				width: 100%;
+				height: 3px;
+				background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+				background-size: 17px 100%;
+				background-repeat: repeat-x;
+				position: absolute;
+				content: '';
+			}
 		}
 	}
 }
