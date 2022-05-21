@@ -68,6 +68,11 @@
     border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
     animation: border-animation3 8s infinite linear;
 }
+.circle-4 {
+
+    border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+    animation: border-animation4 8s infinite linear;
+}
 
 
 
@@ -131,6 +136,25 @@
     100%{
         border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
         transform: scale(1.01);
+    }
+}
+@keyframes border-animation4 {
+    0% { 
+        transform: scale(1.2);
+    }
+    25%{
+        border-radius: 41% 59% 45% 55% / 66% 66% 34% 34% ;
+    }
+    50%{
+        border-radius: 52% 48% 57% 43% / 47% 50% 50% 53% ;
+    }
+    70%{
+        border-radius: 63% 37% 39% 61% / 64% 63% 37% 36% ;
+        transform: scale(1.1);
+    }
+    100%{
+        border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+        transform: scale(1.2);
     }
 }
 
