@@ -134,16 +134,3 @@
     }
 }
 
-
-       /* lock scrollBar */
-
-.noscroll{
-    position: fixed;
-
-    width: 100%;
-}
-html.fixWindow{
-    position: fixed;
-    width: 100%;
-}
-

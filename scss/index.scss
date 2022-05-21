@@ -429,3 +429,89 @@ title {
 	}
 }
 //最新消息區-----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// footer --------------------------------------
+
+li {
+	/* li去除圓點 */
+	list-style: none;
+}
+
+.block_title {
+	font-size: 20px;
+	padding: 5px 0;
+}
+
+.block_text {
+	font-size: 17px;
+	margin: 20px 0;
+}
+
+.ifmblock1,
+.ifmblock2,
+.ifmblock3,
+.ifmblock4 {
+	/* 文字父層區塊padding */
+	padding: 10px 15px 30px 15px;
+}
+
+#store_information {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+
+	// background-image: url(../img/footer-img/footer_png1.png);
+	// background-repeat: no-repeat;
+	// background-position: 50% 50%;
+	.footer_content {
+		width: 100%;
+		padding: 0 10% 0 10%;
+		background-image: url(../img/footer-img/footer_png1.png);
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+		background-size: 98%;
+
+		// .information_page {
+		// 	.ifmblock4 {
+		// 		margin-top: 20px;
+		// 	}
+		// }
+	}
+
+	// .footer_png1{
+	// 	background-image: url(../img/footer-img/footer_png1.png);
+	// 	background-size: 98%;
+	// 	background-repeat: no-repeat;
+	// 	background-position: 0 150px;
+	// 	width: 100%;
+	// 	height: 70%;
+	// 	position: absolute;
+	// 	top: 350px;
+	// 	opacity: 0.5;
+	// }
+	.footer_png2 {
+		background-image: url(../img/footer-img/footer_png2.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		width: 23.14%;
+		height: 26%;
+		position: absolute;
+		top: 260px;
+		right: 115px;
+	}
+}
