@@ -16,7 +16,6 @@ body {
 }
 
 .sectionSize {
-  margin-top: 150px;
   width: 100%;
   height: 100vh;
 }
@@ -50,15 +49,6 @@ a:hover {
   height: 100vh;
 }
 
-.food .foodImageSection {
-  margin-top: 134px;
-  margin-left: 57.02px;
-}
-
-.foodImg2 {
-  margin-bottom: 147.01px;
-}
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -75,10 +65,6 @@ a:hover {
 .navbar .nav {
   width: 28%;
   background-color: darkcyan;
-}
-
-title .titleTag {
-  margin-left: 64.77px;
 }
 
 .profile {
@@ -195,8 +181,8 @@ title .titleTag {
 }
 
 .title {
-  padding-left: 167.77px;
-  padding-top: 163.38px;
+  padding-left: 75px;
+  padding-top: 78px;
 }
 
 .logoTag {
@@ -285,8 +271,8 @@ title .titleTag {
 }
 
 .foodImg {
-  width: 368.99px;
-  height: 368.99px;
+  width: 19.21vw;
+  height: 19.21vw;
   border-radius: 50%;
   background-color: #C4C4C4;
   position: relative;
@@ -308,6 +294,7 @@ title .titleTag {
           transform: rotateY(-145deg);
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+  opacity: 1;
 }
 
 .foodImg:hover .foodImgText {
@@ -343,7 +330,9 @@ title .titleTag {
 .foodImg .foodImgTitle {
   position: absolute;
   bottom: -60px;
-  left: 140px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .foodImg .foodimg-p-img {

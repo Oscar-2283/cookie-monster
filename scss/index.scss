@@ -21,7 +21,7 @@ body {
 }
 
 .sectionSize {
-	margin-top: 150px;
+	// margin-top: 150px;
 	width: 100%;
 	height: 100vh;
 }
@@ -56,16 +56,16 @@ a {
 }
 
 
-.food {
-	.foodImageSection {
-		margin-top: 134px;
-		margin-left: 57.02px;
-	}
-}
+// .food {
+// 	.foodImageSection {
+// 		// margin-top: 134px;
+// 		// margin-left: 57.02px;
+// 	}
+// }
 
-.foodImg2 {
-	margin-bottom: 147.01px;
-}
+// .foodImg2 {
+// 	margin-bottom: 147.01px;
+// }
 
 .swiper-slide {
 	img {
@@ -91,7 +91,7 @@ a {
 //關於我們區域-------------------
 title {
 	.titleTag {
-		margin-left: 64.77px;
+		// margin-left: 64.77px;
 	}
 }
 
@@ -219,8 +219,8 @@ title {
 }
 //頁面錨點--------------
 .title {
-	padding-left: 167.77px;
-	padding-top: 163.38px;
+	padding-left: 75px;
+	padding-top: 78px;
 }
 
 .logoTag {
@@ -314,8 +314,8 @@ title {
 //關於我們照片-------------------
 //嚴選食材區-------------------
 .foodImg {
-	width: 368.99px;
-	height: 368.99px;
+	width: 19.21vw;
+	height: 19.21vw;
 	border-radius: 50%;
 	background-color: $background-color_3;
 	position: relative;
@@ -329,6 +329,7 @@ title {
 	&:hover .food_imgBox{
 		transform: rotateY(-145deg);
 		transition-delay: .3s;
+		opacity: 1;
 	}
 	&:hover .foodImgText{
 		filter: blur(0px);
@@ -356,7 +357,8 @@ title {
 	.foodImgTitle {//嚴選食材文字
 		position: absolute;
 		bottom: -60px;
-		left: 140px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.foodimg-p-img {
