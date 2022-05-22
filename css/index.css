@@ -299,11 +299,15 @@ title .titleTag {
 .foodImg:hover {
   -webkit-box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .foodImg:hover .food_imgBox {
   -webkit-transform: rotateY(-145deg);
           transform: rotateY(-145deg);
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .foodImg .food_imgBox {
@@ -636,14 +640,14 @@ li {
 #store_information .footer_content {
   width: 100%;
   padding: 0 10% 0 10%;
-  background-image: url(../img/footer-img/footer_png1.png);
+  background-image: url(../img/1-7footer-img/background.png);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 98%;
 }
 
 #store_information .footer_png2 {
-  background-image: url(../img/footer-img/footer_png2.png);
+  background-image: url(../img/1-7footer-img/rainbow.png);
   background-size: 100%;
   background-repeat: no-repeat;
   width: 23.14%;

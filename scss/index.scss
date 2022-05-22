@@ -324,9 +324,11 @@ title {
 
 	&:hover{
 		box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+		transition-delay: .3s;
 	}
 	&:hover .food_imgBox{
 		transform: rotateY(-145deg);
+		transition-delay: .3s;
 	}
 	.food_imgBox{
 		position: relative;
