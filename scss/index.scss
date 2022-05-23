@@ -6,6 +6,9 @@ $background-color_3: #C4C4C4; //放圖片區域底色
 
 //快速找相對區域的css
 //用Ctrl+F搜尋(例:嚴選食材)
+html{
+	scroll-behavior: smooth;
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -410,7 +413,6 @@ a {
 	align-items: center;
 
 	.swiper-news-border-lineL {
-		// background-color: rgb(137, 193, 82);
 		position: relative;
 		margin: 0 auto;
 		width: 89%;
@@ -427,7 +429,6 @@ a {
 			left: 0;
 			top: 0;
 		}
-		// 
 		
 		.swiper-news-border-lineR {
 			height: 100%;
@@ -476,21 +477,26 @@ a {
 						background-size: 17px 100%;
 						background-repeat: repeat-x;
 						position: absolute;
-						left: 0;
-						bottom: 1em;
+						left: .1em;
+						bottom: 1.2em;
 						content: '';
 					}
 					.newsTitle{
 						padding: 0 0 0 0;
-						margin-bottom: 50px;
-						margin-top: -50px;
+						margin-bottom: 70px;
+						margin-top: -70px;
 						width: 90%;
 					}
 					.mySwiper1 {//最新消息的swiper
 						margin: 0;
 						width: 90%;
 						height: 25vh;
-						// background-color: red;
+						.swiper-pagination-bullets{
+							.swiper-pagination-bullet-active{
+								//swiper頁面點點顏色
+								background: #4a2b0e!important;
+							}
+						}
 						.swiper-wrapper {
 							.swiper-slide {
 								// background-color: aqua;
@@ -531,9 +537,9 @@ a {
 						//詳細內容按鈕
 						align-self: flex-end;
 						width: 18%;
-						z-index: 2;
+						z-index: 1;
 						position: absolute;
-						bottom: 14.5%;
+						bottom: 17.5%;
 						.moreCircle {
 							border: 1px solid black;
 							border-radius: 50%;
@@ -590,42 +596,39 @@ li {
 	margin: 20px 0;
 }
 
-.ifmblock1,
-.ifmblock2,
-.ifmblock3,
-.ifmblock4 {
-	/* 文字父層區塊padding */
-	padding: 10px 15px 30px 15px;
-}
+
 
 #store_information {
 	width: 100%;
 	height: 100vh;
 	position: relative;
-
-	// background-image: url(../img/footer-img/footer_png1.png);
-	// background-repeat: no-repeat;
-	// background-position: 50% 50%;
-	.footer_content {
+	.footer_content{
+		position: relative;
 		width: 100%;
-		padding: 0 10% 0 10%;
+		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
 		background-position: 0 100%;
 		background-size: 98%;
+		.information_page{
+			.ifmblock1,.ifmblock2,.ifmblock3,.ifmblock4 {
+				/* 文字父層區塊padding */
+				padding: 10px 15px 30px 15px;
+				}
+			.footer-info-line1{
+				width: 1100px;
+				border: 1px solid rgba(0,0,0,0.3);
+				}
+			.footer-info-line2{
+				// width: 1100px;
+				border: 1px solid rgba(0,0,0,0.3);
+				}
+			.footer-info-line3{
+				// width: 1100px;
+				border: 1px solid rgba(0,0,0,0.3);
+				}
+		}
 	}
-
-	// .footer_png1{
-	// 	background-image: url(../img/footer-img/footer_png1.png);
-	// 	background-size: 98%;
-	// 	background-repeat: no-repeat;
-	// 	background-position: 0 150px;
-	// 	width: 100%;
-	// 	height: 70%;
-	// 	position: absolute;
-	// 	top: 350px;
-	// 	opacity: 0.5;
-	// }
 	.footer_png2 {
 		background-image: url(../img/1-7footer-img/rainbow.png);
 		background-size: 100%;
@@ -633,7 +636,7 @@ li {
 		width: 23.14%;
 		height: 26%;
 		position: absolute;
-		top: 260px;
-		right: 115px;
+		top: 0;
+		right: 0;
 	}
 }
