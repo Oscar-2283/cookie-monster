@@ -203,7 +203,7 @@
           </div>
           <div class="foodImg foodImg3 foodImg-t">
             <div class="food_imgBox ">
-              <img class="foodimg-p-img foodImg" src="./img/1-3嚴選食材/sauce.jpg">
+              <img class="foodimg-p-img foodImg " src="./img/1-3嚴選食材/sauce.jpg">
             </div>
             <h1 class="foodImgTitle font-2-5rem font-weight-bolder">醬汁 </h1>
             <p class="foodImgText font-1-25rem font-weight-bold d-flex align-items-center">自製特製醬料日本進口醬汁 </p>
@@ -222,7 +222,7 @@
         </div>
         <div class="col-6">
           <div class="foodImg foodImg2 foodImg-s1">
-            <div class="food_imgBox">
+            <div class="food_imgBox ">
               <img class="foodimg-p-img foodImg" src="./img/1-3嚴選食材/milk.jpg">
             </div>
             <h1 class="foodImgTitle font-2-5rem font-weight-bolder">牛奶</h1>
@@ -232,8 +232,8 @@
             <div class="food_imgBox">
               <img class="foodimg-p-img foodImg" src="./img/1-3嚴選食材/veg.jfif">
             </div>
-            <h1 class="foodImgTitle font-2-5rem font-weight-bolder">蔬果 </h1>
-            <p class="foodImgText font-1-25rem font-weight-bold">季節水果，產銷履歷蔬菜，小農蔬菜</p>
+            <h1 class="foodImgTitle font-2-5rem font-weight-bolder text-layers">蔬果 </h1>
+            <p class="foodImgText font-1-25rem font-weight-bold ">季節水果，產銷履歷蔬菜，小農蔬菜</p>
           </div>
         </div>
       </div>
@@ -352,7 +352,7 @@
           <div class="tag3 tag position-absolute d-flex align-items-center justify-content-center">
             <p class="font-22 ">極厚切丹麥</p>
           </div>
-          <div class="w-100 h-100 number3 overflow-hidden circle-3">
+          <div class="w-100 h-100 number3 overflow-hidden circle-3 ">
             <!-- <img src="./img/1-5菜單/極厚切丹麥.jpg" width="100%" alt=""> -->
           </div>
         </div>
@@ -370,7 +370,7 @@
       <a href="./img/menu/菜單頁面-04.jpg" data-lightbox="menuListPic"  data-title="127853">  
         <div class="position-md-absolute  list5 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
           <div class="tag5 tag position-absolute d-flex align-items-center">
-            <p class="pl-5 font-22">飲品</p>
+            <p class="pl-5 font-22 ">飲品</p>
           </div>
           <div class="w-100 h-100 number5 overflow-hidden circle-1">
             <!-- <img src="./img/1-5菜單/飲品1.png" width="100%" alt=""> -->
@@ -499,8 +499,8 @@
   <!-- lightbox的js連結 -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- aos效果的js連結 -->
-
   <script src="./js/vanilla-tilt.min.js"></script>
+  <script src="./js/ztext.min.js"></script>
   <script src="./js/navbar.js"></script>
 
 
@@ -566,6 +566,28 @@
 
 
   </script>
+
+
+<script>
+  var text = new Ztextify(".text-layers", {
+   depth: "30px",
+   layers: 30,
+   fade: false,
+   direction: "both",
+   eventDirection:"default",
+   event: "scroll",
+   eventRotation: "35deg"
+  }); 
+  var image = new Ztextify(".image-layers", {
+   depth: "30px",
+   layers: 30,
+   fade: false,
+   direction: "both",
+   eventDirection:"default",
+   event: "none",
+   eventRotation: "35deg"
+  }); 
+</script>
 
 
 </body>

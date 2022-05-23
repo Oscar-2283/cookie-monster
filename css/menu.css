@@ -329,4 +329,12 @@
   background-position: center;
   background-size: cover;
 }
+
+.z-layer:first-child {
+  color: black;
+}
+
+.z-layer {
+  color: red;
+}
 /*# sourceMappingURL=menu.css.map */
