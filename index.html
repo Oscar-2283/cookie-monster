@@ -23,6 +23,8 @@
   <!-- 整個頁面用的CSS -->
   <link rel="stylesheet" href="./css/menu.css">
   <!-- 菜單區域的CSS -->
+  <link rel="stylesheet" href="./css/titleparts.css">
+  <!-- 頁面錨點Title的CSS -->
   <link rel="stylesheet" href="./css/all.css">
   <title>一人一伴ともだち</title>
 </head>
@@ -111,35 +113,35 @@
         <div class="navbar">
           <div class="navbar_title">
             <a href="">
-              <div class="title_p">一人一伴
-                　　ともだち</div>
+              <div class="title_p">一人一伴</div>
+              <div class="title_p">ともだち</div>
+            </a>
           </div>
-          </a>
           <div class="navbar_content">
             <div class="navbar_target">
-              <p class="sort">01</p>
+              <img src="./img/0-2 icon/bear.svg" alt="">
               <a href=""><span class="target about">關於我們</span></a>
             </div>
             <div class="navbar_target">
-              <p class="sort">02</p>
+              <img src="./img/0-2 icon/bear.svg" alt="">
               <a href=""><span class="target news">最新消息</span></a>
             </div>
             <div class="navbar_target">
-              <p class="sort">03</p>
-              <a href=""><span class="target menu">菜單</span></a>
+              <img src="./img/0-2 icon/bear.svg" alt="">
+              <a href=""><span class="target menu">菜&emsp;&emsp;單</span></a>
             </div>
             <div class="navbar_target">
-              <p class="sort">04</p>
+              <img src="./img/0-2 icon/bear.svg" alt="">
               <a href=""><span class="target information">店家資訊</span></a>
             </div>
             <div class="navbar_target">
-              <p class="sort">05</p>
+              <img src="./img/0-2 icon/bear.svg" alt="">
               <a href=""><span class="target booking">預約訂位</span></a>
             </div>
           </div>
           <div class="navbar_icon"><!-- banner icon區域(用font awesome放) -->
-            <a href=""><img src="./img/icon/facebook.png" alt="fb"></a>
-            <a href=""><img src="./img/icon/ig.png" alt="ig"></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -147,11 +149,11 @@
   </section>
 <!-- 關於我們區 -->
   <section id="aboutus" class="profile">
-    <div class="d-flex title align-items-center">
-      <!-- 頁面錨點 -->
-      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
+    <div class="newsTitle d-flex title align-items-center">
+      <!-- 頁面錨點Title -->
+      <img class="logoTag" src="./img/0-2 icon/bear.svg">
       <p class="titleTag">關於我們</p>
-      <img class="mark" src="./img/Group.svg">
+      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
     </div>
     <div class="profile_text z-2 ml-6rem-1400"><!-- 三明治照片 -->
       <p class="profile_p1">
@@ -166,7 +168,7 @@
         <span style="margin-left:1em">任何一個能夠陪伴你的人事物。</span>
       </p>
       <p class="profile_p3">
-        <span style="border-bottom: 1px dashed #000;">玉子焼き是我們的招牌</span> <br>
+        <span class="profile-text-egg">玉子焼き是我們的招牌</span> <br>
         <span style="margin-left:3em ;">初次見面、請多多指教。</span>
       </p>
     </div>
@@ -177,11 +179,11 @@
   </section>
 <!-- 嚴選食材區 -->
   <section id="food" class="food sectionSize px-375rem ">
-    <div class="d-flex title align-items-center  ">
-      <!-- 頁面錨點 -->
-      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
-      <p class="titleTag font-27">嚴選食材</p>
-      <img class="mark" src="./img/Group.svg">
+    <div class="newsTitle d-flex title align-items-center">
+      <!-- 頁面錨點Title -->
+      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <p class="titleTag">嚴選食材</p>
+      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
     </div>
 
     <div class="row foodImageSection justify-content-between d-none d-md-flex">
@@ -252,10 +254,11 @@
       <div class="swiper-news-border-lineT">
         <div class="swiper-news-border-lineB">
           <!-- 板塊標題 -->
-          <div class="newsTitle d-flex title align-items-center  ">
+          <div class="newsTitle d-flex title align-items-center">
+            <!-- 頁面錨點Title -->
             <img class="logoTag" src="./img/0-2 icon/bear.svg">
-            <p class="titleTag font-27">最新消息</p>
-            <img class="mark" src="./img/Group.svg">
+            <p class="titleTag">關於我們</p>
+            <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
           </div>
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
@@ -321,10 +324,11 @@
 
 <!-- 菜單區 -->
   <section id="menu" class=" menu-section position-relative">
-    <div class="d-flex title align-items-center  p-0 ">
-      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
-      <p class="titleTag font-27">菜單</p>
-      <img class="mark" src="./img/Group.svg">
+    <div class="newsTitle d-flex title align-items-center">
+      <!-- 頁面錨點Title -->
+      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <p class="titleTag">菜單</p>
+      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
     </div>
     <div class="d-flex menu-list flex-md-nowrap align-content-start flex-wrap     menu-container">
       <a  href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="123">
@@ -412,10 +416,11 @@
 
 <!-- 店家資訊區 -->
   <section id="store_information">
-    <div class="d-flex title align-items-center  ">
-      <img class="logoTag" src="https://dummyimage.com/53X53/614020/f5f5f5.png&text=熊">
-      <p class="titleTag font-27">店家資訊</p>
-      <img class="mark" src="./img/Group.svg">
+    <div class="newsTitle d-flex title align-items-center">
+      <!-- 頁面錨點Title -->
+      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <p class="titleTag">店家資訊</p>
+      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
     </div>
 
     <div class="footer_content">

@@ -39,15 +39,6 @@ h2 {
   padding: 0;
 }
 
-a {
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
 .swiper {
   width: 100%;
   height: 100vh;
@@ -63,12 +54,163 @@ a:hover {
 
 .nav {
   width: 28%;
-  background-color: darkcyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.navbar .nav {
-  width: 28%;
-  background-color: darkcyan;
+.nav .navbar {
+  width: 180px;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .navbar .navbar_title {
+  width: 180px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav .navbar .navbar_title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav .navbar .navbar_title a .title_p {
+  color: #4A2B0E;
+  font-size: 40px;
+}
+
+.nav .navbar .navbar_title a .title_p:nth-child(1) {
+  margin-right: 60px;
+}
+
+.nav .navbar .navbar_title a .title_p:nth-child(2) {
+  margin-top: -15px;
+  margin-left: 100px;
+}
+
+.nav .navbar .navbar_content .navbar_target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  white-space: nowrap;
+}
+
+.nav .navbar .navbar_content .navbar_target:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.nav .navbar .navbar_content .navbar_target img {
+  width: 35px;
+  margin-right: 15px;
+  margin-left: -25px;
+}
+
+.nav .navbar .navbar_content .navbar_target a {
+  font-size: 30px;
+}
+
+.nav .navbar .navbar_content .navbar_target .about {
+  position: relative;
+}
+
+.nav .navbar .navbar_content .navbar_target .about::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.nav .navbar .navbar_content .navbar_target .news {
+  position: relative;
+}
+
+.nav .navbar .navbar_content .navbar_target .news::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.nav .navbar .navbar_content .navbar_target .menu {
+  position: relative;
+}
+
+.nav .navbar .navbar_content .navbar_target .menu::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.nav .navbar .navbar_content .navbar_target .information {
+  position: relative;
+}
+
+.nav .navbar .navbar_content .navbar_target .information::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.nav .navbar .navbar_content .navbar_target .booking {
+  position: relative;
+}
+
+.nav .navbar .navbar_content .navbar_target .booking::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+}
+
+.nav .navbar .navbar_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.nav .navbar .navbar_icon .fa-brands {
+  font-size: 50px;
+  color: #d74f4b;
+}
+
+.nav .navbar .navbar_icon .fa-facebook {
+  font-size: 45px;
+  color: #375197;
 }
 
 .profile {
@@ -84,135 +226,6 @@ a:hover {
   z-index: 2;
 }
 
-.infor {
-  overflow: hidden;
-}
-
-.navbar .navbar_title {
-  width: 285px;
-  height: 85px;
-  position: absolute;
-  top: 184px;
-  left: 80px;
-}
-
-.navbar .navbar_title .title_p {
-  font-size: 40px;
-  line-height: 48px;
-}
-
-.navbar .navbar_content {
-  position: absolute;
-  top: 360px;
-  left: 110px;
-}
-
-.navbar .navbar_content .navbar_target {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 150px;
-  margin-bottom: 34px;
-}
-
-.navbar .navbar_content .navbar_target .sort {
-  font-size: 17px;
-  margin-right: 10px;
-}
-
-.navbar .navbar_content .navbar_target a {
-  font-size: 30px;
-}
-
-.navbar .navbar_content .navbar_target .about::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 80%;
-  top: 45px;
-  left: 27px;
-  background-color: black;
-}
-
-.navbar .navbar_content .navbar_target .news::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 80%;
-  top: 125px;
-  left: 27px;
-  background-color: black;
-}
-
-.navbar .navbar_content .navbar_target .menu::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 40%;
-  top: 205px;
-  left: 27px;
-  background-color: black;
-}
-
-.navbar .navbar_content .navbar_target .information::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 80%;
-  top: 285px;
-  left: 27px;
-  background-color: black;
-}
-
-.navbar .navbar_content .navbar_target .booking::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 80%;
-  top: 365px;
-  left: 27px;
-  background-color: black;
-}
-
-.navbar .navbar_icon {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 800px;
-  left: 155px;
-  gap: 12px;
-}
-
-.title {
-  padding-left: 75px;
-  padding-top: 78px;
-}
-
-.logoTag {
-  height: 53px;
-  width: 53px;
-  border-radius: 50%;
-}
-
-.mark {
-  width: 36.68px;
-  height: 53px;
-  margin-left: 39.15px;
-  position: relative;
-}
-
-.mark::after {
-  position: absolute;
-  width: 14.05px;
-  height: 14.05px;
-  background-color: black;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .profile_text {
   position: absolute;
   margin-top: 90.01px;
@@ -224,24 +237,30 @@ a:hover {
   }
 }
 
-.profile_p1 {
+.profile_text .profile_p1 {
   position: relative;
   line-height: 66px;
 }
 
-.profile_p2 {
+.profile_text .profile_p2 {
   margin-top: 42.7px;
   margin-left: 65.97px;
   line-height: 65px;
 }
 
-.profile_p3 {
+.profile_text .profile_p3 {
   margin-top: 42.9px;
   margin-left: 209.03px;
   line-height: 65.55px;
 }
 
-.img1 {
+.profile_text .profile_p3 .profile-text-egg {
+  padding-bottom: 10px;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
+}
+
+.profile_text .img1 {
   border-radius: 50%;
   background-color: #C4C4C4;
   background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
@@ -252,7 +271,7 @@ a:hover {
   top: 267.84px;
 }
 
-.img2 {
+.profile_text .img2 {
   border-radius: 50%;
   background-color: #C4C4C4;
   background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
@@ -263,7 +282,7 @@ a:hover {
   top: 745px;
 }
 
-.img3 {
+.profile_text .img3 {
   border-radius: 50%;
   background-color: #C4C4C4;
   background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
