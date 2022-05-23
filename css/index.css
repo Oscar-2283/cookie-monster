@@ -294,12 +294,9 @@ a:hover {
           transform: rotateY(-145deg);
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
-  opacity: 1;
 }
 
 .foodImg:hover .foodImgText {
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
   -webkit-transition-delay: .6s;
           transition-delay: .6s;
 }
@@ -314,7 +311,6 @@ a:hover {
   z-index: 1;
   -webkit-transition: 1s;
   transition: 1s;
-  opacity: .85;
 }
 
 .foodImg .food_imgBox img {
@@ -346,8 +342,6 @@ a:hover {
   left: 10px;
   letter-spacing: .2em;
   margin-left: 1em;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
 }
 
 .foodImg3 {
