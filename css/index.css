@@ -227,6 +227,10 @@ h2 {
   color: #d74f4b;
 }
 
+.nav .navbar .navbar_icon .fa-brands:hover {
+  opacity: .5;
+}
+
 .nav .navbar .navbar_icon .fa-facebook {
   font-size: 45px;
   color: #375197;

@@ -188,6 +188,9 @@ h2 {
 			.fa-brands{
 				font-size: 50px;
 				color: #d74f4b;
+				&:hover{
+					opacity: .5;
+				}
 			}
 			.fa-facebook{
 				font-size: 45px;
