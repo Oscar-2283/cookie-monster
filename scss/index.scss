@@ -46,6 +46,7 @@ h2 {
 
 a {
 	color: $color_2;
+	
 
 	&:hover {
 		text-decoration: none;
@@ -327,10 +328,9 @@ a {
 	&:hover .food_imgBox{
 		transform: rotateY(-145deg);
 		transition-delay: .3s;
-		opacity: 1;
 	}
 	&:hover .foodImgText{
-		filter: blur(0px);
+
 		transition-delay: .6s;
 	}
 	.food_imgBox{
@@ -342,7 +342,6 @@ a {
 		transform-origin: left;
 		z-index: 1;
 		transition: 1s;
-		opacity: .85;
 		img{
 			position: absolute;
 			top: 0%;
@@ -371,7 +370,6 @@ a {
 	left: 10px;
 	letter-spacing: .2em;
 	margin-left: 1em;
-	filter: blur(3px);
 }
 
 .foodImg3 {
