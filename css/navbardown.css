@@ -6,10 +6,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: wheat;
-}
-
 nav {
   -webkit-transition: .5s;
   transition: .5s;
@@ -17,6 +13,19 @@ nav {
 
 .navbardown {
   background: #CEB289;
+}
+
+.navbardown .media .fa-brands {
+  font-size: 50px;
+  color: #edecec;
+}
+
+.navbardown .media .fa-brands:hover {
+  opacity: .5;
+}
+
+.navbardown .media .fa-instagram {
+  margin-left: 20px;
 }
 
 .logo {
@@ -126,7 +135,8 @@ nav {
 }
 
 .menudown a {
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .item {
@@ -142,10 +152,12 @@ nav {
           justify-content: center;
   margin-right: 50px;
   font-size: 30px;
+  white-space: nowrap;
 }
 
 .icon {
   width: 50px;
+  margin-right: 10px;
 }
 
 a {

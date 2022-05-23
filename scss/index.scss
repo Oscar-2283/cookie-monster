@@ -76,6 +76,9 @@ h2 {
 			a {
 				display: flex;
 				flex-direction: column;
+				
+    color: black!important;
+    text-decoration: none!important;
 				.title_p {
 					color: $color_3;
 					font-size: 40px;
@@ -238,44 +241,45 @@ h2 {
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
 		}
 	}
-	//關於我們照片-------------------
-	.img1 {
-		//兩位老闆的照片
-		border-radius: 50%;
-		background-color: $background-color_3;
-		background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
-		width: 729.68px;
-		height: 729.68px;
-		position: absolute;
-		left: 39px;
-		top: 267.84px;
-	}
-
-	.img2 {
-		//店內一角照片
-		border-radius: 50%;
-		background-color: $background-color_3;
-		background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
-		width: 288.75px;
-		height: 288.75px;
-		position: absolute;
-		left: 624.49px;
-		top: 745px;
-	}
-
-	.img3 {
-		//三明治照片
-		border-radius: 50%;
-		background-color: $background-color_3;
-		background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
-		width: 405.58px;
-		height: 405.58px;
-		position: absolute;
-		left: 68.77%;
-		top: 154px;
-	}
-	//關於我們照片-------------------
+	
 }
+//關於我們照片-------------------
+.img1 {
+	//兩位老闆的照片
+	border-radius: 50%;
+	background-color: $background-color_3;
+	background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
+	width: 729.68px;
+	height: 729.68px;
+	position: absolute;
+	left: 39px;
+	bottom: 50px;
+}
+
+.img2 {
+	//店內一角照片
+	border-radius: 50%;
+	background-color: $background-color_3;
+	background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
+	width: 288.75px;
+	height: 288.75px;
+	position: absolute;
+	left: 624.49px;
+	bottom: 50px;
+}
+
+.img3 {
+	//三明治照片
+	border-radius: 50%;
+	background-color: $background-color_3;
+	background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
+	width: 405.58px;
+	height: 405.58px;
+	position: absolute;
+	right: 40px;
+	top: 20px;
+}
+//關於我們照片-------------------
 
 
 //關於我們區內文字體--------------
@@ -567,43 +571,77 @@ li {
 
 #store_information {
 	width: 100%;
-	height: 100vh;
+	// height: 100vh;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	.store-info-title{
+		margin: 120px 0 70px 100px;
+	}
 	.footer_content{
+		align-self: flex-end;
 		position: relative;
 		width: 100%;
 		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-position: 0 100%;
-		background-size: 98%;
+		background-position:0 150%;
+		background-size: 99% 85%;
+		font-weight: 500;
 		.information_page{
-			.ifmblock1,.ifmblock2,.ifmblock3,.ifmblock4 {
+			.ifmblock1,.ifmblock2,.ifmblock3 {
 				/* 文字父層區塊padding */
-				padding: 10px 15px 30px 15px;
+				letter-spacing: .2em;
+				padding: 30px 15px 60px 130px;
+				font-size: 17px;
 				}
+			.ifmblock4{
+				margin: 40px 0 10px 0;
+				font-weight: 600;
+				letter-spacing: .1em;
+				}
+			.ifmblock3{
+				.block_text{
+					a{
+						width: 165px;
+						position: relative;
+						&::after{
+							content: '';
+							display: none;
+							padding-bottom: 40px;
+							width: 77%;
+							height: 30px;
+							position: absolute;
+							// background-position:0 100%;
+							background-repeat: repeat;
+							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
+						}
+						&:hover::after{
+							display: block;
+						}
+					}
+				}
+			}
 			.footer-info-line1{
 				width: 1100px;
-				border: 1px solid rgba(0,0,0,0.3);
+				border-bottom: .1em solid rgba(0,0,0,0.3);
 				}
 			.footer-info-line2{
 				// width: 1100px;
-				border: 1px solid rgba(0,0,0,0.3);
+				border-bottom: .1em solid rgba(0,0,0,0.3);
 				}
 			.footer-info-line3{
 				// width: 1100px;
-				border: 1px solid rgba(0,0,0,0.3);
+				border-bottom: .1em solid rgba(0,0,0,0.3);
 				}
 		}
 	}
 	.footer_png2 {
-		background-image: url(../img/1-7footer-img/rainbow.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		width: 23.14%;
-		height: 26%;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 25%;
+		right: 5%;
+		img{
+			width: 430px;
+		}
 	}
 }
