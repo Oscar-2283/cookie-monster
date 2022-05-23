@@ -91,18 +91,26 @@ h2 {
 		}
 	
 		.navbar_content {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			.navbar_target {
 				display: flex;
 				width: 150px;
 				// margin-bottom: 34px;
 				white-space: nowrap;
-				&:not(:last-child){
-					margin-bottom: 20px;
+				
+				&:hover img{
+					display: none;
+
 				}
 				img{
 					width: 35px;
 					margin-right: 15px;
 					margin-left: -25px;
+				
 				}
 	
 				a {
@@ -185,6 +193,33 @@ h2 {
 		}
 	}
 }
+
+#marker{
+    position: absolute;
+    top: 0px;
+	left: -30%;
+    // margin-top: -5px;
+    width: 170px;
+    height: 50px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::before{
+        content: '';
+        position: absolute;
+		background-repeat: no-repeat;
+		background-image: url('../img/0-2 icon/bear.svg');
+        width: 35px;
+		height: 35px;
+		transform: translateY(50%);
+     
+    }
+}
+
+
+
+
 //形象banner區------------------
 //關於我們區域-------------------
 
