@@ -89,11 +89,6 @@ a {
 	}
 }
 //關於我們區域-------------------
-title {
-	.titleTag {
-		// margin-left: 64.77px;
-	}
-}
 
 .profile {
 	width: 100%;
@@ -407,60 +402,159 @@ title {
 //嚴選食材照片區-------------------
 
 //最新消息區-----------------------
-.news {
-	// background-color: rgb(193, 117, 82);
+.newsArea {
 	width: 100%;
 	height: 807px;
 	position: relative;
 	display: flex;
 	align-items: center;
-	.swiper-news-container{
+
+	.swiper-news-border-lineL {
 		// background-color: rgb(137, 193, 82);
 		position: relative;
 		margin: 0 auto;
-		width: 75%;
-		height: 70%;
-		&::before{//Left-line
+		width: 89%;
+		height: 73%;
+		&::before {
+			//Left-line
 			width: 3px;
-			height: 99%;
+			height: 98%;
 			background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
 			background-size: 100% 17px;
 			background-repeat: repeat-y;
 			position: absolute;
 			content: '';
-		}
-		&::after{//Bottom-line
-			width: 100%;
-			height: 4px;
-			background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-			background-size: 17px 100%;
-			background-repeat: repeat-x;
-			position: absolute;
 			left: 0;
-			bottom: 0.7em;
-			content: '';
+			top: 0;
 		}
-		.swiper-news-border-line{
-			width: 100%;
+		// 
+		
+		.swiper-news-border-lineR {
 			height: 100%;
-			&::before{//Right-line
+			position: relative;
+			display: flex;
+			align-items: center;
+
+			&::before {
+				//Right-line
 				width: 3px;
-				height: 99%;
+				height: 98%;
 				background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
 				background-size: 100% 17px;
 				background-repeat: repeat-y;
 				position: absolute;
-				right: 0.1em;
+				right: 0;
+				top: 0;
 				content: '';
 			}
-			&::after{//Top-line
+
+			.swiper-news-border-lineT{
 				width: 100%;
-				height: 3px;
-				background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-				background-size: 17px 100%;
-				background-repeat: repeat-x;
-				position: absolute;
-				content: '';
+				&::before {
+					//Top-line
+					width: 100%;
+					height: 3px;
+					background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+					background-size: 17px 100%;
+					background-repeat: repeat-x;
+					position: absolute;
+					top: 0;
+					left: 0;
+					content: '';
+				}
+				.swiper-news-border-lineB{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					&::before {
+						//Bottom-line
+						width: 100%;
+						height: 4px;
+						background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
+						background-size: 17px 100%;
+						background-repeat: repeat-x;
+						position: absolute;
+						left: 0;
+						bottom: 1em;
+						content: '';
+					}
+					.newsTitle{
+						padding: 0 0 0 0;
+						margin-bottom: 50px;
+						margin-top: -50px;
+						width: 90%;
+					}
+					.mySwiper1 {//最新消息的swiper
+						margin: 0;
+						width: 90%;
+						height: 25vh;
+						// background-color: red;
+						.swiper-wrapper {
+							.swiper-slide {
+								// background-color: aqua;
+								padding: 0 5%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								.blogCard {
+									// border: 1px solid black;
+									width: 100%;
+									height: 100%;
+									background-color: #e2d1b8;
+									border-radius: 20px 20px 0 20px;
+									overflow: hidden;
+									
+									.blogCardImg {
+										width: 25%;
+										height: 100%;
+									}
+									
+									.blogCardContent {
+										width: 63%;
+										margin-left: 5%;
+										.blogCardTitle {
+											padding: 4px 0;
+											color: #4A2B0E;
+										}
+										.blogCardText{
+											padding: 1.5px 0;
+											color: #4A2B0E;
+										}
+									}
+								}
+							}
+						}
+					}
+					.more-circle-btn{
+						//詳細內容按鈕
+						align-self: flex-end;
+						width: 18%;
+						z-index: 2;
+						position: absolute;
+						bottom: 14.5%;
+						.moreCircle {
+							border: 1px solid black;
+							border-radius: 50%;
+							width: 92px;
+							height: 92px;
+							padding: 3.5px;
+							&:hover{
+								background-color: #fff;
+							}
+							
+							.moreCircle_min {
+								width: 83px;
+								height: 83px;
+								border: 1px solid black;
+								border-radius: 50%;
+								line-height: 83px;
+								letter-spacing: 4.25px;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -476,156 +570,6 @@ title {
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 15px var(--swiper-pagination-bullet-horizontal-gap,4px);
 }
-
-#news {
-	display: flex;
-	justify-content: center;
-	position: relative;
-	// background-color: yellow;
-	height: 84.2vh;
-
-	.newsTitle {
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
-
-	.moreCircle {
-		position: absolute;
-		border: 1px solid black;
-		border-radius: 50%;
-		width: 92px;
-		height: 92px;
-		bottom: 25%;
-		right: 14%;
-		padding: 3.5px;
-		z-index: 2;
-		
-		.moreCircle_min {
-			width: 83px;
-			height: 83px;
-			border: 1px solid black;
-			border-radius: 50%;
-			line-height: 83px;
-			letter-spacing: 4.25px;
-		}
-	}
-
-	.mySwiper1 {
-		position: absolute;
-		margin-top: 2.5%;
-		width: 86.5%;
-		height: 42.8%;
-
-		// background-color: red;
-		.swiper-wrapper {
-			.swiper-slide {
-				// background-color: aqua;
-				padding: 0 5%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				.blogCard {
-					// border: 1px solid black;
-					width: 100%;
-					height: 80%;
-					background-color: #e2d1b8;
-					
-					.blogCardImg {
-						width: 29%;
-						height: 100%;
-					}
-					
-					.blogCardContent {
-						width: 63%;
-						margin-left: 5%;
-
-						.blogCardTitle {
-							padding: 4px 0;
-							color: #4A2B0E;
-						}
-						.blogCardText{
-							padding: 1.5px 0;
-							color: #4A2B0E;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-.newsArea {
-	// background-color: rgb(193, 117, 82);
-	width: 100%;
-	// height: 807px;
-	position: relative;
-	display: flex;
-	align-items: center;
-
-	.swiper-news-container {
-		// background-color: rgb(137, 193, 82);
-		position: relative;
-		margin: 0 auto;
-		width: 89%;
-		height: 73%;
-
-		&::before {
-			//Left-line
-			width: 3px;
-			height: 99%;
-			background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-			background-size: 100% 17px;
-			background-repeat: repeat-y;
-			position: absolute;
-			content: '';
-		}
-
-		&::after {
-			//Bottom-line
-			width: 100%;
-			height: 4px;
-			background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-			background-size: 17px 100%;
-			background-repeat: repeat-x;
-			position: absolute;
-			left: 0;
-			bottom: 0.7em;
-			content: '';
-		}
-
-		.swiper-news-border-line {
-			width: 100%;
-			height: 100%;
-
-			&::before {
-				//Right-line
-				width: 3px;
-				height: 99%;
-				background: linear-gradient(to bottom, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-				background-size: 100% 17px;
-				background-repeat: repeat-y;
-				position: absolute;
-				right: 0.1em;
-				content: '';
-			}
-
-			&::after {
-				//Top-line
-				width: 100%;
-				height: 3px;
-				background: linear-gradient(to right, #4a2b0e, #4a2b0e 8.5px, transparent 8.5px, transparent);
-				background-size: 17px 100%;
-				background-repeat: repeat-x;
-				position: absolute;
-				content: '';
-			}
-		}
-	}
-}
-
-
 
 
 
