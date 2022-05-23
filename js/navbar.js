@@ -114,3 +114,27 @@ VanillaTilt.init(document.querySelector(".logo"), {
     glare:true,
     'max-glare':1,
 });
+
+
+
+
+/////////////////////////////////index
+
+let marker = document.querySelector('#marker')
+let item = document.querySelectorAll('ul li a')
+console.log(item)
+
+function Indicator(e){
+        marker.style.top=e.offsetTop + 'px';
+        marker.style.width=e.offsetWidth+50 + 'px';
+        console.log(marker.style.width)
+}
+
+item.forEach(element => {
+    element.addEventListener('mouseenter',(e) =>{
+        Indicator(e.target)
+    })
+    element.addEventListener('mouseleave',(e) =>{
+        marker.style.top='0px';
+    })
+});

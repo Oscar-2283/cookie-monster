@@ -106,6 +106,23 @@ h2 {
   margin-left: 100px;
 }
 
+.nav .navbar .navbar_content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav .navbar .navbar_content .navbar_target {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,8 +131,8 @@ h2 {
   white-space: nowrap;
 }
 
-.nav .navbar .navbar_content .navbar_target:not(:last-child) {
-  margin-bottom: 20px;
+.nav .navbar .navbar_content .navbar_target:hover img {
+  display: none;
 }
 
 .nav .navbar .navbar_content .navbar_target img {
@@ -213,6 +230,36 @@ h2 {
 .nav .navbar .navbar_icon .fa-facebook {
   font-size: 45px;
   color: #375197;
+}
+
+#marker {
+  position: absolute;
+  top: 0px;
+  left: -30%;
+  width: 170px;
+  height: 50px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#marker::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url("../img/0-2 icon/bear.svg");
+  width: 35px;
+  height: 35px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 .profile {
