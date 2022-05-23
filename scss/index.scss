@@ -252,7 +252,17 @@ h2 {
 .profile_text {
 	position: absolute;
 	margin-top: 90.01px;
-
+	@media (max-width:1760px) {
+		margin-top: 65px;
+		margin-left: 45.5%;
+	}
+	@media (max-width:1640px) {
+		margin-top: 55px;
+	}
+	@media (max-width: 1520px) {
+		margin-top: 35px;
+		margin-left: 46%;
+	}
 	@media (min-width: 1400px) {
 		margin-left: 46.275%;
 	}
@@ -260,18 +270,34 @@ h2 {
 	.profile_p1 {
 		position: relative;
 		line-height: 66px;
+		@media (max-width: 1520px) {
+			font-size: 26px;
+		}
 	}
 	
 	.profile_p2 {
 		margin-top: 42.7px;
 		margin-left: 65.97px;
 		line-height: 65px;
+		@media (max-width: 1520px) {
+			font-size: 26px;
+			margin-top: 43px;
+			margin-left: 60px;
+		}
 	}
 	
 	.profile_p3 {
 		margin-top: 42.9px;
 		margin-left: 209.03px;
 		line-height: 65.55px;
+		@media (max-width:1760px) {
+			margin-left: 255px;
+		}
+		@media (max-width: 1520px) {
+			font-size: 26px;
+			margin-left: 250px;
+			margin-top: 28px;
+		}
 		.profile-text-egg{
 			padding-bottom: 10px;
 			// background-position:0 100%;
@@ -292,6 +318,25 @@ h2 {
 	position: absolute;
 	left: 39px;
 	bottom: 50px;
+	@media (max-width:1760px) {
+		left: 4.3%;
+		top: 25%;
+		width: 730px;
+		height: 730px;
+	}
+	@media (max-width:1640px) {
+		width: 680px;
+		height: 680px;
+		top: 28%;
+		left: 4.8%;
+	}
+	@media (max-width: 1520px) {
+		top: 27%;
+	}
+	@media (max-width:1470px) {
+		width: 630px;
+		height: 630px;
+	}
 }
 
 .img2 {
@@ -304,6 +349,26 @@ h2 {
 	position: absolute;
 	left: 624.49px;
 	bottom: 50px;
+	@media (max-width:1760px) {
+		top:69%;
+		left: 37%;
+		width: 290px;
+		height: 290px;
+	}
+	@media (max-width:1640px) {
+		width: 270px;
+		height: 270px;	
+	}
+	@media (max-width: 1520px) {
+		top: 67%;
+		left: 39%;
+	}
+	@media (max-width:1470px) {
+		width: 250px;
+		height: 250px;
+		top: 66%;
+		left: 35%;
+	}
 }
 
 .img3 {
@@ -316,6 +381,26 @@ h2 {
 	position: absolute;
 	right: 40px;
 	top: 20px;
+	@media (max-width:1760px) {
+		top: 16%;
+		left: 73%;
+		width: 390px;
+		height: 390px;
+	}
+	@media (max-width:1640px) {
+		width: 370px;
+		height: 370px;
+		left: 75%;
+	}
+	@media (max-width: 1520px) {
+		top: 17%;
+		left: 73%;
+	}
+	@media (max-width:1470px) {
+		width: 340px;
+		height: 340px;
+		left: 75%;
+	}
 }
 //關於我們照片-------------------
 
