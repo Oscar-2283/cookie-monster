@@ -17,7 +17,10 @@ ul li, ol li {
 }
 
 .container {
-  background-color: rgb(209, 202, 202);
+  background-repeat: no-repeat;
+  background-position: 0 150%;
+  background-size: 100% 87%;
+  background-image: url(../img/background.png);
   width: 100%;
   position: relative;
 }
