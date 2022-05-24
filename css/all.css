@@ -8,6 +8,9 @@
 .font-17{
     font-size: 17px;
 }
+.font-20{
+    font-size: 20px;
+}
 .font-22{
     font-size: 22px;
 }
@@ -25,6 +28,13 @@
 }
 
 
+.z-1{
+    z-index: -1;
+}
+
+.mt30{
+    margin-top: 30%;
+}
 
 
 
