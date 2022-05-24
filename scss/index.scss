@@ -702,6 +702,7 @@ li {
 		margin: 120px 0 70px 100px;
 	}
 	.footer_content{
+		overflow-x: hidden;
 		align-self: flex-end;
 		position: relative;
 		width: 100%;
@@ -709,8 +710,26 @@ li {
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
 		background-position:0 150%;
-		background-size: 99% 85%;
+		background-size: 100% 88%;
 		font-weight: 500;
+		@media (max-width:1700px) {
+			background-size: 100% 75%;
+		}
+		@media (max-width:1600px) {
+			background-size: 103% 75%;
+		}
+		@media (max-width:1500px) {
+			background-size: 104% 75%;
+		}
+		@media (max-width:1400px) {
+			background-size: 110% 75%;
+		}
+		@media (max-width:1300px) {
+			background-size: 120% 75%;
+		}
+		@media (max-width:1200px) {
+			background-size: 130% 74%;
+		}
 		.information_page{
 			.ifmblock1,.ifmblock2,.ifmblock3 {
 				/* 文字父層區塊padding */
@@ -765,6 +784,9 @@ li {
 		right: 5%;
 		img{
 			width: 430px;
+			@media (max-width:1700px) {
+				width: 100%;
+			}
 		}
 	}
 }

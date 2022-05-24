@@ -820,6 +820,7 @@ li {
 }
 
 #store_information .footer_content {
+  overflow-x: hidden;
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
@@ -828,8 +829,44 @@ li {
   background-image: url(../img/1-7footer-img/background.png);
   background-repeat: no-repeat;
   background-position: 0 150%;
-  background-size: 99% 85%;
+  background-size: 100% 88%;
   font-weight: 500;
+}
+
+@media (max-width: 1700px) {
+  #store_information .footer_content {
+    background-size: 100% 75%;
+  }
+}
+
+@media (max-width: 1600px) {
+  #store_information .footer_content {
+    background-size: 103% 75%;
+  }
+}
+
+@media (max-width: 1500px) {
+  #store_information .footer_content {
+    background-size: 104% 75%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #store_information .footer_content {
+    background-size: 110% 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  #store_information .footer_content {
+    background-size: 120% 75%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #store_information .footer_content {
+    background-size: 130% 74%;
+  }
 }
 
 #store_information .footer_content .information_page .ifmblock1, #store_information .footer_content .information_page .ifmblock2, #store_information .footer_content .information_page .ifmblock3 {
@@ -886,5 +923,11 @@ li {
 
 #store_information .footer_png2 img {
   width: 430px;
+}
+
+@media (max-width: 1700px) {
+  #store_information .footer_png2 img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
