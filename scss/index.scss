@@ -549,6 +549,37 @@ h2 {
 .foodImg-t1 {
 	background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
 }
+// 768down
+
+.abc{
+	
+	transition:all 5s
+	
+}
+@media (min-width:375px){
+
+	.woodImgSize{
+		width: 50px;
+		height: 50px;
+	}
+}
+.wood-hover{
+	transition:all 5s !important;
+	
+}
+.open{
+	opacity: 0;
+	transition: 5s;
+}
+.wood-hover:hover .open {
+	
+	transition:all 5s !important;
+	opacity: 1;
+}
+
+
+
+
 //嚴選食材照片區-------------------
 
 //最新消息區-----------------------
