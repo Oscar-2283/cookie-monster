@@ -27,6 +27,24 @@ body{
     }
 }
 
+//SweetAlert2的樣式
+.swal2-popup{
+    border-radius: 20px!important;
+}
+.swal2-modal .swal2-title {
+    font-size: 32px!important;
+}
+.swal2-html-container{
+    font-size: 22px!important;
+}
+.swal2-styled.swal2-confirm{
+    color: black!important;
+    background-color: #FFD18E!important;
+    border-radius: 20px!important;
+}
+.swal2-styled.swal2-confirm:focus{
+    box-shadow: none!important;
+}
 
 ul,ol {
     margin: 0;
@@ -84,13 +102,22 @@ ul,ol {
             align-self: flex-start;
             align-items: center;
             z-index: 2;
-            margin: 0 0 55px 100px;
+            margin: 0 0 55px 15%;
             @media (max-width:950px) {
                 display: flex;
             }
+            @media (max-width:900px) {
+                margin-left: 11%;
+            }
+            @media (max-width:800px) {
+                margin-left: 10%;
+            }
+            @media (max-width:700px) {
+                margin-left: 4%;
+            }
             @media (max-width:680px) {
                 align-self: flex-start;
-                margin: 0 0 0 0;
+                margin: 0 0 20px 0;
             }
             // .logoTag{
             // }
