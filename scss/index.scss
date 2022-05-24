@@ -99,6 +99,7 @@ h2 {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			margin-left: 3 0px;
 			.navbar_target {
 				display: flex;
 				width: 150px;
@@ -185,16 +186,23 @@ h2 {
 		.navbar_icon {
 			display: flex;
 			gap: 30px;
-			.fa-brands{
-				font-size: 50px;
-				color: #d74f4b;
-				&:hover{
-					opacity: .5;
+			a{
+				.fa-brands{
+					font-size: 50px;
+					color: #d74f4b;
+					&:hover{
+						opacity: .5;
+					}
 				}
-			}
-			.fa-facebook{
-				font-size: 45px;
-				color: #375197;
+				.fa-facebook{
+					font-size: 45px;
+					color: #375197;
+				}
+				.fa-gradient {
+					background: -webkit-linear-gradient(-135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+					background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
 			}
 		}
 	}
@@ -219,7 +227,6 @@ h2 {
         width: 35px;
 		height: 35px;
 		transform: translateY(50%);
-     
     }
 }
 
