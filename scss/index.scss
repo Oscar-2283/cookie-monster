@@ -1085,34 +1085,55 @@ h2 {
 
 // 768down
 
-.abc {
 
-	transition: all 5s;
-}
+.wood{
 
-@media (min-width:375px) {
-
-	.woodImgSize {
-		width: 50px;
-		height: 50px;
+	@media (min-width:360px) {
+		.woodImgSize {
+			width: 30px;
+			height: 30px;
+		}
+		.font-wood{
+			font-size: 16px;
+		}
+		.open{
+			font-size: 12px;
+		}
+		.wood-mt{
+			margin-top: 2rem;
+		}
+	}
+	@media(min-width:420px){
+		.wood-mt{
+			margin-top: 3rem;
+		}
+	}
+	@media(min-width:490px){
+		.woodImgSize {
+			width: 50px;
+			height: 50px;
+		}
+		.font-wood{
+			font-size: 27px;
+		}
+		.open{
+			font-size: 20px;
+		}
+	
+	
+	}
+	.open {
+		opacity: 0;
+		transition: 1s;
+	}
+	.wood-hover:hover .open {
+		opacity: 1;
 	}
 }
 
-.wood-hover {
-	transition: all 5s !important;
 
-}
 
-.open {
-	opacity: 0;
-	transition: 5s;
-}
 
-.wood-hover:hover .open {
-
-	transition: all 5s !important;
-	opacity: 1;
-}
 
 
 
