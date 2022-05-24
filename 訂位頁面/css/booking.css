@@ -427,7 +427,6 @@ ul li, ol li {
   margin-left: 15px;
   background: -webkit-linear-gradient(-135deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .container .book-main .b-main-s .b-main-s-text .b-main-s-input form {
