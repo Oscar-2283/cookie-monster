@@ -422,20 +422,64 @@ h2 {
 	background-color: $background-color_3;
 	position: relative;
 	transition: 1s;
+	
 	box-shadow: inset 300px 0 50px rgba(0,0,0,0.2);
+	
+	.foodTextAnimation{
+		opacity: 0;
+		transition: 1s;
+	}
+	.food-animation{
+		opacity: 1;
+		transition: 1s;
+		transition-delay: 1s;
+	}
 
 	&:hover{
 		box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
 		transition-delay: .3s;
+		
+		.foodTextAnimation{
+			// transition-delay: 1s;
+			// animation: foodText 3s linear .5s;
+			// animation-fill-mode: forwards ;
+			transition-delay: .3s;
+			opacity: 1;
+		}
+		.food-animation{
+			// transition-delay: 1s;
+			// animation: foodIcon 1s linear ;
+			// animation-fill-mode: forwards;
+			opacity: 0;
+			transition-delay: .6s;
+		}
+	
 	}
 	&:hover .food_imgBox{
 		transform: rotateY(-145deg);
 		transition-delay: .3s;
 	}
+
+
 	&:hover .foodImgText{
 
 		transition-delay: .6s;
 	}
+	}
+	.foodIcon{
+		width: 50%;
+		height: 50%;
+	}
+	.meatIcon{
+		width: 30%;
+		top: 15%;
+	}
+	.meatIcon2{
+		width: 30%;
+		top: 50%;
+	}
+
+
 	.food_imgBox{
 		position: relative;
 		width: 100%;
@@ -465,23 +509,23 @@ h2 {
 		position: absolute;
 		bottom: 20px;
 	}
-}
+
 
 .foodImgText {//嚴選食材文字
 	position: absolute;
-	top: 50%;
-	left: 10px;
 	letter-spacing: .2em;
-	margin-left: 1em;
+	
 }
 
 .foodImg3 {
 	margin-top: 73.5px;
 }
 //嚴選食材照片區-------------------
+.foodImg-all {
+	background-image: url('../img/1-3嚴選食材/卡片背景圖.svg');
+}
 .foodImg-f {
-	// background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+bread);
-	background: #e2d1b8;
+	background-image: url('');
 }
 
 .foodImg-s {
