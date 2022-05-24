@@ -526,7 +526,7 @@ ul li, ol li {
 }
 .container .book-main .b-main-t {
   width: 750px;
-  margin: 20px 0 0 0;
+  margin: 10px 0 10px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -547,10 +547,6 @@ ul li, ol li {
     margin-right: 0;
   }
 }
-.container .book-main .b-main-t .book-btn {
-  background-color: #FFD18E;
-  width: 160px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 20px;
+.container .book-main .b-main-t .btn {
+  box-shadow: none;
 }/*# sourceMappingURL=booking.css.map */

@@ -501,7 +501,7 @@ ul,ol {
         }
         .b-main-t{
             width: 750px;
-            margin: 20px 0 0 0;
+            margin: 10px 0 10px 0;
             display: flex;
             justify-content: flex-end;
             @media (max-width:1300px) {
@@ -516,13 +516,8 @@ ul,ol {
                 align-self: center;
                 margin-right: 0;
             }
-            .book-btn{
-                background-color: 
-                #FFD18E;
-                width: 160px;
-                border-radius: 20px;
-                font-weight: 600;
-                font-size: 20px;
+            .btn{
+                box-shadow: none;
             }
         }
     }
