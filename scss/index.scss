@@ -108,6 +108,7 @@ h2 {
 			align-items: center;
 
 			margin-left: 3 0px;
+
 			.navbar_target {
 				display: flex;
 				width: 150px;
@@ -205,20 +206,24 @@ h2 {
 		.navbar_icon {
 			display: flex;
 			gap: 30px;
-			a{
-				.fa-brands{
+
+			a {
+				.fa-brands {
 					font-size: 50px;
 					color: #d74f4b;
-					&:hover{
+
+					&:hover {
 						opacity: .5;
 					}
 				}
-				.fa-facebook{
+
+				.fa-facebook {
 					font-size: 45px;
 					color: #375197;
 				}
+
 				.fa-gradient {
-					background: -webkit-linear-gradient(-135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+					background: -webkit-linear-gradient(-135deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 					-webkit-background-clip: text;
 					-webkit-text-fill-color: transparent;
 				}
@@ -236,6 +241,10 @@ h2 {
 	}
 
 	@media (max-width:467px) {
+		padding-top: 100px;
+		padding-left: 65px;
+	}
+	@media (max-width:386px){
 		padding-top: 80px;
 		padding-left: 60px;
 	}
@@ -261,7 +270,7 @@ h2 {
 		width: 35px;
 		height: 35px;
 		transform: translateY(50%);
-    }
+	}
 }
 
 
@@ -286,6 +295,9 @@ h2 {
 		}
 
 		@media (max-width:467px) {
+			font-size: 16px;
+		}
+		@media (max-width:386px){
 			font-size: 14px;
 		}
 	}
@@ -424,10 +436,14 @@ h2 {
 		}
 
 		@media (max-width:467px) {
-			font-size: 14px;
-			margin-top: 75px;
+			font-size: 16px;
+			margin-top: 150px;
 			margin-left: 100px;
-			line-height: 28px
+			line-height: 40px
+		}
+		@media (max-width:386px){
+			font-size: 14px;
+			margin-left: 85px;
 		}
 	}
 
@@ -446,6 +462,12 @@ h2 {
 			@media (max-width:802px) {
 				margin-left: -26px;
 			}
+			@media (max-width:467px){
+				margin-left: -18px;
+			}
+			@media (max-width:386px){
+				margin-left: -15px;
+			}
 		}
 
 		.py2 {
@@ -459,9 +481,11 @@ h2 {
 			}
 
 			@media (max-width:467px) {
-				line-height: 14px;
 				padding-top: 0rem;
 				padding-bottom: 0rem;
+			}
+			@media (max-width:386px){
+				margin-left: -3px;	
 			}
 		}
 
@@ -471,12 +495,18 @@ h2 {
 			@media (max-width:802px) {
 				margin-left: 30px;
 			}
+			@media (max-width:467px){
+				margin-left: 21px;
+			}
+			@media (max-width:386px){
+				margin-left: 18px;
+			}
 		}
 
 		@media (max-width: 1520px) {
 			font-size: 26px;
 			margin-top: 43px;
-			margin-left: 60px;
+			margin-left: 50px;
 		}
 
 		@media (max-width: 1340px) {
@@ -522,9 +552,13 @@ h2 {
 		}
 
 		@media (max-width:467px) {
-			font-size: 14px;
+			font-size: 16px;
 			margin-left: 98px;
-			line-height: 28px
+			margin-top: 40px;
+			line-height: 40px
+		}
+		@media (max-width:386px){
+			font-size: 14px;
 		}
 
 	}
@@ -542,6 +576,12 @@ h2 {
 			margin-left: 3em;
 
 			@media (max-width:802px) {
+				margin-left: 1em;
+			}
+			@media (max-width:467px){
+				margin-left: .8em;
+			}
+			@media (max-width:386px){
 				margin-left: 1em;
 			}
 		}
@@ -600,7 +640,13 @@ h2 {
 		}
 
 		@media (max-width:467px) {
+			font-size: 16px;
+			margin-left: 180px;
+			margin-top: 45px;
+		}
+		@media (max-width:386px){
 			font-size: 14px;
+			margin-left: 160px;
 		}
 
 		.profile-text-egg {
@@ -697,11 +743,17 @@ h2 {
 	}
 
 	@media (max-width:467px) {
-		top: 9%;
-		left: 30%;
-		width: 270px;
-		height: 270px;
+		top: 12%;
+		left: 25%;
+		width: 280px;
+		height: 280px;
 	}
+	@media (max-width:386px){
+		width: 240px;
+		height: 240px;
+		left: 28%;
+	}
+	
 }
 
 .img2 {
@@ -839,6 +891,12 @@ h2 {
 		top: 78%;
 		left: 10%;
 	}
+	@media (max-width:467px){
+		top: 82%;
+	}
+	@media (max-width:386px){
+		top: 80%;
+	}
 }
 
 //關於我們照片-------------------
@@ -862,14 +920,15 @@ h2 {
 	background-color: $background-color_3;
 	position: relative;
 	transition: 1s;
-	
-	box-shadow: inset 300px 0 50px rgba(0,0,0,0.2);
-	
-	.foodTextAnimation{
+
+	box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.2);
+
+	.foodTextAnimation {
 		opacity: 0;
 		transition: 1s;
 	}
-	.food-animation{
+
+	.food-animation {
 		opacity: 1;
 		transition: 1s;
 		transition-delay: 1s;
@@ -878,22 +937,23 @@ h2 {
 	&:hover {
 		box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 		transition-delay: .3s;
-		
-		.foodTextAnimation{
+
+		.foodTextAnimation {
 			// transition-delay: 1s;
 			// animation: foodText 3s linear .5s;
 			// animation-fill-mode: forwards ;
 			transition-delay: .3s;
 			opacity: 1;
 		}
-		.food-animation{
+
+		.food-animation {
 			// transition-delay: 1s;
 			// animation: foodIcon 1s linear ;
 			// animation-fill-mode: forwards;
 			opacity: 0;
 			transition-delay: .6s;
 		}
-	
+
 	}
 
 	&:hover .food_imgBox {
@@ -902,66 +962,69 @@ h2 {
 	}
 
 
-	&:hover .foodImgText{
+	&:hover .foodImgText {
 
 		transition-delay: .6s;
 	}
-	}
-	.foodIcon{
-		width: 50%;
-		height: 50%;
-	}
-	.meatIcon{
-		width: 30%;
-		top: 15%;
-	}
-	.meatIcon2{
-		width: 30%;
-		top: 50%;
-	}
+}
+
+.foodIcon {
+	width: 50%;
+	height: 50%;
+}
+
+.meatIcon {
+	width: 30%;
+	top: 15%;
+}
+
+.meatIcon2 {
+	width: 30%;
+	top: 50%;
+}
 
 
-	
 
-	.food_imgBox{
-		position: relative;
+
+.food_imgBox {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	// border: 1px solid #000;
+	background-color: transparent;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s;
+
+	img {
+		position: absolute;
+		top: 0%;
+		left: 0%;
 		width: 100%;
 		height: 100%;
-		// border: 1px solid #000;
-		background-color: transparent;
-		transform-origin: left;
-		z-index: 1;
-		transition: 1s;
-
-		img {
-			position: absolute;
-			top: 0%;
-			left: 0%;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
+		object-fit: cover;
 	}
+}
 
-	.foodImgTitle {
-		//嚴選食材文字
-		position: absolute;
-		bottom: -60px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
+.foodImgTitle {
+	//嚴選食材文字
+	position: absolute;
+	bottom: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
-	.foodimg-p-img {
-		position: absolute;
-		bottom: 20px;
-	}
+.foodimg-p-img {
+	position: absolute;
+	bottom: 20px;
+}
 
 
 .foodImgText {
 	//嚴選食材文字
 	position: absolute;
 	letter-spacing: .2em;
-	
+
 }
 
 .foodImg3 {
@@ -972,6 +1035,7 @@ h2 {
 .foodImg-all {
 	background-image: url('../img/1-3嚴選食材/卡片背景圖.svg');
 }
+
 .foodImg-f {
 	background-image: url('');
 }
@@ -995,32 +1059,35 @@ h2 {
 .foodImg-t1 {
 	background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
 }
+
 // 768down
 
-.abc{
-	
-	transition:all 5s
-	
+.abc {
+
+	transition: all 5s;
 }
 
-@media (min-width:375px){
+@media (min-width:375px) {
 
-	.woodImgSize{
+	.woodImgSize {
 		width: 50px;
 		height: 50px;
 	}
 }
-.wood-hover{
-	transition:all 5s !important;
-	
+
+.wood-hover {
+	transition: all 5s !important;
+
 }
-.open{
+
+.open {
 	opacity: 0;
 	transition: 5s;
 }
+
 .wood-hover:hover .open {
-	
-	transition:all 5s !important;
+
+	transition: all 5s !important;
 	opacity: 1;
 }
 
@@ -1259,7 +1326,8 @@ li {
 	.store-info-title {
 		margin: 120px 0 70px 100px;
 	}
-	.footer_content{
+
+	.footer_content {
 		overflow-x: hidden;
 		align-self: flex-end;
 		position: relative;
@@ -1267,29 +1335,39 @@ li {
 		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-position:0 150%;
+		background-position: 0 150%;
 		background-size: 100% 88%;
 		font-weight: 500;
+
 		@media (max-width:1700px) {
 			background-size: 100% 75%;
 		}
+
 		@media (max-width:1600px) {
 			background-size: 103% 75%;
 		}
+
 		@media (max-width:1500px) {
 			background-size: 104% 75%;
 		}
+
 		@media (max-width:1400px) {
 			background-size: 110% 75%;
 		}
+
 		@media (max-width:1300px) {
 			background-size: 120% 75%;
 		}
+
 		@media (max-width:1200px) {
 			background-size: 130% 74%;
 		}
-		.information_page{
-			.ifmblock1,.ifmblock2,.ifmblock3 {
+
+		.information_page {
+
+			.ifmblock1,
+			.ifmblock2,
+			.ifmblock3 {
 				/* 文字父層區塊padding */
 				letter-spacing: .2em;
 				padding: 30px 15px 60px 130px;
@@ -1351,6 +1429,7 @@ li {
 
 		img {
 			width: 430px;
+
 			@media (max-width:1700px) {
 				width: 100%;
 			}

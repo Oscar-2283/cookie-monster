@@ -66,7 +66,8 @@ body {
 }
 
 .swal2-styled.swal2-confirm:focus {
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 ul, ol {
@@ -163,24 +164,29 @@ ul li, ol li {
     display: flex;
   }
 }
+
 @media (max-width: 900px) {
   .container .book-main .booking-phone {
     margin-left: 11%;
   }
 }
+
 @media (max-width: 800px) {
   .container .book-main .booking-phone {
     margin-left: 10%;
   }
 }
+
 @media (max-width: 700px) {
   .container .book-main .booking-phone {
     margin-left: 4%;
   }
 }
+
 @media (max-width: 680px) {
   .container .book-main .booking-phone {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin: 0 0 20px 0;
   }
 }
