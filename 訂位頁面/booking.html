@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>一人一伴ともだち - 預約訂位</title>
     <link rel="stylesheet" href="./css/booking.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="./img/icon/webicon.ico" type="image/x-icon">
+    <!--分頁icon-->
 </head>
 <body>
     <div class="container">
         <div class="book-main">
-            <div class="booking-phone">
-                <img class="img-bear" src="./img/bear.png" alt="">
-                <p>預約訂位</p>
-                <img class="img-line" src="https://dummyimage.com/40X15/ffffff/000000&text=-o-" alt="">
+            <div class="newsTitle title align-items-center booking-phone">
+                <img class="logoTag" src="./img/icon/bear.svg">
+                <p class="titleTag">預約訂位</p>
+                <img class="circle-line" src="./img/icon/Group 142.svg">
             </div>
             <div class="b-main-f">
                 <!-- 訂位頁面上方Logo區 -->
-                <div class="b-main-f-logo"><img src="./img/book_logo.png" alt="logoimg"></div>
+                <div class="b-main-f-logo"><a href="../index.html" target="_blank"><img src="./img/book_logo.png" alt="logoimg"></a></div>
                 <div class="b-main-f-text">
                     <!-- 訂位頁面上方文字區 -->
                     <ul class="book-text-ul">
@@ -34,11 +36,17 @@
                         <li class="book-text-1-phone">“開放時段為平日，假日恕不接受預約”</li>
                     </ul>
                 </div>
+                <div class="sun-animate">
+                    
+                    <div class="sun-face">
+                        <img class="sun-line" src="./img/sun/sun.svg" alt="">
+                    </div>
+                </div>
             </div>
             <div class="b-main-s">
                 <div class="b-main-s-map">
                     <!-- 地圖區 -->
-                    <iframe id="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.0922442532875!2d120.6692629510948!3d24.145839184162877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1192f39d71%3A0x6cd3b529562cba9b!2z5LiA5Lq65LiA5Ly0IOOBqOOCguOBoOOBoe-8iOaaq-eEoeaOpeW-hTEw5q2y5Lul5LiL5a2p56ul77yJ!5e0!3m2!1szh-TW!2stw!4v1652928699981!5m2!1szh-TW!2stw" style="border:0;border-radius: 5%;filter: grayscale(1) contrast(1) opacity(0.9);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="g-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.0922442532875!2d120.6692629510948!3d24.145839184162877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d1192f39d71%3A0x6cd3b529562cba9b!2z5LiA5Lq65LiA5Ly0IOOBqOOCguOBoOOBoe-8iOaaq-eEoeaOpeW-hTEw5q2y5Lul5LiL5a2p56ul77yJ!5e0!3m2!1szh-TW!2stw!4v1652928699981!5m2!1szh-TW!2stw" style="border:0;border-radius: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="b-main-s-text">
                     <!-- input上面的字體 -->
@@ -50,13 +58,14 @@
                     </ul>
                     <div class="book-icon">
                         <!-- 社群連結區 -->
-                        <i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.facebook.com/tomohalf2020/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i></a>&nbsp;<a  href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <div class="b-main-s-input">
                         <form>
                             <!-- 訂位表格區 -->
-                            <input type="text" class="book-input" id="" placeholder="姓名">
-                            <input type="text" class="book-input" id="" placeholder="電話">
+                            <input type="text" class="book-input" id="" placeholder="姓名" maxlength="5">
+                            <input type="text" class="book-input" id="" placeholder="電話" maxlength="10">
                             <input type="date" class="book-input" id="" value="2022-05-01">
 
                             <select class="book-input">
