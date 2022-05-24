@@ -107,6 +107,7 @@ h2 {
 			justify-content: center;
 			align-items: center;
 
+			margin-left: 3 0px;
 			.navbar_target {
 				display: flex;
 				width: 150px;
@@ -204,19 +205,23 @@ h2 {
 		.navbar_icon {
 			display: flex;
 			gap: 30px;
-
-			.fa-brands {
-				font-size: 50px;
-				color: #d74f4b;
-
-				&:hover {
-					opacity: .5;
+			a{
+				.fa-brands{
+					font-size: 50px;
+					color: #d74f4b;
+					&:hover{
+						opacity: .5;
+					}
 				}
-			}
-
-			.fa-facebook {
-				font-size: 45px;
-				color: #375197;
+				.fa-facebook{
+					font-size: 45px;
+					color: #375197;
+				}
+				.fa-gradient {
+					background: -webkit-linear-gradient(-135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
 			}
 		}
 	}
@@ -256,8 +261,7 @@ h2 {
 		width: 35px;
 		height: 35px;
 		transform: translateY(50%);
-
-	}
+    }
 }
 
 
@@ -858,11 +862,38 @@ h2 {
 	background-color: $background-color_3;
 	position: relative;
 	transition: 1s;
-	box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.2);
+	
+	box-shadow: inset 300px 0 50px rgba(0,0,0,0.2);
+	
+	.foodTextAnimation{
+		opacity: 0;
+		transition: 1s;
+	}
+	.food-animation{
+		opacity: 1;
+		transition: 1s;
+		transition-delay: 1s;
+	}
 
 	&:hover {
 		box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 		transition-delay: .3s;
+		
+		.foodTextAnimation{
+			// transition-delay: 1s;
+			// animation: foodText 3s linear .5s;
+			// animation-fill-mode: forwards ;
+			transition-delay: .3s;
+			opacity: 1;
+		}
+		.food-animation{
+			// transition-delay: 1s;
+			// animation: foodIcon 1s linear ;
+			// animation-fill-mode: forwards;
+			opacity: 0;
+			transition-delay: .6s;
+		}
+	
 	}
 
 	&:hover .food_imgBox {
@@ -870,12 +901,29 @@ h2 {
 		transition-delay: .3s;
 	}
 
-	&:hover .foodImgText {
+
+	&:hover .foodImgText{
 
 		transition-delay: .6s;
 	}
+	}
+	.foodIcon{
+		width: 50%;
+		height: 50%;
+	}
+	.meatIcon{
+		width: 30%;
+		top: 15%;
+	}
+	.meatIcon2{
+		width: 30%;
+		top: 50%;
+	}
 
-	.food_imgBox {
+
+	
+
+	.food_imgBox{
 		position: relative;
 		width: 100%;
 		height: 100%;
@@ -907,15 +955,13 @@ h2 {
 		position: absolute;
 		bottom: 20px;
 	}
-}
+
 
 .foodImgText {
 	//嚴選食材文字
 	position: absolute;
-	top: 50%;
-	left: 10px;
 	letter-spacing: .2em;
-	margin-left: 1em;
+	
 }
 
 .foodImg3 {
@@ -923,9 +969,11 @@ h2 {
 }
 
 //嚴選食材照片區-------------------
+.foodImg-all {
+	background-image: url('../img/1-3嚴選食材/卡片背景圖.svg');
+}
 .foodImg-f {
-	// background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+bread);
-	background: #e2d1b8;
+	background-image: url('');
 }
 
 .foodImg-s {
@@ -1180,23 +1228,37 @@ li {
 	.store-info-title {
 		margin: 120px 0 70px 100px;
 	}
-
-	.footer_content {
+	.footer_content{
+		overflow-x: hidden;
 		align-self: flex-end;
 		position: relative;
 		width: 100%;
 		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-position: 0 150%;
-		background-size: 99% 85%;
+		background-position:0 150%;
+		background-size: 100% 88%;
 		font-weight: 500;
-
-		.information_page {
-
-			.ifmblock1,
-			.ifmblock2,
-			.ifmblock3 {
+		@media (max-width:1700px) {
+			background-size: 100% 75%;
+		}
+		@media (max-width:1600px) {
+			background-size: 103% 75%;
+		}
+		@media (max-width:1500px) {
+			background-size: 104% 75%;
+		}
+		@media (max-width:1400px) {
+			background-size: 110% 75%;
+		}
+		@media (max-width:1300px) {
+			background-size: 120% 75%;
+		}
+		@media (max-width:1200px) {
+			background-size: 130% 74%;
+		}
+		.information_page{
+			.ifmblock1,.ifmblock2,.ifmblock3 {
 				/* 文字父層區塊padding */
 				letter-spacing: .2em;
 				padding: 30px 15px 60px 130px;
@@ -1258,6 +1320,9 @@ li {
 
 		img {
 			width: 430px;
+			@media (max-width:1700px) {
+				width: 100%;
+			}
 		}
 	}
 }

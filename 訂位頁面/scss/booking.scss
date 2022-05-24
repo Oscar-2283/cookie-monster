@@ -2,8 +2,28 @@
     transition: .5s;
 }
 body{
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position:0 120%;
+    background-size: 110% 87%;
+    background-image:url(../img/background.png);
+    @media (max-width:1600px) {
+        background-size: 110% 75%;
+    }
+    @media (max-width:1400px) {
+        background-size: 115% 75%;
+    }
+    @media (max-width:1200px) {
+        background-size: 120% 75%;
+    }
+    @media (max-width:950px) {
+        background-size: 185% 50%;
+    }
+    @media (max-width:800px) {
+        background-size: 190% 50%;
+    }
     @media (max-width:680px) {
-        overflow-x: hidden;
+        background-size: 250% 50%;
     }
 }
 
@@ -18,7 +38,6 @@ ul,ol {
 }
 
 .container {
-    background-color: rgb(209, 202, 202);
     width: 100%;
     position: relative;
 
@@ -58,7 +77,6 @@ ul,ol {
         }
         .booking-phone{
             display: none;
-            white-space: nowrap;
             position: relative;
             top: 1%;
             left: 1%;
@@ -66,26 +84,32 @@ ul,ol {
             align-self: flex-start;
             align-items: center;
             z-index: 2;
-            margin: 0 0 55px 0;
-            .img-bear{
-                width: 90px;
-                @media (max-width:680px) {
-                    width: 45px;
-                }
-            }
-            // .img-line{
-            // }
-            p{
-                margin: 0 20px 0 5px;
-            }
+            margin: 0 0 55px 100px;
             @media (max-width:950px) {
                 display: flex;
-                font-size: 30px;
             }
             @media (max-width:680px) {
                 align-self: flex-start;
-                font-size: 15px;
                 margin: 0 0 0 0;
+            }
+            // .logoTag{
+            // }
+            img{
+                width: 53px;
+                @media (max-width:680px) {
+                    width: 29px;
+                }
+            }
+            // .circle-line{
+            // }
+            p{
+                margin: 0 40px;
+                font-size: 30px;
+                color: #4A2B0E;
+                @media (max-width:680px) {
+                    font-size: 15px;
+                    margin: 0 20px;
+                }
             }
         }
         .b-main-f {
@@ -168,6 +192,74 @@ ul,ol {
                     @media (max-width:768px) {}
 
                     @media (max-width:1300px) {}
+                }
+            }
+            .sun-animate{
+                opacity: .3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+                height: 30px;
+                background-image: url(../img/sun/smile.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                top: 50%;
+                right: -140%;
+                @media (max-width:1700px) {
+                    top: 40%;
+                    right: -90%;
+                }
+                @media (max-width:1300px) {
+                    right: -80%;
+                }
+                @media (max-width:1200px) {
+                    right: -70%;
+                }
+                @media (max-width:1100px) {
+                    right: -60%;
+                    height: 25px;
+                }
+                @media (max-width:950px){
+                    top: -80%;
+                    right: -30%;
+                }
+                @media (max-width:680px) {
+                    top: -20%;
+                    right: -65%;
+                    height: 17px;
+                }
+                .sun-face{
+                    width: 300px;
+                    height: 300px;
+                    @media (max-width:1610px) {
+                        width: 250px;
+                        height: 250px;
+                    }
+                    @media (max-width:1300px) {
+                        width: 200px;
+                        height: 200px;
+                    }
+                    @media (max-width:950px) {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    @media (max-width:680px){
+                        width: 100px;
+                        height: 100px;
+                    }
+                    .sun-line{
+                        animation:sunspin 40s infinite linear;
+                    }
+                }
+            }
+            @keyframes sunspin {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
                 }
             }
         }
@@ -288,13 +380,7 @@ ul,ol {
 
                     .fa-brands {
                         font-size: 30px;
-                        color: rgb(0, 0, 0);
-
-                        @media (max-width:1300px) {}
-                        
-                        @media (max-width:950px) {
-                        }
-                        
+                        color: #375197;
                         @media (max-width:680px) {
                             font-size: 17px;
                         }
@@ -302,11 +388,15 @@ ul,ol {
 
                     .fa-instagram {
                         margin-left: 15px;
+                        background: -webkit-linear-gradient(-135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
 
                 .b-main-s-input {
                     form {
+                        caret-color: rgb(20, 137, 233);
                         .book-input {
                             width: 200px;
                             height: 3em;
@@ -411,7 +501,7 @@ ul,ol {
         }
         .b-main-t{
             width: 750px;
-            margin: 20px 0 0 0;
+            margin: 10px 0 10px 0;
             display: flex;
             justify-content: flex-end;
             @media (max-width:1300px) {
@@ -426,13 +516,8 @@ ul,ol {
                 align-self: center;
                 margin-right: 0;
             }
-            .book-btn{
-                background-color: 
-                #FFD18E;
-                width: 160px;
-                border-radius: 20px;
-                font-weight: 600;
-                font-size: 20px;
+            .btn{
+                box-shadow: none;
             }
         }
     }

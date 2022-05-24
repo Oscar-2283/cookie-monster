@@ -121,6 +121,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 3 0px;
 }
 
 .nav .navbar .navbar_content .navbar_target {
@@ -222,18 +223,24 @@ h2 {
   gap: 30px;
 }
 
-.nav .navbar .navbar_icon .fa-brands {
+.nav .navbar .navbar_icon a .fa-brands {
   font-size: 50px;
   color: #d74f4b;
 }
 
-.nav .navbar .navbar_icon .fa-brands:hover {
+.nav .navbar .navbar_icon a .fa-brands:hover {
   opacity: .5;
 }
 
-.nav .navbar .navbar_icon .fa-facebook {
+.nav .navbar .navbar_icon a .fa-facebook {
   font-size: 45px;
   color: #375197;
+}
+
+.nav .navbar .navbar_icon a .fa-gradient {
+  background: -webkit-linear-gradient(-135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title1 {
@@ -1020,11 +1027,37 @@ h2 {
           box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.2);
 }
 
+.foodImg .foodTextAnimation {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.foodImg .food-animation {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
 .foodImg:hover {
   -webkit-box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
           box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+}
+
+.foodImg:hover .foodTextAnimation {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  opacity: 1;
+}
+
+.foodImg:hover .food-animation {
+  opacity: 0;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 .foodImg:hover .food_imgBox {
@@ -1039,7 +1072,22 @@ h2 {
           transition-delay: .6s;
 }
 
-.foodImg .food_imgBox {
+.foodIcon {
+  width: 50%;
+  height: 50%;
+}
+
+.meatIcon {
+  width: 30%;
+  top: 15%;
+}
+
+.meatIcon2 {
+  width: 30%;
+  top: 50%;
+}
+
+.food_imgBox {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1051,7 +1099,7 @@ h2 {
   transition: 1s;
 }
 
-.foodImg .food_imgBox img {
+.food_imgBox img {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -1061,7 +1109,7 @@ h2 {
      object-fit: cover;
 }
 
-.foodImg .foodImgTitle {
+.foodImgTitle {
   position: absolute;
   bottom: -60px;
   left: 50%;
@@ -1069,25 +1117,26 @@ h2 {
           transform: translateX(-50%);
 }
 
-.foodImg .foodimg-p-img {
+.foodimg-p-img {
   position: absolute;
   bottom: 20px;
 }
 
 .foodImgText {
   position: absolute;
-  top: 50%;
-  left: 10px;
   letter-spacing: .2em;
-  margin-left: 1em;
 }
 
 .foodImg3 {
   margin-top: 73.5px;
 }
 
+.foodImg-all {
+  background-image: url("../img/1-3嚴選食材/卡片背景圖.svg");
+}
+
 .foodImg-f {
-  background: #e2d1b8;
+  background-image: url("");
 }
 
 .foodImg-s {
@@ -1346,6 +1395,7 @@ li {
 }
 
 #store_information .footer_content {
+  overflow-x: hidden;
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
@@ -1354,13 +1404,47 @@ li {
   background-image: url(../img/1-7footer-img/background.png);
   background-repeat: no-repeat;
   background-position: 0 150%;
-  background-size: 99% 85%;
+  background-size: 100% 88%;
   font-weight: 500;
 }
 
-#store_information .footer_content .information_page .ifmblock1,
-#store_information .footer_content .information_page .ifmblock2,
-#store_information .footer_content .information_page .ifmblock3 {
+@media (max-width: 1700px) {
+  #store_information .footer_content {
+    background-size: 100% 75%;
+  }
+}
+
+@media (max-width: 1600px) {
+  #store_information .footer_content {
+    background-size: 103% 75%;
+  }
+}
+
+@media (max-width: 1500px) {
+  #store_information .footer_content {
+    background-size: 104% 75%;
+  }
+}
+
+@media (max-width: 1400px) {
+  #store_information .footer_content {
+    background-size: 110% 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  #store_information .footer_content {
+    background-size: 120% 75%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #store_information .footer_content {
+    background-size: 130% 74%;
+  }
+}
+
+#store_information .footer_content .information_page .ifmblock1, #store_information .footer_content .information_page .ifmblock2, #store_information .footer_content .information_page .ifmblock3 {
   /* 文字父層區塊padding */
   letter-spacing: .2em;
   padding: 30px 15px 60px 130px;
@@ -1413,5 +1497,11 @@ li {
 
 #store_information .footer_png2 img {
   width: 430px;
+}
+
+@media (max-width: 1700px) {
+  #store_information .footer_png2 img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */
