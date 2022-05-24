@@ -48,6 +48,30 @@
     }
 }
 
+@media(min-width:768px){
+    .food-textsize{  
+        font-size: .75rem;
+    }
+    .food-titlesize{
+        font-size: 2rem;
+    }
+}
+@media(min-width:1050px){
+    .food-textsize{
+        font-size: 1rem;
+    }
+   
+  
+}
+@media (min-width:1400px){
+    .food-textsize{
+       
+        font-size: 1.25rem;
+    }
+    .food-titlesize{
+        font-size: 2.5rem;
+    }
+}
 
 
 
