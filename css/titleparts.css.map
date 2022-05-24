@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,UADM,CACN,QAAQ,CAAA;EACJ,KAAK,EAAE,IAAI;CACd;;AAHL,AAII,UAJM,CAIN,CAAC,CAAA;EACG,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;CACjB",
+    "sources": [
+        "../scss/titleparts.scss"
+    ],
+    "names": [],
+    "file": "titleparts.css"
+}

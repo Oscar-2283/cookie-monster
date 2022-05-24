@@ -1,0 +1,181 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.navbardown {
+  background: #CEB289;
+}
+
+.navbardown .media .fa-brands {
+  font-size: 50px;
+  color: #edecec;
+}
+
+.navbardown .media .fa-brands:hover {
+  opacity: .5;
+}
+
+.navbardown .media .fa-instagram {
+  margin-left: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.logo:hover img {
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.links a {
+  width: 220px;
+}
+
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.snake {
+  position: absolute;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 75%;
+  left: -3%;
+}
+
+.snake path {
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 14 100;
+  stroke-width: 1px;
+}
+
+.pos1 .snake {
+  -webkit-transform: translateX(20%) translateY(-50%);
+          transform: translateX(20%) translateY(-50%);
+}
+
+.pos2 .snake {
+  -webkit-transform: translateX(40%) translateY(-50%);
+          transform: translateX(40%) translateY(-50%);
+}
+
+.pos3 .snake {
+  -webkit-transform: translateX(60%) translateY(-50%);
+          transform: translateX(60%) translateY(-50%);
+}
+
+.pos4 .snake {
+  -webkit-transform: translateX(80%) translateY(-50%);
+          transform: translateX(80%) translateY(-50%);
+}
+
+.left .snake path {
+  stroke-dashoffset: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.right .snake path {
+  stroke-dashoffset: -70px;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
+}
+
+.instant .snake path {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.menudown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  position: relative;
+}
+
+.menudown a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 50px;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.icon {
+  width: 50px;
+  margin-right: 10px;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.js-tilt-glare {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=navbardown.css.map */

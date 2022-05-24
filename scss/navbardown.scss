@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    transition: .5s;
+}
+
+.navbardown {
+    background: #CEB289;
+    .media{
+        .fa-brands{
+            font-size: 50px;
+            color: rgb(237, 236, 236);
+            &:hover{
+                opacity: .5;
+            }
+        }
+        .fa-instagram{
+            margin-left: 20px;
+        }
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+
+    &:hover img {
+        transform: translateZ(50px);
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        width: 220px;
+    }
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+.snake {
+    position: absolute;
+    transition: transform 500ms;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 75%;
+    left: -3%;
+}
+
+.snake path {
+    fill: none;
+    stroke: black;
+    stroke-dasharray: 14 100;
+    stroke-width: 1px;
+}
+
+.pos1 .snake {
+    transform: translateX(20%) translateY(-50%);
+}
+
+.pos2 .snake {
+    transform: translateX(40%) translateY(-50%);
+}
+
+.pos3 .snake {
+    transform: translateX(60%) translateY(-50%);
+}
+
+.pos4 .snake {
+    transform: translateX(80%) translateY(-50%);
+}
+
+.left .snake path {
+    stroke-dashoffset: 0;
+    transform: translateX(0);
+    transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+
+.right .snake path {
+    stroke-dashoffset: -70px;
+    transform: translateX(-60%);
+    transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+
+.instant .snake path {
+    transition: none;
+}
+
+.menudown {
+    display: flex;
+    height: 100px;
+    position: relative;
+
+    a {
+        color: white !important;
+        text-decoration: none !important;
+    }
+}
+
+.item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.icon {
+    width: 50px;
+    margin-right: 10px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+
+
+////////////
+.js-tilt-glare {
+    border-radius: 10px;
+}
+
+
+////////////
