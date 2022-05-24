@@ -7,9 +7,10 @@ $background-color_3: #C4C4C4; //放圖片區域底色
 
 //快速找相對區域的css
 //用Ctrl+F搜尋(例:嚴選食材)
-html{
+html {
 	scroll-behavior: smooth;
 }
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -59,68 +60,78 @@ h2 {
 		object-fit: cover;
 	}
 }
+
 .nav {
 	width: 28%;
 	display: flex;
 	justify-content: center;
-	
+
 	.navbar {
 		width: 180px;
 		height: 100%;
 		flex-direction: row;
 		justify-content: center;
+
 		.navbar_title {
 			width: 180px;
 			font-weight: 700;
 			white-space: nowrap;
+
 			a {
 				display: flex;
 				flex-direction: column;
-				
-    color: black!important;
-    text-decoration: none!important;
+
+				color: black !important;
+				text-decoration: none !important;
+
 				.title_p {
 					color: $color_3;
 					font-size: 40px;
-					&:nth-child(1){
+
+					&:nth-child(1) {
 						margin-right: 60px;
 					}
-					&:nth-child(2){
+
+					&:nth-child(2) {
 						margin-top: -15px;
 						margin-left: 100px;
 					}
 				}
 			}
 		}
-	
+
 		.navbar_content {
 			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+
 			.navbar_target {
 				display: flex;
 				width: 150px;
 				// margin-bottom: 34px;
 				white-space: nowrap;
-				
-				&:hover img{
+
+				&:hover img {
 					display: none;
 
 				}
-				img{
+
+				img {
 					width: 35px;
 					margin-right: 15px;
 					margin-left: -25px;
-				
+
 				}
-	
+
 				a {
 					font-size: 30px;
 				}
+
 				.about {
 					position: relative;
+
 					&::after {
 						content: "";
 						position: absolute;
@@ -131,8 +142,10 @@ h2 {
 						background-color: $background-color_2;
 					}
 				}
+
 				.news {
 					position: relative;
+
 					&::after {
 						content: "";
 						position: absolute;
@@ -143,8 +156,10 @@ h2 {
 						background-color: $background-color_2;
 					}
 				}
+
 				.menu {
 					position: relative;
+
 					&::after {
 						content: "";
 						position: absolute;
@@ -155,8 +170,10 @@ h2 {
 						background-color: $background-color_2;
 					}
 				}
+
 				.information {
 					position: relative;
+
 					&::after {
 						content: "";
 						position: absolute;
@@ -167,8 +184,10 @@ h2 {
 						background-color: $background-color_2;
 					}
 				}
+
 				.booking {
 					position: relative;
+
 					&::after {
 						content: "";
 						position: absolute;
@@ -181,18 +200,21 @@ h2 {
 				}
 			}
 		}
-	
+
 		.navbar_icon {
 			display: flex;
 			gap: 30px;
-			.fa-brands{
+
+			.fa-brands {
 				font-size: 50px;
 				color: #d74f4b;
-				&:hover{
+
+				&:hover {
 					opacity: .5;
 				}
 			}
-			.fa-facebook{
+
+			.fa-facebook {
 				font-size: 45px;
 				color: #375197;
 			}
@@ -200,27 +222,42 @@ h2 {
 	}
 }
 
-#marker{
-    position: absolute;
-    top: 0px;
+.title1 {
+	padding-left: 100px;
+	padding-top: 120px;
+
+	@media (max-width:830px) {
+		padding-left: 80px;
+	}
+
+	@media (max-width:467px) {
+		padding-top: 80px;
+		padding-left: 60px;
+	}
+}
+
+#marker {
+	position: absolute;
+	top: 0px;
 	left: -30%;
-    // margin-top: -5px;
-    width: 170px;
-    height: 50px;
-    transition: .5s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &::before{
-        content: '';
-        position: absolute;
+	// margin-top: -5px;
+	width: 170px;
+	height: 50px;
+	transition: .5s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&::before {
+		content: '';
+		position: absolute;
 		background-repeat: no-repeat;
 		background-image: url('../img/0-2 icon/bear.svg');
-        width: 35px;
+		width: 35px;
 		height: 35px;
 		transform: translateY(50%);
-     
-    }
+
+	}
 }
 
 
@@ -234,13 +271,22 @@ h2 {
 	height: 100vh;
 	position: relative;
 
-	p {
-		font-size: 27.98px;
-		letter-spacing: .1em;
+	.titleTag {
+		font-size: 30px;
+		letter-spacing: .2em;
 		font-weight: 600;
 		z-index: 2;
+
+		@media (max-width:690px) {
+			font-size: 25px;
+		}
+
+		@media (max-width:467px) {
+			font-size: 14px;
+		}
 	}
 }
+
 //關於我們區域-------------------
 
 
@@ -249,93 +295,408 @@ h2 {
 //頁面錨點--------------
 
 //關於我們區內文字體--------------
+#aboutus {
+	overflow: hidden;
+
+}
+
 .profile_text {
 	position: absolute;
-	margin-top: 90.01px;
+	margin-top: 95px;
+	margin-left: 46%;
+
 	@media (max-width:1760px) {
 		margin-top: 65px;
 		margin-left: 45.5%;
 	}
+
 	@media (max-width:1640px) {
 		margin-top: 55px;
 	}
+
 	@media (max-width: 1520px) {
 		margin-top: 35px;
 		margin-left: 46%;
 	}
-	@media (min-width: 1400px) {
-		margin-left: 46.275%;
+
+	@media (max-width:1370px) {
+		margin-left: 45%;
 	}
+
+	@media (max-width: 1340px) {
+		margin-left: 43%;
+	}
+
+	@media (max-width:1078px) {
+		margin-left: 46%;
+	}
+
+	@media (max-width:989px) {
+		margin-left: 15%;
+		margin-top: 25%;
+	}
+
+	@media (max-width:802px) {
+		margin-top: 35%;
+	}
+
+	@media (max-width:690px) {
+		margin-top: 40%;
+	}
+
+	@media (max-width:467px) {
+		margin-top: 38%;
+		margin-left: 0%;
+	}
+
 
 	.profile_p1 {
 		position: relative;
 		line-height: 66px;
+		letter-spacing: .1em;
+		font-size: 30px;
+		font-weight: 600;
+		z-index: 2;
+
+		.twoman {
+			margin-left: 1em;
+
+			@media (max-width:802px) {
+				margin-left: -27px;
+			}
+
+			@media (max-width:467px) {
+				margin-left: -16px;
+			}
+		}
+
+		.sendman {
+			@media (max-width:802px) {
+				margin-left: -27px;
+			}
+
+			@media (max-width:467px) {
+				margin-left: -16px;
+			}
+		}
+
 		@media (max-width: 1520px) {
 			font-size: 26px;
 		}
+
+		@media (max-width: 1340px) {
+			letter-spacing: .05em;
+		}
+
+		@media (max-width: 1190px) {
+			font-size: 24px;
+		}
+
+		@media (max-width:1078px) {
+			font-size: 22px;
+			margin-left: -10%;
+		}
+
+		@media (max-width:989px) {
+			letter-spacing: .1em;
+			font-size: 25px;
+			line-height: 60px;
+		}
+
+		@media (max-width:802px) {
+			line-height: 50px;
+			margin-left: 3px;
+			margin-top: 20px;
+		}
+
+		@media (max-width:690px) {
+			font-size: 23.5px;
+		}
+
+		@media (max-width:538px) {
+			font-size: 20px;
+			margin-left: 30px;
+			margin-top: 54px;
+		}
+
+		@media (max-width:467px) {
+			font-size: 14px;
+			margin-top: 75px;
+			margin-left: 100px;
+			line-height: 28px
+		}
 	}
-	
+
 	.profile_p2 {
-		margin-top: 42.7px;
-		margin-left: 65.97px;
+		margin-top: 41px;
+		margin-left: 71px;
 		line-height: 65px;
+		letter-spacing: .1em;
+		font-size: 30px;
+		font-weight: 600;
+		z-index: 2;
+
+		.findman {
+			margin-left: 2em;
+
+			@media (max-width:802px) {
+				margin-left: -26px;
+			}
+		}
+
+		.py2 {
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			margin-left: 3em;
+			background-color: #C4C4C4;
+
+			@media (max-width:802px) {
+				margin-left: -2px;
+			}
+
+			@media (max-width:467px) {
+				line-height: 14px;
+				padding-top: 0rem;
+				padding-bottom: 0rem;
+			}
+		}
+
+		.anyman {
+			margin-left: 1em;
+
+			@media (max-width:802px) {
+				margin-left: 30px;
+			}
+		}
+
 		@media (max-width: 1520px) {
 			font-size: 26px;
 			margin-top: 43px;
 			margin-left: 60px;
 		}
+
+		@media (max-width: 1340px) {
+			letter-spacing: .05em;
+			margin-left: 72px;
+			margin-top: 15px;
+		}
+
+		@media (max-width: 1190px) {
+			font-size: 24px;
+		}
+
+		@media (max-width:1078px) {
+			font-size: 22px;
+			margin-left: 50px;
+		}
+
+		@media (max-width:989px) {
+			letter-spacing: .1em;
+			font-size: 25px;
+			margin-left: 110px;
+			line-height: 60px;
+		}
+
+		@media (max-width:802px) {
+			margin-left: 140px;
+			margin-top: 18px;
+			line-height: 50px;
+		}
+
+		@media (max-width:690px) {
+			margin-left: 50px;
+		}
+
+		@media (max-width:690px) {
+			font-size: 23.5px;
+		}
+
+		@media (max-width:538px) {
+			font-size: 20px;
+			margin-left: 30px;
+			margin-top: 20px;
+		}
+
+		@media (max-width:467px) {
+			font-size: 14px;
+			margin-left: 98px;
+			line-height: 28px
+		}
+
 	}
-	
+
 	.profile_p3 {
 		margin-top: 42.9px;
-		margin-left: 209.03px;
+		margin-left: 240px;
 		line-height: 65.55px;
+		letter-spacing: .1em;
+		font-size: 30px;
+		font-weight: 600;
+		z-index: 2;
+
+		.hifirst {
+			margin-left: 3em;
+
+			@media (max-width:802px) {
+				margin-left: 1em;
+			}
+		}
+
 		@media (max-width:1760px) {
 			margin-left: 255px;
 		}
+
 		@media (max-width: 1520px) {
 			font-size: 26px;
 			margin-left: 250px;
 			margin-top: 28px;
 		}
-		.profile-text-egg{
+
+		@media (max-width: 1340px) {
+			letter-spacing: .05em;
+			margin-left: 280px;
+			margin-top: 15px;
+		}
+
+		@media (max-width: 1190px) {
+			font-size: 24px;
+			margin-left: 230px;
+		}
+
+		@media (max-width:1078px) {
+			font-size: 22px;
+			margin-left: 200px;
+		}
+
+		@media (max-width:989px) {
+			font-size: 25px;
+			letter-spacing: .1em;
+			margin-left: 300px;
+			line-height: 60px;
+		}
+
+		@media (max-width:802px) {
+			margin-left: 240px;
+			margin-top: 40px;
+			line-height: 50px;
+		}
+
+		@media (max-width:690px) {
+			margin-left: 200px;
+		}
+
+		@media (max-width:690px) {
+			font-size: 23.5px;
+		}
+
+		@media (max-width:538px) {
+			font-size: 20px;
+			margin-left: 160px;
+			margin-top: 40px;
+		}
+
+		@media (max-width:467px) {
+			font-size: 14px;
+		}
+
+		.profile-text-egg {
 			padding-bottom: 10px;
 			// background-position:0 100%;
 			background-repeat: repeat;
 			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
 		}
 	}
-	
 }
+
 //關於我們照片-------------------
 .img1 {
 	//兩位老闆的照片
 	border-radius: 50%;
 	background-color: $background-color_3;
 	background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
-	width: 729.68px;
-	height: 729.68px;
+	width: 750px;
+	height: 750px;
 	position: absolute;
-	left: 39px;
-	bottom: 50px;
+	left: 4.5%;
+	top: 22%;
+
 	@media (max-width:1760px) {
 		left: 4.3%;
 		top: 25%;
 		width: 730px;
 		height: 730px;
 	}
+
 	@media (max-width:1640px) {
 		width: 680px;
 		height: 680px;
 		top: 28%;
 		left: 4.8%;
 	}
+
 	@media (max-width: 1520px) {
 		top: 27%;
 	}
+
 	@media (max-width:1470px) {
 		width: 630px;
 		height: 630px;
+		left: 39px;
+	}
+
+	@media (max-width: 1340px) {
+		width: 550px;
+		height: 550px;
+		top: 30%;
+		left: 42px;
+	}
+
+	@media (max-width: 1190px) {
+		width: 480px;
+		height: 480px;
+	}
+
+	@media (max-width:1078px) {
+		top: 40%;
+	}
+
+	@media (max-width:989px) {
+		top: 11%;
+		left: 50%;
+		width: 410px;
+		height: 410px;
+	}
+
+	@media (max-width:830px) {
+		width: 380px;
+		height: 380px;
+	}
+
+	@media (max-width:802px) {
+		width: 360px;
+		height: 360px;
+		left: 45%;
+		top: 12%;
+	}
+
+	@media (max-width:690px) {
+		width: 300px;
+		height: 300px;
+		top: 14%;
+		left: 36%;
+	}
+
+	@media (max-width:538px) {
+		width: 260px;
+		height: 260px;
+		top: 15%;
+	}
+
+	@media (max-width:467px) {
+		top: 9%;
+		left: 30%;
+		width: 270px;
+		height: 270px;
 	}
 }
 
@@ -344,30 +705,56 @@ h2 {
 	border-radius: 50%;
 	background-color: $background-color_3;
 	background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
-	width: 288.75px;
-	height: 288.75px;
+	width: 300px;
+	height: 300px;
 	position: absolute;
-	left: 624.49px;
-	bottom: 50px;
+	left: 35%;
+	top: 65%;
+
 	@media (max-width:1760px) {
-		top:69%;
+		top: 69%;
 		left: 37%;
 		width: 290px;
 		height: 290px;
 	}
+
 	@media (max-width:1640px) {
 		width: 270px;
-		height: 270px;	
+		height: 270px;
 	}
+
 	@media (max-width: 1520px) {
 		top: 67%;
 		left: 39%;
 	}
+
 	@media (max-width:1470px) {
 		width: 250px;
 		height: 250px;
 		top: 66%;
 		left: 35%;
+	}
+
+	@media (max-width: 1340px) {
+		width: 230px;
+		height: 230px;
+		top: 62%;
+		left: 35%;
+	}
+
+	@media (max-width: 1190px) {
+		width: 180px;
+		height: 180px;
+		left: 33%;
+	}
+
+	@media (max-width:1078px) {
+		top: 70%;
+		left: 38%;
+	}
+
+	@media (max-width:989px) {
+		display: none;
 	}
 }
 
@@ -376,38 +763,94 @@ h2 {
 	border-radius: 50%;
 	background-color: $background-color_3;
 	background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
-	width: 405.58px;
-	height: 405.58px;
+	width: 410px;
+	height: 410px;
 	position: absolute;
-	right: 40px;
-	top: 20px;
+	left: 72%;
+	top: 15%;
+
 	@media (max-width:1760px) {
 		top: 16%;
 		left: 73%;
 		width: 390px;
 		height: 390px;
 	}
+
 	@media (max-width:1640px) {
 		width: 370px;
 		height: 370px;
 		left: 75%;
 	}
+
 	@media (max-width: 1520px) {
 		top: 17%;
 		left: 73%;
 	}
+
 	@media (max-width:1470px) {
-		width: 340px;
-		height: 340px;
-		left: 75%;
+		width: 320px;
+		height: 320px;
+		left: 74%;
+	}
+
+	@media (max-width:1340px) {
+		width: 290px;
+		height: 290px;
+		left: 74%;
+	}
+
+	@media (max-width: 1190px) {
+		width: 250px;
+		height: 250px;
+		left: 76%;
+	}
+
+	@media (max-width:1078px) {
+		top: 16%;
+		left: 74%;
+	}
+
+	@media (max-width:989px) {
+		left: 6%;
+		top: 78%;
+		width: 230px;
+		height: 230px;
+	}
+
+	@media (max-width:820px) {
+		width: 240px;
+		height: 240px;
+	}
+
+	@media (max-width:690px) {
+		width: 200px;
+		height: 200px;
+		left: 9%;
+		top: 80%;
+	}
+
+	@media (max-width:538px) {
+		width: 170px;
+		height: 170px;
+		top: 78%;
+		left: 10%;
 	}
 }
+
 //關於我們照片-------------------
 
 
 //關於我們區內文字體--------------
 
 //嚴選食材區-------------------
+
+#food {
+	.newsTitle {
+		padding-top: 120px;
+		padding-left: 40px;
+	}
+}
+
 .foodImg {
 	width: 19.21vw;
 	height: 19.21vw;
@@ -415,21 +858,24 @@ h2 {
 	background-color: $background-color_3;
 	position: relative;
 	transition: 1s;
-	box-shadow: inset 300px 0 50px rgba(0,0,0,0.2);
+	box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.2);
 
-	&:hover{
-		box-shadow: inset 20px 0 50px rgba(0,0,0,0.5);
+	&:hover {
+		box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 		transition-delay: .3s;
 	}
-	&:hover .food_imgBox{
+
+	&:hover .food_imgBox {
 		transform: rotateY(-145deg);
 		transition-delay: .3s;
 	}
-	&:hover .foodImgText{
+
+	&:hover .foodImgText {
 
 		transition-delay: .6s;
 	}
-	.food_imgBox{
+
+	.food_imgBox {
 		position: relative;
 		width: 100%;
 		height: 100%;
@@ -438,7 +884,8 @@ h2 {
 		transform-origin: left;
 		z-index: 1;
 		transition: 1s;
-		img{
+
+		img {
 			position: absolute;
 			top: 0%;
 			left: 0%;
@@ -447,7 +894,9 @@ h2 {
 			object-fit: cover;
 		}
 	}
-	.foodImgTitle {//嚴選食材文字
+
+	.foodImgTitle {
+		//嚴選食材文字
 		position: absolute;
 		bottom: -60px;
 		left: 50%;
@@ -460,7 +909,8 @@ h2 {
 	}
 }
 
-.foodImgText {//嚴選食材文字
+.foodImgText {
+	//嚴選食材文字
 	position: absolute;
 	top: 50%;
 	left: 10px;
@@ -471,6 +921,7 @@ h2 {
 .foodImg3 {
 	margin-top: 73.5px;
 }
+
 //嚴選食材照片區-------------------
 .foodImg-f {
 	// background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+bread);
@@ -496,6 +947,7 @@ h2 {
 .foodImg-t1 {
 	background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
 }
+
 //嚴選食材照片區-------------------
 
 //最新消息區-----------------------
@@ -511,6 +963,7 @@ h2 {
 		margin: 0 auto;
 		width: 89%;
 		height: 73%;
+
 		&::before {
 			//Left-line
 			width: 3px;
@@ -523,7 +976,7 @@ h2 {
 			left: 0;
 			top: 0;
 		}
-		
+
 		.swiper-news-border-lineR {
 			height: 100%;
 			position: relative;
@@ -543,8 +996,9 @@ h2 {
 				content: '';
 			}
 
-			.swiper-news-border-lineT{
+			.swiper-news-border-lineT {
 				width: 100%;
+
 				&::before {
 					//Top-line
 					width: 100%;
@@ -557,12 +1011,14 @@ h2 {
 					left: 0;
 					content: '';
 				}
-				.swiper-news-border-lineB{
+
+				.swiper-news-border-lineB {
 					width: 100%;
 					height: 100%;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+
 					&::before {
 						//Bottom-line
 						width: 100%;
@@ -575,22 +1031,27 @@ h2 {
 						bottom: 1.2em;
 						content: '';
 					}
-					.newsTitle{
+
+					.newsTitle {
 						padding: 0 0 0 0;
 						margin-bottom: 70px;
 						margin-top: -70px;
-						width: 90%;
+						width: 95%;
 					}
-					.mySwiper1 {//最新消息的swiper
+
+					.mySwiper1 {
+						//最新消息的swiper
 						margin: 0;
 						width: 90%;
 						height: 25vh;
-						.swiper-pagination-bullets{
-							.swiper-pagination-bullet-active{
+
+						.swiper-pagination-bullets {
+							.swiper-pagination-bullet-active {
 								//swiper頁面點點顏色
-								background: #4a2b0e!important;
+								background: #4a2b0e !important;
 							}
 						}
+
 						.swiper-wrapper {
 							.swiper-slide {
 								// background-color: aqua;
@@ -598,6 +1059,7 @@ h2 {
 								display: flex;
 								justify-content: center;
 								align-items: center;
+
 								.blogCard {
 									// border: 1px solid black;
 									width: 100%;
@@ -605,20 +1067,22 @@ h2 {
 									background-color: #e2d1b8;
 									border-radius: 20px 20px 0 20px;
 									overflow: hidden;
-									
+
 									.blogCardImg {
 										width: 25%;
 										height: 100%;
 									}
-									
+
 									.blogCardContent {
 										width: 63%;
 										margin-left: 5%;
+
 										.blogCardTitle {
 											padding: 4px 0;
 											color: #4A2B0E;
 										}
-										.blogCardText{
+
+										.blogCardText {
 											padding: 1.5px 0;
 											color: #4A2B0E;
 										}
@@ -627,23 +1091,26 @@ h2 {
 							}
 						}
 					}
-					.more-circle-btn{
+
+					.more-circle-btn {
 						//詳細內容按鈕
 						align-self: flex-end;
 						width: 18%;
 						z-index: 1;
 						position: absolute;
 						bottom: 17.5%;
+
 						.moreCircle {
 							border: 1px solid black;
 							border-radius: 50%;
 							width: 92px;
 							height: 92px;
 							padding: 3.5px;
-							&:hover{
+
+							&:hover {
 								background-color: #fff;
 							}
-							
+
 							.moreCircle_min {
 								width: 83px;
 								height: 83px;
@@ -659,16 +1126,27 @@ h2 {
 		}
 	}
 }
+
 //最新消息區-----------------------
 
+#menu {
+	.newsTitle {
+		padding-top: 120px;
+		padding-left: 100px;
+	}
+}
+
 /* 輪播開關控制 */
-.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets {
 	width: 30px;
 	left: 97.6%;
-    transform: translate3d(0px,-7%,0);
+	transform: translate3d(0px, -7%, 0);
 }
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 15px var(--swiper-pagination-bullet-horizontal-gap,4px);
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 15px var(--swiper-pagination-bullet-horizontal-gap, 4px);
 }
 
 
@@ -698,37 +1176,46 @@ li {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	.store-info-title{
+
+	.store-info-title {
 		margin: 120px 0 70px 100px;
 	}
-	.footer_content{
+
+	.footer_content {
 		align-self: flex-end;
 		position: relative;
 		width: 100%;
 		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-position:0 150%;
+		background-position: 0 150%;
 		background-size: 99% 85%;
 		font-weight: 500;
-		.information_page{
-			.ifmblock1,.ifmblock2,.ifmblock3 {
+
+		.information_page {
+
+			.ifmblock1,
+			.ifmblock2,
+			.ifmblock3 {
 				/* 文字父層區塊padding */
 				letter-spacing: .2em;
 				padding: 30px 15px 60px 130px;
 				font-size: 17px;
-				}
-			.ifmblock4{
+			}
+
+			.ifmblock4 {
 				margin: 40px 0 10px 0;
 				font-weight: 600;
 				letter-spacing: .1em;
-				}
-			.ifmblock3{
-				.block_text{
-					a{
+			}
+
+			.ifmblock3 {
+				.block_text {
+					a {
 						width: 165px;
 						position: relative;
-						&::after{
+
+						&::after {
 							content: '';
 							display: none;
 							padding-bottom: 40px;
@@ -739,31 +1226,37 @@ li {
 							background-repeat: repeat;
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
 						}
-						&:hover::after{
+
+						&:hover::after {
 							display: block;
 						}
 					}
 				}
 			}
-			.footer-info-line1{
-				width: 1100px;
-				border-bottom: .1em solid rgba(0,0,0,0.3);
-				}
-			.footer-info-line2{
+
+			.footer-info-line1 {
 				// width: 1100px;
-				border-bottom: .1em solid rgba(0,0,0,0.3);
-				}
-			.footer-info-line3{
+				border-bottom: .1em solid rgba(0, 0, 0, 0.3);
+			}
+
+			.footer-info-line2 {
 				// width: 1100px;
-				border-bottom: .1em solid rgba(0,0,0,0.3);
-				}
+				border-bottom: .1em solid rgba(0, 0, 0, 0.3);
+			}
+
+			.footer-info-line3 {
+				// width: 1100px;
+				border-bottom: .1em solid rgba(0, 0, 0, 0.3);
+			}
 		}
 	}
+
 	.footer_png2 {
 		position: absolute;
 		top: 25%;
 		right: 5%;
-		img{
+
+		img {
 			width: 430px;
 		}
 	}

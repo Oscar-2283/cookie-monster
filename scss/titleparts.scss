@@ -1,10 +1,30 @@
 .newsTitle{
     .logoTag{
         width: 53px;
+        @media (max-width:690px){
+            width: 40px;
+        }
+        @media (max-width:467px){
+            width: 25px;
+        }
+    }
+    .circle-line{
+        @media (max-width:690px){
+            width: 25px;
+        }
+        @media (max-width:467px){
+            width: 15px;
+        }
     }
     p{
         margin: 0 50px;
         font-size: 30px;
         color: #4A2B0E;
-    }
+        @media (max-width:690px){
+            margin: 0 25px;
+        }
+        @media (max-width:467px){
+            margin: 0 15px;
+        }   
+     }
 }
