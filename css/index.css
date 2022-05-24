@@ -337,6 +337,7 @@ h2 {
   position: absolute;
   margin-top: 95px;
   margin-left: 46%;
+  z-index: 2;
 }
 
 @media (max-width: 1760px) {
@@ -801,12 +802,16 @@ h2 {
 .img1 {
   border-radius: 50%;
   background-color: #C4C4C4;
-  background-image: url(https://dummyimage.com/750X750/dba878/f5f5f5.png&text=Boss+X2);
   width: 750px;
   height: 750px;
   position: absolute;
   left: 4.5%;
   top: 22%;
+  background-image: url(../img/1-2關於我們/老闆娘.jpg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: 50% 50%;
+  border: 5px solid #FFD18E;
 }
 
 @media (max-width: 1760px) {
@@ -925,12 +930,16 @@ h2 {
 .img2 {
   border-radius: 50%;
   background-color: #C4C4C4;
-  background-image: url(https://dummyimage.com/290X290/a2cf8b/f5f5f5.png&text=店&logo);
   width: 300px;
   height: 300px;
   position: absolute;
   left: 35%;
   top: 65%;
+  background-image: url(../img/1-2關於我們/擺設.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 5px solid white;
 }
 
 @media (max-width: 1760px) {
@@ -998,12 +1007,14 @@ h2 {
 .img3 {
   border-radius: 50%;
   background-color: #C4C4C4;
-  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=三明治);
-  width: 410px;
   height: 410px;
   position: absolute;
   left: 72%;
   top: 15%;
+  background-image: url(../img/1-2關於我們/招牌.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: 99% 96%;
 }
 
 @media (max-width: 1760px) {
@@ -1104,7 +1115,18 @@ h2 {
 @media (max-width: 386px) {
   .img3 {
     top: 80%;
-  }
+  }}
+.img4 {
+  /* 太陽雲朵插圖 */
+  width: 337px;
+  height: 244.06px;
+  position: absolute;
+  right: 169px;
+  bottom: 82px;
+  background-image: url(../img/1-2關於我們/背景插圖.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
 }
 
 #food .newsTitle {
