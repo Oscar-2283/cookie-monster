@@ -4,7 +4,7 @@ const items = document.querySelectorAll(".item");
 const menulink = document.querySelectorAll(".menudown a");
 let current = 0;
 items.forEach((item, i) =>
-  item.addEventListener("click", () => {
+  item.addEventListener("mouseenter", () => {
     if (i < current) {
       // ltr
       container.className = "container right instant";
