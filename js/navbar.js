@@ -1,3 +1,5 @@
+////////蚯蚓
+
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menudown");
 const items = document.querySelectorAll(".item");
@@ -19,12 +21,6 @@ items.forEach((item, i) =>
     current = i;
   })
 );
-
-
-
-
-
-
 
 
 //////////////////////
@@ -81,25 +77,27 @@ document.addEventListener("scroll",function(){
 
 
 
-let mediaIcon = document.querySelectorAll('.meida a')
+let mediaIcon = document.querySelectorAll('.media a')
 console.log(mediaIcon)
 let mediaBg = document.querySelector('.navbardown')
+let mediaColor = document.querySelectorAll('.navbardown p')
 
 mediaIcon.forEach(icon =>{
   icon.addEventListener('mouseenter',function(e){
     console.log(e)
     let color = e.target.getAttribute('data-color')
     mediaBg.style.backgroundColor = color
-    items.forEach(item=>{
-      item.style.color= '	#ffffff'
+    mediaColor.forEach(x=>{
+      x.style.color ='#ffffff'
     })
+
 
   })
 })
 mediaIcon.forEach(icon =>{
   icon.addEventListener('mouseleave',function(e){
     mediaBg.style.backgroundColor = '#CEB289'
-    items.forEach(item=>{
+    mediaColor.forEach(item=>{
       item.style.color= '	#000000'
     })
   })
