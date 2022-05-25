@@ -598,7 +598,7 @@
 
 
 
-  <!-- Initialize Swiper -->
+  <!-- Banner的 Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
@@ -622,14 +622,14 @@
   <!-- 最新消息 swiper -->
   <script>
     var swiper2 = new Swiper(".mySwiper1", {
-      direction: "vertical",
       loop: true,
       pagination: {
-        el: ".swiper-p1",
+        el: ".swiper-pagination",
         clickable: true,
       },
       mousewheel: true,
       spaceBetween: 30,
+      direction: "vertical",
     });
   </script>
 
