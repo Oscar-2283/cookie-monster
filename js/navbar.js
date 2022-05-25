@@ -44,9 +44,22 @@ let last = 0
 
 document.addEventListener("scroll",function(){
   let currentPos = window.scrollY;
+  let x = nav.offsetWidth
+ 
+
   if (currentPos+120> banner.offsetHeight){
       nav.classList.remove('d-none')
       nav.classList.add('d-flex')
+
+
+      if(nav.offsetWidth < 1400){
+      nav.classList.remove('d-flex');
+      nav.classList.add('d-none');
+      return
+
+      }
+
+
       if (Math.abs(currentPos - last) < 100) {
         return;
       }

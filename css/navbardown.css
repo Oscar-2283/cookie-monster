@@ -15,6 +15,12 @@ nav {
   background: #CEB289;
 }
 
+@media (max-width: 1400px) {
+  .navbardown {
+    display: none;
+  }
+}
+
 .navbardown p {
   color: black;
 }
