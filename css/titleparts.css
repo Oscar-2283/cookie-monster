@@ -2,7 +2,7 @@
   width: 53px;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 802px) {
   .newsTitle .logoTag {
     width: 40px;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 802px) {
   .newsTitle .circle-line {
     width: 25px;
   }
@@ -38,7 +38,7 @@
   color: #4A2B0E;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 802px) {
   .newsTitle p {
     margin: 0 25px;
   }
