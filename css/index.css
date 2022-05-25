@@ -1311,10 +1311,43 @@ h2 {
   }
 }
 
+.wood .wood-max-height {
+  max-height: 860px;
+}
+
 .wood .open {
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media (min-width: 680px) {
+  .wood .wood-hover {
+    margin-left: 50px !important;
+  }
+  .wood .wood-hover .open {
+    margin-right: auto;
+  }
+}
+
+.wood .wood-hover .food-icon1 {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wood .wood-hover .food-icon2 {
+  left: 65%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  opacity: 0;
+}
+
+.wood .wood-hover:hover .food-icon2 {
+  opacity: 1;
+}
+
+.wood .wood-hover:hover .food-icon1 {
+  opacity: 0;
 }
 
 .wood .wood-hover:hover .open {
