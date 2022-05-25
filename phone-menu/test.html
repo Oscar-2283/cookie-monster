@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/menutest.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-container" id="toggle">
+            <a href="#" class="menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li><a href="#"><img src="./img/bear.png" alt="bear">關於我們</a></li>
+                <li><a href="#"><img src="./img/bear.png" alt="bear">最新消息</a></li>
+                <li><a href="#"><img src="./img/bear.png" alt="bear">&emsp;菜單&emsp;</a></li>
+                <li><a href="#"><img src="./img/bear.png" alt="bear">店家資訊</a></li>
+                <li><a href="#"><img src="./img/bear.png" alt="bear">預約訂位</a></li>
+                <div class="media-icon">
+                    <a  href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i>
+                    </a>&emsp;<a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-gradient"></i></a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const menu = document.querySelector('#toggle');
+        const menuItems = document.querySelector('#overlay');
+        const menuContainer = document.querySelector('.menu-container');
+        const menuIcon = document.querySelector('i');
+
+        function toggleMenu(e) {
+            menuItems.classList.toggle('open');
+            menuContainer.classList.toggle('full-menu');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.add('fa-times');
+            e.preventDefault();
+            console.log(e);
+        }
+
+        menu.addEventListener('click', toggleMenu, false);
+    </script>
+</body>
+
+</html>
