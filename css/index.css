@@ -329,10 +329,6 @@ h2 {
   }
 }
 
-#aboutus {
-  overflow: hidden;
-}
-
 .profile_text {
   position: absolute;
   margin-top: 95px;
@@ -1123,8 +1119,8 @@ h2 {
   width: 337px;
   height: 244.06px;
   position: absolute;
-  right: 169px;
-  bottom: 82px;
+  right: 112px;
+  bottom: -68px;
   background-image: url(../img/1-2關於我們/背景插圖.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
