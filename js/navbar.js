@@ -1,4 +1,4 @@
-////////蚯蚓
+
 
 const container = document.querySelector(".container");
 const menu = document.querySelector(".menudown");
@@ -28,8 +28,7 @@ items.forEach((item, i) =>
 let nav =document.querySelector('nav');
 let banner = document.querySelector('#banner')
 
-// window.onscroll = function(){
-
+// window.onscroll = function(){ooooooo
 
 //   if(document.documentElement.scrollTop+120 > banner.offsetHeight){
 //     nav.classList.remove('d-none')
@@ -41,41 +40,52 @@ let banner = document.querySelector('#banner')
 // }
 
 let last = 0
+var scrollTop = window.pageYOffset || document.body.scrollTop;
+console.log('eefefef'+ scrollTop)
+function navbardown(){
 
-document.addEventListener("scroll",function(){
-  let currentPos = window.scrollY;
-  let x = nav.offsetWidth
- 
+  window.addEventListener('resize', function(){
+      var currentWidth = window.innerWidth;
+      var currentHeight = window.innerHeight;
+   
+      if(currentWidth<= 1200){
+        nav.classList.add('d-none')
+        nav.classList.remove('d-flex')
+        return
+        }else if (currentWidth>1400){
+          function scrolle(){
+            document.addEventListener("scroll",function(){
+              let currentPos = window.scrollY;
+              
+              if(currentPos+120> banner.offsetHeight){
+                  nav.classList.remove('d-none')
+                  nav.classList.add('d-flex')
+                
+            
+            
+                  if (Math.abs(currentPos - last) < 100) {
+                    return;
+                  }
+                  console.log('dfdf'+ currentPos )
+                  if(currentPos > last ){
+                      nav.style.top = "-200px";
+                  }else{
+                      nav.style.top = "0px";
+                  }
+                  last = currentPos 
+              }else{
+                nav.classList.add('d-none')
+                nav.classList.remove('d-flex')
+              }
+            
+            })
+          }
+          scrolle()
+        }  
+  });
+}
 
-  if (currentPos+120> banner.offsetHeight){
-      nav.classList.remove('d-none')
-      nav.classList.add('d-flex')
-
-
-      if(nav.offsetWidth < 1400){
-      nav.classList.remove('d-flex');
-      nav.classList.add('d-none');
-      return
-
-      }
-
-
-      if (Math.abs(currentPos - last) < 100) {
-        return;
-      }
-      console.log('dfdf'+ currentPos )
-      if(currentPos > last ){
-          nav.style.top = "-200px";
-      }else{
-          nav.style.top = "0px";
-      }
-      last = currentPos 
-  }else{
-    nav.classList.add('d-none')
-    nav.classList.remove('d-flex')
-  }
-
-})
+navbardown()
 
 
 

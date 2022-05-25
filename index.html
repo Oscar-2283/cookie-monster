@@ -600,10 +600,15 @@
 
   <!-- Banner的 Swiper -->
   <script>
+
+
+
+
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       effect: "fade",
       loop: true,
+      direction: getDirection(),
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -616,7 +621,20 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
     });
+      
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 1200 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+
   </script>
 
   <!-- 最新消息 swiper -->
