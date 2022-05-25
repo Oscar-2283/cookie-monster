@@ -10,11 +10,17 @@ nav {
 }
 
 .navbardown {
+    @media(max-width:1400px){
+        display: none;
+    }
+    p{
+        color: black;
+    }
     background: #CEB289;
     .media{
         .fa-brands{
             font-size: 50px;
-            color: rgb(237, 236, 236);
+            color: black;
             &:hover{
                 opacity: .5;
             }
@@ -55,31 +61,31 @@ nav {
     transition: transform 500ms;
     width: 100%;
     transform: translateY(-50%);
-    top: 75%;
+    top: 82%;
     left: -3%;
 }
 
 .snake path {
     fill: none;
-    stroke: black;
-    stroke-dasharray: 14 100;
-    stroke-width: 1px;
+    stroke: #4a2b011c;
+    stroke-dasharray: 16 100;
+    stroke-width: .5px;
 }
 
 .pos1 .snake {
-    transform: translateX(20%) translateY(-50%);
+    transform: translateX(19%) translateY(-50%);
 }
 
 .pos2 .snake {
-    transform: translateX(40%) translateY(-50%);
+    transform: translateX(38%) translateY(-50%);
 }
 
 .pos3 .snake {
-    transform: translateX(60%) translateY(-50%);
+    transform: translateX(58%) translateY(-50%);
 }
 
 .pos4 .snake {
-    transform: translateX(80%) translateY(-50%);
+    transform: translateX(77.5%) translateY(-50%);
 }
 
 .left .snake path {

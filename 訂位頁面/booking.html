@@ -44,7 +44,7 @@
                 </div>
                 <div class="sun-animate">
 
-                    <div class="sun-face">
+                    <div class="sun-line">
                         <a href="../index.html" target="_blank"><img class="sun-line" src="./img/sun/sun.svg" alt=""></a>
                     </div>
                 </div>
@@ -110,7 +110,11 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function btnAlert() {
-            Swal.fire('位置僅保留10分鐘<br>(人數到齊才能入座)','收到訊息回覆才代表預約成功哦<br>店內位置有限，請見諒')
+            Swal.fire({
+            icon: 'warning',
+            title: '位置僅保留10分鐘<br>(人數到齊才能入座)',
+            text: '收到訊息回覆才代表預約成功哦',
+        })
         }
     </script>
 </body>

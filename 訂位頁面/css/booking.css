@@ -55,8 +55,21 @@ body {
   font-size: 32px !important;
 }
 
+@media (max-width: 680px) {
+  .swal2-modal .swal2-title {
+    font-size: 28px !important;
+  }
+}
+
 .swal2-html-container {
   font-size: 22px !important;
+  font-weight: 600;
+}
+
+@media (max-width: 680px) {
+  .swal2-html-container {
+    font-size: 18px !important;
+  }
 }
 
 .swal2-styled.swal2-confirm {
@@ -235,6 +248,10 @@ ul li, ol li {
   margin-bottom: 5%;
 }
 
+.container .book-main .b-main-f .b-main-f-logo a {
+  cursor: url("../img/add-circle.png") 16 16, auto;
+}
+
 @media (max-width: 950px) {
   .container .book-main .b-main-f .b-main-f-logo {
     display: none;
@@ -356,40 +373,44 @@ ul li, ol li {
   }
 }
 
-.container .book-main .b-main-f .sun-animate .sun-face {
+.container .book-main .b-main-f .sun-animate .sun-line {
   width: 300px;
   height: 300px;
 }
 
+.container .book-main .b-main-f .sun-animate .sun-line a {
+  cursor: url("../img/add-circle.png") 16 16, auto;
+}
+
 @media (max-width: 1610px) {
-  .container .book-main .b-main-f .sun-animate .sun-face {
+  .container .book-main .b-main-f .sun-animate .sun-line {
     width: 250px;
     height: 250px;
   }
 }
 
 @media (max-width: 1300px) {
-  .container .book-main .b-main-f .sun-animate .sun-face {
+  .container .book-main .b-main-f .sun-animate .sun-line {
     width: 200px;
     height: 200px;
   }
 }
 
 @media (max-width: 950px) {
-  .container .book-main .b-main-f .sun-animate .sun-face {
+  .container .book-main .b-main-f .sun-animate .sun-line {
     width: 150px;
     height: 150px;
   }
 }
 
 @media (max-width: 680px) {
-  .container .book-main .b-main-f .sun-animate .sun-face {
+  .container .book-main .b-main-f .sun-animate .sun-line {
     width: 100px;
     height: 100px;
   }
 }
 
-.container .book-main .b-main-f .sun-animate .sun-face .sun-line {
+.container .book-main .b-main-f .sun-animate .sun-line .sun-line {
   -webkit-animation: sunspin 40s infinite linear;
           animation: sunspin 40s infinite linear;
 }
@@ -571,6 +592,10 @@ ul li, ol li {
 .container .book-main .b-main-s .b-main-s-text .book-icon .fa-brands {
   font-size: 30px;
   color: #375197;
+}
+
+.container .book-main .b-main-s .b-main-s-text .book-icon .fa-brands:hover {
+  opacity: .5;
 }
 
 @media (max-width: 680px) {

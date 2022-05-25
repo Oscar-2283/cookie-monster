@@ -316,10 +316,6 @@ h2 {
 //頁面錨點--------------
 
 //關於我們區內文字體--------------
-#aboutus {
-	overflow: hidden;
-
-}
 
 .profile_text {
 	position: absolute;
@@ -1046,6 +1042,7 @@ h2 {
 		padding-top: 120px;
 		padding-left: 40px;
 	}
+
 }
 
 .foodImg {
@@ -1241,6 +1238,9 @@ h2 {
 
 
 	}
+	.wood-max-height{
+		max-height: 860px;
+	}
 
 	.open {
 		opacity: 0;
@@ -1249,7 +1249,32 @@ h2 {
 
 	.wood-hover:hover .open {
 		opacity: 1;
+	.wood-hover{
+		@media(min-width: 680px){
+			margin-left: 50px!important;
+			.open{
+				margin-right: auto;
+			}
+		}
+		.food-icon1{
+			transition: .3s;
+		}
+		.food-icon2{
+			left: 65%;
+			transition: .3s;
+			opacity: 0;
+		}
+		&:hover .food-icon2{
+			opacity: 1;
+		}
+		&:hover .food-icon1{
+			opacity: 0;
+		}
+		&:hover .open{
+			opacity: 1;
+		}
 	}
+
 }
 
 
@@ -1600,4 +1625,6 @@ li {
 			}
 		}
 	}
+	}
+
 }
