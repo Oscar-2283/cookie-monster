@@ -10,6 +10,7 @@ html {
   border: 0;
   -webkit-transition: .3s;
   transition: .3s;
+  cursor: none;
 }
 
 body {

@@ -1,0 +1,21 @@
+.cursor{
+    position:absolute;
+    
+    width: 65px;
+    height: 65px;
+    background: transparent;
+    border: 1px solid rgba(202, 37, 37, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    background-image: url('../img/cursor/add-circle.svg');
+    background-position: 3% 2%;
+    // background-size: cover;
+    transition: transform .3s ease-out;
+    z-index: 10000;
+    object-fit: contain;
+    transform: scale(1);
+}
+
+.bg{
+   background-color: rgba(0, 139, 139, 0.24);
+}

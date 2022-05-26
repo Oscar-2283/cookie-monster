@@ -26,13 +26,16 @@
   <link rel="stylesheet" href="./css/titleparts.css">
   <!-- 頁面錨點Title的CSS -->
   <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/cursor.css">
   <title>一人一伴ともだち</title>
 </head>
 
 <body>
+
+  <div class="cursor"></div>
+
 <!-- 首頁外navbar -->
 <section>
-
   <nav class="d-flex navbardown fixed-top align-items-center justify-content-between px-4 ">
     <div class="logo d-flex justify-content-center align-items-center">
         <img src="./img/0-1 NAV/Logo.png"  width="70px" height="70px" alt="">
@@ -45,31 +48,31 @@
             <div class="menudown">
                 <a href="#aboutus">
                     <div class="item">
-                        <img class="icon" src="./img/0-2 icon/bear.svg" alt="">
+                        <img class="icon" src="./img/icon/bear.svg" alt="">
                         <p class="m-0">關於我們</p>
                     </div>
                 </a>
                 <a href="#news">
                     <div class="item">
-                        <img  class="icon" src="./img/0-2 icon/bear.svg" alt="">
+                        <img  class="icon" src="./img/icon/bear.svg" alt="">
                         <p class="m-0">最新消息</p>
                     </div>
                 </a>
                 <a href="#menu">
                     <div class="item">
-                        <img  class="icon" src="./img/0-2 icon/bear.svg" alt="">
+                        <img  class="icon" src="./img/icon/bear.svg" alt="">
                         <p class="m-0">菜&nbsp;單</p>
                     </div>
                 </a>
                 <a href="#store_information">
                     <div class="item">
-                        <img  class="icon" src="./img/0-2 icon/bear.svg" alt="">
+                        <img  class="icon" src="./img/icon/bear.svg" alt="">
                         <p class="m-0">店家資訊</p>
                     </div>
                 </a>
                 <a href="./訂位頁面/booking.html" target="_blank">
                     <div class="item mr-0">
-                        <img  class="icon" src="./img/0-2 icon/bear.svg" alt="">
+                        <img  class="icon" src="./img/icon/bear.svg" alt="">
                         <p class="m-0">預約訂位</p>
                     </div>
                 </a>
@@ -88,7 +91,6 @@
   
   </nav>
 </section>
-
 
 <!-- 形象banner區  -->
   <section id="banner" class="index">
@@ -153,9 +155,9 @@
   <section id="aboutus" class="profile">
     <div class="newsTitle d-flex title1 align-items-center">
       <!-- 頁面錨點Title -->
-      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <img class="logoTag" src="./img/icon/bear.svg">
       <p class="titleTag">關於我們</p>
-      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
+      <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
     <div class="profile_text z-2"><!-- 三明治照片 -->
       <p class="profile_p1">
@@ -184,9 +186,9 @@
 <section id="food" class="food px-375rem ">
   <div class="newsTitle d-flex title align-items-center">
     <!-- 頁面錨點Title -->
-    <img class="logoTag" src="./img/0-2 icon/bear.svg">
+    <img class="logoTag" src="./img/icon/bear.svg">
     <p class="titleTag">嚴選食材</p>
-    <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
+    <img class="circle-line" src="./img/icon/circle-line.svg">
   </div>
   <div class="row foodImageSection justify-content-between d-none d-md-flex">
     <div class="col-6 row align-items-center">
@@ -345,9 +347,9 @@
           <!-- 板塊標題 -->
           <div class="newsTitle d-flex title align-items-center">
             <!-- 頁面錨點Title -->
-            <img class="logoTag" src="./img/0-2 icon/bear.svg">
+            <img class="logoTag" src="./img/icon/bear.svg">
             <p class="titleTag">最新消息</p>
-            <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
+            <img class="circle-line" src="./img/icon/circle-line.svg">
           </div>
           <div class="swiper mySwiper1">
             <div class="swiper-wrapper">
@@ -413,9 +415,9 @@
   <section id="menu" class=" menu-section position-relative">
     <div class="newsTitle d-flex title align-items-center">
       <!-- 頁面錨點Title -->
-      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <img class="logoTag" src="./img/icon/bear.svg">
       <p class="titleTag">菜單</p>
-      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
+      <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
     <div class="d-flex menu-list flex-md-nowrap align-content-start flex-wrap menu-container">
       <a  href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="123">
@@ -505,9 +507,9 @@
   <section id="store_information">
     <div class="newsTitle d-flex title align-items-center store-info-title">
       <!-- 頁面錨點Title -->
-      <img class="logoTag" src="./img/0-2 icon/bear.svg">
+      <img class="logoTag" src="./img/icon/bear.svg">
       <p class="titleTag">店家資訊</p>
-      <img class="circle-line" src="./img/0-2 icon/circle-line.svg">
+      <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
 
     <div class="footer_content">
@@ -595,7 +597,8 @@
 
   <script src="./js/vanilla-tilt.min.js"></script>
   <script src="./js/navbar.js"></script>
-
+  <script src="./js/bubbleCursor.js"></script>
+  <script src="./js/cursor.js"></script>
 
 
   <!-- Banner的 Swiper -->
@@ -664,6 +667,8 @@
   <!-- AOS -->
   <script>
   AOS.init();
+
+  bubbleCursor()
   </script>
 
 
