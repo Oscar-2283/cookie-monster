@@ -12,24 +12,29 @@
   width: 100%;
   background-color: grey;
 }
+
 .menu-list p {
   -webkit-animation: none;
           animation: none;
 }
+
 @media (min-width: 768px) {
   .menu-list .position-md-absolute {
     position: absolute;
   }
 }
+
 .menu-list .list1 {
   width: 706.32px;
   height: 706.32px;
   left: 31.94%;
   top: 10.47%;
 }
+
 .menu-list .list1 .number1 {
   background-position: center;
 }
+
 @media (min-width: 768px) {
   .menu-list .list1 .tag1 {
     z-index: 3;
@@ -41,15 +46,18 @@
     font-size: 22px;
   }
 }
+
 .menu-list .list2 {
   width: 409.3px;
   height: 409.3px;
   left: 11.25%;
   top: 70.2%;
 }
+
 .menu-list .list2 .number2 {
   background-image: url("https://dummyimage.com/409.3/db4fdb/fff&text=2");
 }
+
 @media (min-width: 768px) {
   .menu-list .list2 .tag2 {
     z-index: 3;
@@ -60,15 +68,18 @@
     background-color: darkgray;
   }
 }
+
 .menu-list .list3 {
   width: 661.33px;
   height: 661.33px;
   left: 46.93%;
   top: 57.41%;
 }
+
 .menu-list .list3 .number3 {
   background-image: url("https://dummyimage.com/661.33/4451a6/fff&text=3");
 }
+
 @media (min-width: 768px) {
   .menu-list .list3 .tag3 {
     z-index: 3;
@@ -79,15 +90,18 @@
     background-color: darkgray;
   }
 }
+
 .menu-list .list4 {
   width: 457.1px;
   height: 457.1px;
   left: 73.82%;
   top: 73.99%;
 }
+
 .menu-list .list4 .number4 {
   background-image: url("https://dummyimage.com/457.1//db4fdb/fff&text=4");
 }
+
 @media (min-width: 768px) {
   .menu-list .list4 .tag4 {
     z-index: 3;
@@ -98,6 +112,7 @@
     background-color: darkgray;
   }
 }
+
 .menu-list .list5 {
   width: 308.18px;
   height: 308.18px;
@@ -105,9 +120,11 @@
   top: 44.92%;
   z-index: 2;
 }
+
 .menu-list .list5 .number5 {
   background-image: url("https://dummyimage.com/308.18/44a656/fff&text=5");
 }
+
 @media (min-width: 768px) {
   .menu-list .list5 .tag5 {
     z-index: 3;
@@ -118,15 +135,18 @@
     background-color: darkgray;
   }
 }
+
 .menu-list .list6 {
   width: 459.23px;
   height: 459.23px;
   left: -3.79%;
   top: 28.01%;
 }
+
 .menu-list .list6 .number6 {
   background-image: url("https://dummyimage.com/459.23//db4fdb/fff&text=6");
 }
+
 @media (min-width: 768px) {
   .menu-list .list6 .tag6 {
     z-index: 3;
@@ -137,15 +157,18 @@
     background-color: darkgray;
   }
 }
+
 .menu-list .list7 {
   width: 474.68px;
   height: 474.68px;
   left: 80.52%;
   top: 12.73%;
 }
+
 .menu-list .list7 .number7 {
   background-image: url("https://dummyimage.com/474.68/5c5815/fff&text=7");
 }
+
 @media (min-width: 768px) {
   .menu-list .list7 .tag7 {
     z-index: 3;
@@ -155,4 +178,5 @@
     left: 10%;
     background-color: darkgray;
   }
-}/*# sourceMappingURL=menu.css.map */
+}
+/*# sourceMappingURL=menu.css.map */

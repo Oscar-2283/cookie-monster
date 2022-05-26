@@ -1,12 +1,14 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
 }
 
 nav {
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .navbardown {
@@ -16,13 +18,16 @@ nav {
 .navbardown p {
   color: black;
 }
+
 .navbardown .media .fa-brands {
   font-size: 50px;
   color: black;
 }
+
 .navbardown .media .fa-brands:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
+
 .navbardown .media .fa-instagram {
   margin-left: 20px;
 }
@@ -30,17 +35,27 @@ nav {
 .logo {
   width: 100px;
   height: 100px;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
+
 .logo:hover img {
-  transform: translateZ(50px);
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
 }
 
 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .links a {
   width: 220px;
 }
@@ -52,67 +67,93 @@ nav {
 
 .snake {
   position: absolute;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
   transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
   width: 100%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   top: 82%;
   left: -3%;
 }
 
 .snake path {
   fill: none;
-  stroke: rgba(74, 43, 1, 0.1098039216);
+  stroke: #4a2b011c;
   stroke-dasharray: 16 100;
-  stroke-width: 0.5px;
+  stroke-width: .5px;
 }
 
 .pos1 .snake {
-  transform: translateX(19%) translateY(-50%);
+  -webkit-transform: translateX(19%) translateY(-50%);
+          transform: translateX(19%) translateY(-50%);
 }
 
 .pos2 .snake {
-  transform: translateX(38%) translateY(-50%);
+  -webkit-transform: translateX(38%) translateY(-50%);
+          transform: translateX(38%) translateY(-50%);
 }
 
 .pos3 .snake {
-  transform: translateX(58%) translateY(-50%);
+  -webkit-transform: translateX(58%) translateY(-50%);
+          transform: translateX(58%) translateY(-50%);
 }
 
 .pos4 .snake {
-  transform: translateX(77.5%) translateY(-50%);
+  -webkit-transform: translateX(77.5%) translateY(-50%);
+          transform: translateX(77.5%) translateY(-50%);
 }
 
 .left .snake path {
   stroke-dashoffset: 0;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
   transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
 }
 
 .right .snake path {
   stroke-dashoffset: -70px;
-  transform: translateX(-60%);
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, -webkit-transform 500ms;
   transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms, -webkit-transform 500ms;
 }
 
 .instant .snake path {
+  -webkit-transition: none;
   transition: none;
 }
 
 .menudown {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
   position: relative;
 }
+
 .menudown a {
   color: white !important;
   text-decoration: none !important;
 }
 
 .item {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 50px;
   font-size: 30px;
   white-space: nowrap;
@@ -124,8 +165,12 @@ nav {
 }
 
 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: black !important;
   text-decoration: none !important;
 }
