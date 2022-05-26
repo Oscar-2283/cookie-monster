@@ -24,6 +24,7 @@ body {
 	color: $color_1;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .sectionSize {
@@ -212,9 +213,11 @@ h2 {
 				.fa-brands {
 					font-size: 50px;
 					color: #d74f4b;
+					transition: .5s;
 
 					&:hover {
 						opacity: .5;
+						transform: scale(1.2);
 					}
 				}
 
@@ -2033,6 +2036,7 @@ li {
 		}
 		.fa-location-dot{
 			color: #ea4335;
+			transition: .5s;
 		}
 	}
 }
@@ -2155,8 +2159,8 @@ li {
 								width:115px ;
 							}
 						}
-						&:hover{
-							opacity: .5;
+						&:hover .fa-location-dot{
+							transform: scale(1.5);
 						}
 					}
 				}
