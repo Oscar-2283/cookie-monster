@@ -5,7 +5,6 @@ document.addEventListener("mousemove",e=>{
 })
 
 let image = document.querySelectorAll('.list')
-console.log(image)
 image.forEach(item=>{
     item.addEventListener('mouseenter',function(){
         cursorX.style.transform = 'scale(1.5)'

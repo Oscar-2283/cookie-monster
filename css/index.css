@@ -1403,30 +1403,6 @@ h2 {
   background-image: url("../img/1-3嚴選食材/卡片背景圖.svg");
 }
 
-.foodImg-f {
-  background-image: url("");
-}
-
-.foodImg-s {
-  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+meat);
-}
-
-.foodImg-t {
-  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+sauce);
-}
-
-.foodImg-f1 {
-  background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+egg);
-}
-
-.foodImg-s1 {
-  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+milk);
-}
-
-.foodImg-t1 {
-  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
-}
-
 @media (min-width: 360px) {
   .wood .woodImgSize {
     width: 30px;

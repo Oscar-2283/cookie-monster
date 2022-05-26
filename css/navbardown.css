@@ -15,12 +15,6 @@ nav {
   background: #CEB289;
 }
 
-@media (max-width: 1400px) {
-  .navbardown {
-    display: none;
-  }
-}
-
 .navbardown p {
   color: black;
 }
@@ -66,7 +60,7 @@ nav {
   width: 220px;
 }
 
-.container {
+.container1 {
   overflow: hidden;
   position: relative;
 }
@@ -187,5 +181,11 @@ a:hover {
 
 .js-tilt-glare {
   border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .navbardown {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=navbardown.css.map */

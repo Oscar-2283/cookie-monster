@@ -10,9 +10,6 @@ nav {
 }
 
 .navbardown {
-    @media(max-width:1400px){
-        display: none;
-    }
     p{
         color: black;
     }
@@ -45,17 +42,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
     a {
         width: 220px;
     }
-}
 
-.container {
+}
+.container1 {
     overflow: hidden;
     position: relative;
+ 
 }
-
+    
 .snake {
     position: absolute;
     transition: transform 500ms;
@@ -150,3 +147,9 @@ a:hover {
 
 
 ////////////
+
+@media (max-width: 1200px) {
+    .navbardown {
+        display: none !important;
+    }
+}
