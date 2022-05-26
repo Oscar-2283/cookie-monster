@@ -1653,8 +1653,8 @@ h2 {
 							right: 18%;
 						}
 						@media(max-width:375px){
-							bottom: 6%;
-							right: 20%;
+							bottom: 8%;
+							right: 16%;
 						}
 
 						.moreCircle {
@@ -1679,14 +1679,11 @@ h2 {
 								height: 56px;
 								padding: 1.7px;
 							}
-							// @media(max-width:500px){
-								
-							// }
-							// @media(max-width:375px){
-							// 	width: 46px;
-							// 	height: 46px;
-							// 	padding: 1.1px;
-							// }
+							@media(max-width:400px){
+								width: 46px;
+								height: 46px;
+								padding: 5px;
+							}
 
 							&:hover {
 								background-color: #fff;
@@ -1722,15 +1719,18 @@ h2 {
 									line-height: 50.64px;
 									letter-spacing: 0px;
 								}
-								// @media(max-width:500px){
-									
-								// }
-								// @media(max-width:375px){
-								// 	width: 41.82px;
-								// 	height: 41.82px;
-								// 	line-height: 41.82px;
-								// 	font-size: 8px;
-								// }
+								@media(max-width:400px){
+									// -webkit-text-size-adjust:none;
+									width: 63.36px;
+									height: 63.36px;
+									line-height: 63.36px;
+									letter-spacing: 3.32px;
+									transform: scale(0.66,0.66);
+									position: absolute;
+									top: -8.55px;
+									left: -8.95px;
+									font-weight: bolder;
+								}
 							}
 						}
 					}
@@ -1756,10 +1756,10 @@ h2 {
 	left: 94.6%;
 	transform: translate3d(0px, -7%, 0);
 	@media(max-width:768px){
-		left: 93.6%;
+		left: 93%;
 	}
 	@media(max-width:576px){
-		left: 92.28%;
+		left: 91.28%;
 	}
 }
 

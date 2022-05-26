@@ -1997,8 +1997,8 @@ h2 {
 
 @media (max-width: 375px) {
   .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .swiper-news-border-lineB .more-circle-btn {
-    bottom: 6%;
-    right: 20%;
+    bottom: 8%;
+    right: 16%;
   }
 }
 
@@ -2030,6 +2030,14 @@ h2 {
     width: 56px;
     height: 56px;
     padding: 1.7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .swiper-news-border-lineB .more-circle-btn .moreCircle {
+    width: 46px;
+    height: 46px;
+    padding: 5px;
   }
 }
 
@@ -2076,6 +2084,21 @@ h2 {
   }
 }
 
+@media (max-width: 400px) {
+  .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .swiper-news-border-lineB .more-circle-btn .moreCircle .moreCircle_min {
+    width: 63.36px;
+    height: 63.36px;
+    line-height: 63.36px;
+    letter-spacing: 3.32px;
+    -webkit-transform: scale(0.66, 0.66);
+            transform: scale(0.66, 0.66);
+    position: absolute;
+    top: -8.55px;
+    left: -8.95px;
+    font-weight: bolder;
+  }
+}
+
 #menu .newsTitle {
   padding-top: 120px;
   padding-left: 100px;
@@ -2093,14 +2116,14 @@ h2 {
 @media (max-width: 768px) {
   .swiper-pagination-vertical.swiper-pagination-bullets,
   .swiper-vertical > .swiper-pagination-bullets {
-    left: 93.6%;
+    left: 93%;
   }
 }
 
 @media (max-width: 576px) {
   .swiper-pagination-vertical.swiper-pagination-bullets,
   .swiper-vertical > .swiper-pagination-bullets {
-    left: 92.28%;
+    left: 91.28%;
   }
 }
 
