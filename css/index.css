@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background: #eee;
+  background: white;
   color: #000;
   margin: 0;
   padding: 0;
@@ -654,7 +654,7 @@ h2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-left: 3em;
-  background-color: #C4C4C4;
+  background-color: #FFD18E;
 }
 
 @media (max-width: 989px) {
@@ -1443,6 +1443,14 @@ h2 {
   }
 }
 
+#food {
+  background-image: url("../img/1-3嚴選食材/background(1920x1080).svg");
+  z-index: 3;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
 #food .newsTitle {
   padding-top: 120px;
   padding-left: 40px;
@@ -1568,28 +1576,8 @@ h2 {
   background-image: url("../img/1-3嚴選食材/卡片背景圖.svg");
 }
 
-.foodImg-f {
-  background-image: url("");
-}
-
-.foodImg-s {
-  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+meat);
-}
-
-.foodImg-t {
-  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+sauce);
-}
-
-.foodImg-f1 {
-  background-image: url(https://dummyimage.com/410X410/c46d55/f5f5f5.png&text=+egg);
-}
-
-.foodImg-s1 {
-  background-image: url(https://dummyimage.com/410X410/c4bf66/f5f5f5.png&text=+milk);
-}
-
-.foodImg-t1 {
-  background-image: url(https://dummyimage.com/410X410/7467c2/f5f5f5.png&text=+fruit);
+.wood {
+  z-index: 5;
 }
 
 @media (min-width: 360px) {
@@ -2336,6 +2324,7 @@ li {
   position: relative;
   width: 100%;
   padding: 0 5%;
+  background-color: #FFFAF7;
   background-image: url(../img/1-7footer-img/background.png);
   background-repeat: no-repeat;
   background-position: 0 150%;

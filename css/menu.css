@@ -29,7 +29,11 @@
 }
 
 #menu {
+  background-image: url("../img/1-5菜單/background(1920x2160).svg");
   background-color: wheat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 768px) {
