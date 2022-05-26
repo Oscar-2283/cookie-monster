@@ -17,7 +17,7 @@ image.forEach(item=>{
         cursorX.classList.remove('bg')
 
         cursorX.style.backgroundImage="url(./img/cursor/abc.ico)"
-        cursorX.style.transform = 'scale(1)'
+        cursorX.style.transform = 'scale(0.6) translate(-50%, -50%)'
     })
 })
 

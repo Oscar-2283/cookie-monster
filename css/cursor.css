@@ -15,8 +15,8 @@
   z-index: 10000;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: scale(0.6) translate(-50%, -50%);
+          transform: scale(0.6) translate(-50%, -50%);
 }
 
 .bg {

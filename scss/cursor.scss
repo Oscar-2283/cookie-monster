@@ -13,7 +13,7 @@
     transition: transform .3s ease-out;
     z-index: 10000;
     object-fit: contain;
-    transform: translate(-50%,-50%);
+    transform: scale(0.6) translate(-50%, -50%);
 }
 
 .bg{
