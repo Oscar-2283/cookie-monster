@@ -4,6 +4,10 @@ $color_3: #4A2B0E; //文字用
 $background-color_1: darkcyan; //形象頁面nav底色
 $background-color_2: black; //底線顏色
 $background-color_3: #C4C4C4; //放圖片區域底色
+$font_1: "KFhimaji";
+$font_2: "MS Gothic";
+$font_3: "Yu Gothic";
+$font_4: "Kristen ITC";
 
 //快速找相對區域的css
 //用Ctrl+F搜尋(例:嚴選食材)
@@ -87,6 +91,7 @@ h2 {
 
 				.title_p {
 					color: $color_3;
+					font-family: $font_3;
 					font-size: 40px;
 
 					&:nth-child(1) {
@@ -129,6 +134,7 @@ h2 {
 				}
 
 				a {
+					font-family: $font_2;
 					font-size: 30px;
 				}
 
@@ -312,9 +318,10 @@ h2 {
 	position: relative;
 
 	.titleTag {
+		font-family: $font_2;
 		font-size: 30px;
 		letter-spacing: .2em;
-		font-weight: 600;
+		font-weight: 500;
 		z-index: 2;
 
 		@media (max-width:802px) {
@@ -419,12 +426,13 @@ h2 {
 	}
 
 	.profile_p1 {
+		font-family: $font_2;
 		margin-left: -2%;
 		position: relative;
 		line-height: 66px;
 		letter-spacing: .1em;
 		font-size: 30px;
-		font-weight: 600;
+		// font-weight: 600;
 		z-index: 2;
 
 		.twoman {
@@ -524,12 +532,13 @@ h2 {
 	}
 
 	.profile_p2 {
+		font-family: $font_3;
 		margin-top: 35px;
 		margin-left: 71px;
 		line-height: 65px;
 		letter-spacing: .1em;
-		font-size: 30px;
-		font-weight: 600;
+		font-size: 24px;
+		// font-weight: 600;
 		z-index: 2;
 
 		.findman {
@@ -691,11 +700,12 @@ h2 {
 	}
 
 	.profile_p3 {
+		font-family: $font_1;
 		margin-top: 42.9px;
 		margin-left: 240px;
 		line-height: 65.55px;
 		letter-spacing: .1em;
-		font-size: 30px;
+		font-size: 26px;
 		font-weight: 600;
 		z-index: 2;
 
@@ -1317,6 +1327,10 @@ h2 {
 
 .foodImgTitle {
 	//嚴選食材文字
+	font-family: $font_3;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #4A2B0E;
 	position: absolute;
 	bottom: -60px;
 	left: 50%;
@@ -1331,6 +1345,10 @@ h2 {
 
 .foodImgText {
 	//嚴選食材文字
+	font-family: $font_3;
+	font-size: 20px;
+	font-weight: 600;
+	color: #4A2B0E;
 	position: absolute;
 	letter-spacing: .2em;
 
@@ -1702,6 +1720,8 @@ h2 {
 
 										.blogCardTitle {
 											padding: 4px 0;
+											font-family: $font_2;
+											font-size: 30px;
 											color: #4A2B0E;
 
 											@media(max-width:1512px) {
@@ -1726,6 +1746,9 @@ h2 {
 
 										.blogCardText {
 											padding: 1.5px 0;
+											font-family: $font_3;
+											// font-weight: bolder;
+											font-size: 20px;
 											color: #4A2B0E;
 
 											@media(max-width:1512px) {
@@ -1790,6 +1813,9 @@ h2 {
 
 					.more-circle-btn {
 						//詳細內容按鈕
+						font-family: $font_3;
+						font-weight: 800;
+						font-size: 14px;
 						align-self: flex-end;
 						width: 18%;
 						z-index: 1;
@@ -1968,94 +1994,138 @@ li {
 	/* li去除圓點 */
 	list-style: none;
 }
+
 //上排文字
-.ifmblock1{
+.ifmblock1 {
 	white-space: nowrap;
+
 	.block_title {
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $font_3;
+		font-weight: bolder;
 		padding: 5px 0;
-		@media (max-width:768px){
-			font-size:14px;
+
+		@media (max-width:768px) {
+			font-size: 14px;
 		}
 	}
-	
+
 	.block_text {
 		font-size: 17px;
+		font-family: $font_3;
+		font-weight: bolder;
 		margin: 20px 0;
-		@media (max-width:1600px){
+
+		@media (max-width:1600px) {
 			font-size: 15px;
 		}
-		@media (max-width:768px){
-			font-size:12px
+
+		@media (max-width:768px) {
+			font-size: 12px
 		}
 	}
 }
+
 //中間文字
-.ifmblock2{
+.ifmblock2 {
 	.block_title {
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $font_3;
+		font-weight: bolder;
 		padding: 5px 0;
-		@media (max-width:768px){
-			font-size:14px;
+
+		@media (max-width:768px) {
+			font-size: 14px;
 		}
 	}
-	
+
 	.block_text {
 		font-size: 17px;
+		font-family: $font_3;
+		font-weight: bolder;
 		margin: 20px 0;
-		@media (max-width:1600px){
+
+		@media (max-width:1600px) {
 			font-size: 15px;
 		}
-		@media (max-width:768px){
-			font-size:12px
+
+		@media (max-width:768px) {
+			font-size: 12px
 		}
 	}
 }
+
 //下排文字
-.ifmblock3Left{//左邊
+.ifmblock3Left {
+	//左邊
 	white-space: nowrap;
+
 	.block_title {
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $font_3;
+		font-weight: bolder;
 		padding: 5px 0;
-		@media (max-width:768px){
-			font-size:14px;
+
+		@media (max-width:768px) {
+			font-size: 14px;
 		}
 	}
-	
+
 	.block_text {
 		font-size: 17px;
+		font-family: $font_3;
+		font-weight: bolder;
 		margin: 20px 0;
-		@media (max-width:1600px){
+
+		@media (max-width:1600px) {
 			font-size: 15px;
 		}
-		@media (max-width:768px){
-			font-size:12px
+
+		@media (max-width:768px) {
+			font-size: 12px
 		}
-		.fa-location-dot{
+
+		.fa-location-dot {
 			color: #ea4335;
 		}
 	}
 }
-.ifmblock3Right{//右邊
+
+.ifmblock3Right {
+	//右邊
 	white-space: nowrap;
 	margin-top: 11px;
-	@media (max-width:1200px){
+
+	@media (max-width:1200px) {
 		margin-top: 0px;
 	}
+
 	.block_title {
-		font-size: 24px;
+		font-size: 20px;
+		font-family: $font_3;
+		font-weight: bolder;
 		padding: 5px 0;
 	}
-	
+
+
 	.block_text {
 		font-size: 17px;
+		font-family: $font_3;
+		font-weight: bolder;
 		margin: 20px 0 20px 0;
-		@media (max-width:1600px){
+
+
+		@media (max-width:1600px) {
 			font-size: 15px;
 		}
-		@media (max-width:768px){
-			font-size:12px
+
+		@media (max-width:768px) {
+			font-size: 12px
 		}
+	}
+
+	.textphone {
+		font-size: 20px;
 	}
 }
 
@@ -2069,6 +2139,7 @@ li {
 
 	.store-info-title {
 		margin: 120px 0 70px 100px;
+
 		@media (max-width:1200px) {
 			margin: 120px 0 40px 65px;
 		}
@@ -2110,6 +2181,7 @@ li {
 		@media (max-width:1200px) {
 			background-size: 190% 66%;
 		}
+
 		@media (max-width:768px) {
 			background-size: 350% 79%;
 		}
@@ -2122,6 +2194,7 @@ li {
 				/* 文字父層區塊padding */
 				letter-spacing: .2em;
 				padding: 30px 15px 60px 130px;
+
 				@media (max-width:1200px) {
 					flex-direction: column;
 					padding: 40px 0 40px 0;
@@ -2130,7 +2203,10 @@ li {
 
 			.ifmblock4 {
 				margin: 40px 0 10px 0;
-				font-weight: 600;
+				font-size: 17px;
+				font-family: $font_3;
+				font-weight: bolder;
+				// font-weight: 600;
 				letter-spacing: .1em;
 			}
 
@@ -2148,14 +2224,17 @@ li {
 							position: absolute;
 							background-repeat: repeat;
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'%3E%3Cstyle type='text/css'%3E.squiggle%7Banimation:shift .5s linear infinite;%7D@keyframes shift %7Bfrom %7Btransform:translateX(-10px);%7Dto %7Btransform:translateX(0);%7D%7D%3C/style%3E%3Cpath fill='none' stroke='black' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5' /%3E%3C/svg%3E");
+
 							@media (max-width:1600px) {
-								width:135px ;
+								width: 135px;
 							}
+
 							@media (max-width:768px) {
-								width:115px ;
+								width: 115px;
 							}
 						}
-						&:hover{
+
+						&:hover {
 							opacity: .5;
 						}
 					}
@@ -2165,39 +2244,51 @@ li {
 			.footer-info-line1 {
 				width: 1100px;
 				border-bottom: .1em solid rgba(0, 0, 0, 0.3);
+
 				@media (max-width:1800px) {
 					width: 1000px;
 				}
+
 				@media (max-width:1600px) {
 					width: 900px;
 				}
+
 				@media (max-width:1400px) {
 					width: 800px;
 				}
+
 				@media (max-width:1200px) {
 					width: 100%;
 				}
+
 				@media (max-width:768px) {
 					width: 450px;
 				}
+
 				@media (max-width:750px) {
 					width: 400px;
 				}
+
 				@media (max-width:690px) {
 					width: 350px;
 				}
+
 				@media (max-width:630px) {
 					width: 300px;
 				}
+
 				@media (max-width:590px) {
 					width: 250px;
 				}
+
 				@media (max-width:530px) {
 					width: 200px;
 				}
+
 				@media (max-width:460px) {
 					width: 150px;
 				}
+
 				@media (max-width:410px) {
 					width: 100px;
 				}
@@ -2217,26 +2308,32 @@ li {
 		position: absolute;
 		top: 25%;
 		right: 5%;
-		@media (max-width:1300px){
+
+		@media (max-width:1300px) {
 			top: 30%;
 			right: 3%;
 		}
-		@media (max-width:1200px){
+
+		@media (max-width:1200px) {
 			top: 3%;
 			right: 10%;
 		}
-		@media (max-width:1000px){
+
+		@media (max-width:1000px) {
 			top: 3%;
 			right: 10%;
 		}
-		@media (max-width:900px){
+
+		@media (max-width:900px) {
 			right: 5%;
 		}
-		@media (max-width:768px){
+
+		@media (max-width:768px) {
 			top: 29%;
 			right: 4%;
 		}
-		@media (max-width:537px){
+
+		@media (max-width:537px) {
 			top: 27%;
 		}
 
@@ -2246,10 +2343,12 @@ li {
 			@media (max-width:1700px) {
 				width: 300px;
 			}
+
 			@media (max-width:1300px) {
 				width: 250px;
 			}
-			@media (max-width:768px){
+
+			@media (max-width:768px) {
 				width: 200px;
 			}
 		}
