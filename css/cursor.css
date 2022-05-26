@@ -6,7 +6,7 @@
   border: 1px solid rgba(202, 37, 37, 0.1);
   border-radius: 50%;
   pointer-events: none;
-  background-image: url("../img/cursor/add-circle.svg");
+  background-image: url("../img/cursor/abc.ico");
   background-position: 3% 2%;
   -webkit-transition: -webkit-transform .3s ease-out;
   transition: -webkit-transform .3s ease-out;
