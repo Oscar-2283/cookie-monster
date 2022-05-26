@@ -1,9 +1,11 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   border: 0;
-  transition: 0.3s;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 body {
@@ -37,6 +39,7 @@ h2 {
 a {
   color: black;
 }
+
 a:hover {
   text-decoration: none;
   color: #000;
@@ -83,9 +86,10 @@ title .titleTag {
   height: 100vh;
   position: relative;
 }
+
 .profile p {
   font-size: 27.98px;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   font-weight: 600;
   z-index: 2;
 }
@@ -101,27 +105,35 @@ title .titleTag {
   top: 184px;
   left: 80px;
 }
+
 .navbar .navbar_title .title_p {
   font-size: 40px;
   line-height: 48px;
 }
+
 .navbar .navbar_content {
   position: absolute;
   top: 360px;
   left: 110px;
 }
+
 .navbar .navbar_content .navbar_target {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 150px;
   margin-bottom: 34px;
 }
+
 .navbar .navbar_content .navbar_target .sort {
   font-size: 17px;
   margin-right: 10px;
 }
+
 .navbar .navbar_content .navbar_target a {
   font-size: 30px;
 }
+
 .navbar .navbar_content .navbar_target .about::after {
   content: "";
   position: absolute;
@@ -131,6 +143,7 @@ title .titleTag {
   left: 27px;
   background-color: black;
 }
+
 .navbar .navbar_content .navbar_target .news::after {
   content: "";
   position: absolute;
@@ -140,6 +153,7 @@ title .titleTag {
   left: 27px;
   background-color: black;
 }
+
 .navbar .navbar_content .navbar_target .menu::after {
   content: "";
   position: absolute;
@@ -149,6 +163,7 @@ title .titleTag {
   left: 27px;
   background-color: black;
 }
+
 .navbar .navbar_content .navbar_target .information::after {
   content: "";
   position: absolute;
@@ -158,6 +173,7 @@ title .titleTag {
   left: 27px;
   background-color: black;
 }
+
 .navbar .navbar_content .navbar_target .booking::after {
   content: "";
   position: absolute;
@@ -167,8 +183,11 @@ title .titleTag {
   left: 27px;
   background-color: black;
 }
+
 .navbar .navbar_icon {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 800px;
   left: 155px;
@@ -192,6 +211,7 @@ title .titleTag {
   margin-left: 39.15px;
   position: relative;
 }
+
 .mark::after {
   position: absolute;
   width: 14.05px;
@@ -199,13 +219,15 @@ title .titleTag {
   background-color: black;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .profile_text {
   position: absolute;
   margin-top: 90.01px;
 }
+
 @media (min-width: 1400px) {
   .profile_text {
     margin-left: 46.275%;
@@ -269,11 +291,13 @@ title .titleTag {
   background-color: #C4C4C4;
   position: relative;
 }
+
 .foodImg .foodImgTitle {
   position: absolute;
   bottom: -60px;
   left: 140px;
 }
+
 .foodImg .foodimg-p-img {
   position: absolute;
   bottom: 20px;
@@ -283,7 +307,7 @@ title .titleTag {
   position: absolute;
   bottom: 40px;
   left: 10px;
-  letter-spacing: 0.2em;
+  letter-spacing: .2em;
   margin-left: 1em;
 }
 
@@ -319,15 +343,21 @@ title .titleTag {
   width: 100%;
   height: 807px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .news .swiper-news-container {
   position: relative;
   margin: 0 auto;
   width: 75%;
   height: 70%;
 }
+
 .news .swiper-news-container::before {
   width: 3px;
   height: 99%;
@@ -335,8 +365,9 @@ title .titleTag {
   background-size: 100% 17px;
   background-repeat: repeat-y;
   position: absolute;
-  content: "";
+  content: '';
 }
+
 .news .swiper-news-container::after {
   width: 100%;
   height: 4px;
@@ -346,12 +377,14 @@ title .titleTag {
   position: absolute;
   left: 0;
   bottom: 0.7em;
-  content: "";
+  content: '';
 }
+
 .news .swiper-news-container .swiper-news-border-line {
   width: 100%;
   height: 100%;
 }
+
 .news .swiper-news-container .swiper-news-border-line::before {
   width: 3px;
   height: 99%;
@@ -360,8 +393,9 @@ title .titleTag {
   background-repeat: repeat-y;
   position: absolute;
   right: 0.1em;
-  content: "";
+  content: '';
 }
+
 .news .swiper-news-container .swiper-news-border-line::after {
   width: 100%;
   height: 3px;
@@ -369,5 +403,6 @@ title .titleTag {
   background-size: 17px 100%;
   background-repeat: repeat-x;
   position: absolute;
-  content: "";
-}/*# sourceMappingURL=index.css.map */
+  content: '';
+}
+/*# sourceMappingURL=index.css.map */

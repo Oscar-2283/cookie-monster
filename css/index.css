@@ -18,6 +18,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .sectionSize {
@@ -229,10 +230,14 @@ h2 {
 .nav .navbar .navbar_icon a .fa-brands {
   font-size: 50px;
   color: #d74f4b;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .nav .navbar .navbar_icon a .fa-brands:hover {
   opacity: .5;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .nav .navbar .navbar_icon a .fa-facebook {
@@ -2416,6 +2421,8 @@ li {
 
 .ifmblock3Left .block_text .fa-location-dot {
   color: #ea4335;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .ifmblock3Right {
@@ -2593,8 +2600,9 @@ li {
   }
 }
 
-#store_information .footer_content .information_page .ifmblock3 .block_text a:hover {
-  opacity: .5;
+#store_information .footer_content .information_page .ifmblock3 .block_text a:hover .fa-location-dot {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #store_information .footer_content .information_page .footer-info-line1 {

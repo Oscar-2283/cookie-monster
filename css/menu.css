@@ -42,6 +42,12 @@
   }
 }
 
+@media (max-width: 1120px) {
+  #menu {
+    overflow: visible;
+  }
+}
+
 .menu-list {
   height: 100%;
   width: 100%;
@@ -72,7 +78,6 @@
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: bisque;
     padding: 0 1em;
     z-index: 3;
   }
@@ -116,8 +121,16 @@
     height: 83.86px;
     margin-left: 50%;
     margin-top: 75%;
-    background-color: darkgray;
     font-size: 22px;
+    background-image: url(../img/1-5菜單/sticker/Group64.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list .list1 .tag1 {
+    background-image: url(../img/1-5菜單/sticker/Group64.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -152,7 +165,15 @@
     height: 64.56px;
     left: -20%;
     margin-top: 1rem;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group67.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list .list2 .tag2 {
+    background-image: url(../img/1-5菜單/sticker/Group67.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -186,7 +207,15 @@
     height: 76.42px;
     left: -5%;
     margin-top: 4rem;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group69.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list .list3 .tag3 {
+    background-image: url(../img/1-5菜單/sticker/Group69.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -221,7 +250,15 @@
     height: 81.47px;
     left: -67%;
     top: 71%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group70.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list .list4 .tag4 {
+    background-image: url(../img/1-5菜單/sticker/Group63.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -260,7 +297,15 @@
     height: 60.18px;
     left: 42%;
     top: 70%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group65.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list .list5 .tag5 {
+    background-image: url(../img/1-5菜單/sticker/Group65.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -295,7 +340,8 @@
     height: 59.32px;
     top: -4%;
     left: 48%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group66.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -330,7 +376,8 @@
     height: 79.65px;
     top: -13%;
     left: 10%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group63.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -338,6 +385,13 @@
   background-image: url("../img/1-5菜單/佐味小食.webp");
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .menu-list .tag8 {
+    background-image: url(../img/1-5菜單/sticker/Group66.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .z-layer:first-child {

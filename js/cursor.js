@@ -5,7 +5,6 @@ document.addEventListener("mousemove",e=>{
 })
 
 let image = document.querySelectorAll('.list')
-console.log(image)
 image.forEach(item=>{
     item.addEventListener('mouseenter',function(){
         cursorX.style.transform = 'scale(1.5)'
@@ -18,7 +17,7 @@ image.forEach(item=>{
         cursorX.classList.remove('bg')
 
         cursorX.style.backgroundImage="url(./img/cursor/abc.ico)"
-        cursorX.style.transform = 'scale(1)'
+        cursorX.style.transform = 'scale(0.6) translate(-50%, -50%)'
     })
 })
 
