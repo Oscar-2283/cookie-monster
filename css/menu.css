@@ -3,21 +3,25 @@
   width: 100%;
   height: 100vh;
 }
+
 @media (min-width: 1100px) {
   .menu-section {
     height: 120vh;
   }
 }
+
 @media (min-width: 1100px) {
   .menu-section {
     height: 150vh;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-section {
     height: 200vh;
   }
 }
+
 @media (max-width: 768px) {
   .menu-section .menu-container {
     padding: 0px 2rem;
@@ -31,9 +35,16 @@
   background-position: center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   #menu {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 1120px) {
+  #menu {
+    overflow: visible;
   }
 }
 
@@ -41,11 +52,13 @@
   height: 100%;
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .menu-list .position-md-absolute {
     position: absolute;
   }
 }
+
 @media (max-width: 768px) {
   .menu-list a {
     width: 50%;
@@ -57,8 +70,8 @@
     width: 90%;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: bisque;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 0 1em;
     z-index: 3;
   }
@@ -70,6 +83,7 @@
     height: 100%;
   }
 }
+
 @media (min-width: 768px) {
   .menu-list .list1 {
     width: 45.31%;
@@ -78,6 +92,7 @@
     top: 10.47%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list1 {
     width: 706.32px;
@@ -86,11 +101,13 @@
     top: 10.47%;
   }
 }
+
 .menu-list .list1 .number1 {
   background-image: url("../img/1-5菜單/日式三明治.png");
   background-position: center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list1 .tag1 {
     z-index: 3;
@@ -98,10 +115,19 @@
     height: 83.86px;
     margin-left: 50%;
     margin-top: 75%;
-    background-color: darkgray;
     font-size: 22px;
+    background-image: url(../img/1-5菜單/sticker/Group64.svg);
+    background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-list .list1 .tag1 {
+    background-image: url(../img/1-5菜單/sticker/Group64.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-list .list2 {
     width: 24.86%;
@@ -110,6 +136,7 @@
     top: 70.2%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list2 {
     width: 409.3px;
@@ -118,11 +145,13 @@
     top: 70.2%;
   }
 }
+
 .menu-list .list2 .number2 {
   background-image: url("../img/1-5菜單/日式漢堡.jpg");
   background-position: center center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list2 .tag2 {
     z-index: 3;
@@ -130,9 +159,18 @@
     height: 64.56px;
     left: -20%;
     margin-top: 1rem;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group67.svg);
+    background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-list .list2 .tag2 {
+    background-image: url(../img/1-5菜單/sticker/Group67.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-list .list3 {
     width: 40.1%;
@@ -141,6 +179,7 @@
     top: 57.41%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list3 {
     width: 661.33px;
@@ -149,10 +188,12 @@
     top: 57.41%;
   }
 }
+
 .menu-list .list3 .number3 {
   background-image: url("../img/1-5菜單/極厚切丹麥.jpg");
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list3 .tag3 {
     z-index: 3;
@@ -160,9 +201,18 @@
     height: 76.42px;
     left: -5%;
     margin-top: 4rem;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group69.svg);
+    background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-list .list3 .tag3 {
+    background-image: url(../img/1-5菜單/sticker/Group69.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-list .list4 {
     width: 27.72%;
@@ -171,6 +221,7 @@
     top: 73.99%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list4 {
     width: 457.1px;
@@ -179,11 +230,13 @@
     top: 73.99%;
   }
 }
+
 .menu-list .list4 .number4 {
   background-image: url("../img/1-5菜單/主廚限定鹹派1.png");
   background-position: center center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list4 .tag4 {
     z-index: 3;
@@ -191,12 +244,22 @@
     height: 81.47px;
     left: -67%;
     top: 71%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group70.svg);
+    background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-list .list4 .tag4 {
+    background-image: url(../img/1-5菜單/sticker/Group63.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 .menu-list .list5 {
   z-index: 2;
 }
+
 @media (min-width: 768px) {
   .menu-list .list5 {
     width: 18.69%;
@@ -205,6 +268,7 @@
     top: 44.92%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list5 {
     width: 308.18px;
@@ -213,11 +277,13 @@
     top: 44.92%;
   }
 }
+
 .menu-list .list5 .number5 {
   background-image: url("../img/1-5菜單/飲品1.png");
   background-position: center center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list5 .tag5 {
     z-index: 3;
@@ -225,9 +291,18 @@
     height: 60.18px;
     left: 42%;
     top: 70%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group65.svg);
+    background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .menu-list .list5 .tag5 {
+    background-image: url(../img/1-5菜單/sticker/Group65.svg);
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: 768px) {
   .menu-list .list6 {
     width: 27.66%;
@@ -236,6 +311,7 @@
     top: 28.01%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list6 {
     width: 456.16px;
@@ -244,11 +320,13 @@
     top: 28.01%;
   }
 }
+
 .menu-list .list6 .number6 {
   background-image: url("../img/1-5菜單/佐味小食.webp");
   background-position: center center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list6 .tag6 {
     z-index: 3;
@@ -256,9 +334,11 @@
     height: 59.32px;
     top: -4%;
     left: 48%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group66.svg);
+    background-repeat: no-repeat;
   }
 }
+
 @media (min-width: 768px) {
   .menu-list .list7 {
     width: 28.8%;
@@ -267,6 +347,7 @@
     top: 12.73%;
   }
 }
+
 @media (min-width: 1512px) {
   .menu-list .list7 {
     width: 474.68px;
@@ -275,11 +356,13 @@
     top: 12.73%;
   }
 }
+
 .menu-list .list7 .number7 {
   background-image: url("../img/1-5菜單/限定甜品1.png");
   background-position: center center;
   background-size: cover;
 }
+
 @media (min-width: 768px) {
   .menu-list .list7 .tag7 {
     z-index: 3;
@@ -287,13 +370,22 @@
     height: 79.65px;
     top: -13%;
     left: 10%;
-    background-color: darkgray;
+    background-image: url(../img/1-5菜單/sticker/Group63.svg);
+    background-repeat: no-repeat;
   }
 }
+
 .menu-list .number8 {
   background-image: url("../img/1-5菜單/佐味小食.webp");
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .menu-list .tag8 {
+    background-image: url(../img/1-5菜單/sticker/Group66.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .z-layer:first-child {
@@ -302,4 +394,5 @@
 
 .z-layer {
   color: red;
-}/*# sourceMappingURL=menu.css.map */
+}
+/*# sourceMappingURL=menu.css.map */

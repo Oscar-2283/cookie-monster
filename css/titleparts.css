@@ -6,6 +6,7 @@
     width: 45px;
   }
 }
+
 @media (max-width: 645px) {
   .newsTitle .logoTag {
     width: 35px;
@@ -21,6 +22,7 @@
     width: 25px;
   }
 }
+
 @media (max-width: 386px) {
   .newsTitle .logoTag {
     width: 23px;
@@ -36,11 +38,13 @@
     width: 25px;
   }
 }
+
 @media (max-width: 467px) {
   .newsTitle .circle-line {
     width: 18px;
   }
 }
+
 .newsTitle p {
   margin: 0 50px;
   font-size: 30px;
@@ -56,8 +60,10 @@
     margin: 0 25px;
   }
 }
+
 @media (max-width: 467px) {
   .newsTitle p {
     margin: 0 15px;
   }
-}/*# sourceMappingURL=titleparts.css.map */
+}
+/*# sourceMappingURL=titleparts.css.map */
