@@ -47,7 +47,7 @@ function navbardown(){
   window.addEventListener('resize', function(){
       var currentWidth = window.innerWidth;
       var currentHeight = window.innerHeight;
-   
+  
       if(currentWidth<= 1200){
         nav.classList.add('d-none')
         nav.classList.remove('d-flex')
