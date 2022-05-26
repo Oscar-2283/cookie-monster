@@ -1,11 +1,14 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import url("https://fonts.googleapis.com/css?family=Titan+One");
 .container-phone {
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   display: none;
+  z-index: 10;
 }
 
 @media (max-width: 1200px) {
@@ -14,7 +17,7 @@
   }
 }
 
-.menu-container {
+.menu-container-phone {
   background-color: #CEB289CC;
   border-radius: 100%;
   color: white;
@@ -28,7 +31,7 @@
   transition: all 0.3s;
 }
 
-.menu-container.full-menu {
+.menu-container-phone.full-menu {
   border-radius: 0;
   padding: 0 !important;
   position: aboslute;
@@ -40,12 +43,12 @@
   transition: all 0.3s;
 }
 
-.full-menu .menu {
+.full-menu .menu-phone {
   top: 40px;
   left: 40px;
 }
 
-.menu {
+.menu-phone {
   color: white;
   font-size: 3.5em;
   position: absolute;
@@ -56,7 +59,7 @@
   transition: all 0.3s;
 }
 
-.menu i {
+.menu-phone i {
   opacity: 0.7;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -64,7 +67,7 @@
   transition: all 0.3s;
 }
 
-.menu i:hover {
+.menu-phone i:hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -73,9 +76,10 @@
 }
 
 .overlay {
+  z-index: 10;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 0%;
   opacity: 0;
@@ -83,24 +87,24 @@
   overflow: hidden;
 }
 
-.overlay.open {
+.overlay.open-phone {
   opacity: .9;
   visibility: visible;
   height: 100%;
 }
 
-.overlay.open .overlay-menu {
+.overlay.open-phone .overlay-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 45%;
 }
 
-.overlay.open .overlay-menu ul {
+.overlay.open-phone .overlay-menu ul {
   position: relative;
 }
 
-.overlay.open .overlay-menu ul .media-icon {
+.overlay.open-phone .overlay-menu ul .media-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,23 +119,23 @@
   margin-left: 70px;
 }
 
-.overlay.open .overlay-menu ul .media-icon a {
+.overlay.open-phone .overlay-menu ul .media-icon a {
   text-decoration: none;
   z-index: 2;
 }
 
-.overlay.open .overlay-menu ul .media-icon a .fa-facebook {
+.overlay.open-phone .overlay-menu ul .media-icon a .fa-facebook {
   color: #375197;
 }
 
-.overlay.open .overlay-menu ul .media-icon a .fa-instagram {
+.overlay.open-phone .overlay-menu ul .media-icon a .fa-instagram {
   font-size: 52px;
   background: -webkit-linear-gradient(-135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.overlay.open .overlay-menu ul .media-icon a :hover {
+.overlay.open-phone .overlay-menu ul .media-icon a :hover {
   opacity: 1;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -139,37 +143,37 @@
   transition: all 0.3s;
 }
 
-.overlay.open .overlay-menu ul li {
+.overlay.open-phone .overlay-menu ul li {
   -webkit-animation: fadeInRight .5s ease forwards;
           animation: fadeInRight .5s ease forwards;
   -webkit-animation-delay: .35s;
           animation-delay: .35s;
 }
 
-.overlay.open .overlay-menu ul li:nth-of-type(2) {
+.overlay.open-phone .overlay-menu ul li:nth-of-type(2) {
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }
 
-.overlay.open .overlay-menu ul li:nth-of-type(3) {
+.overlay.open-phone .overlay-menu ul li:nth-of-type(3) {
   -webkit-animation-delay: .45s;
           animation-delay: .45s;
 }
 
-.overlay.open .overlay-menu ul li:nth-of-type(4) {
+.overlay.open-phone .overlay-menu ul li:nth-of-type(4) {
   -webkit-animation-delay: .50s;
           animation-delay: .50s;
 }
 
-.overlay.open .overlay-menu ul li a {
+.overlay.open-phone .overlay-menu ul li a {
   letter-spacing: 10px;
 }
 
-.overlay.open .overlay-menu ul li img {
+.overlay.open-phone .overlay-menu ul li img {
   margin-right: 10px;
 }
 
-.overlay nav {
+.overlay .menu-container {
   font-size: 3.2em;
   font-family: "Titan One", san-serif;
   position: relative;
@@ -181,7 +185,7 @@
   text-align: center;
 }
 
-.overlay ul {
+.overlay .menu-container ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -190,7 +194,8 @@
   height: 100%;
 }
 
-.overlay ul li {
+.overlay .menu-container ul li {
+  z-index: 10;
   display: block;
   height: 20%;
   min-height: 50px;
@@ -198,7 +203,7 @@
   opacity: 0;
 }
 
-.overlay ul li a {
+.overlay .menu-container ul li a {
   display: block;
   position: relative;
   color: #fff;
@@ -211,7 +216,7 @@
   transition: all 0.3s;
 }
 
-.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+.overlay .menu-container ul li a:hover, .overlay .menu-container ul li a:focus, .overlay .menu-container ul li a:active {
   opacity: 1;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -310,4 +315,4 @@
             transform: scale(1);
   }
 }
-/*# sourceMappingURL=menutest.css.map */
+/*# sourceMappingURL=phonemenu.css.map */
