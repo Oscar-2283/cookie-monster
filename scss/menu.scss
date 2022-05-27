@@ -62,6 +62,12 @@ $font_4: "Kristen ITC";
             display: none!important;
         }
     }
+    .d-none-sweet{
+        @media(min-width:1200px){
+
+            display: none!important;
+        }
+    }
   
 
     // background-color: grey;
@@ -78,9 +84,6 @@ $font_4: "Kristen ITC";
 
         .position-md-absolute {
             position: absolute;
-        }
-        .d-none-sweet{
-            display: none;
         }
     }
 

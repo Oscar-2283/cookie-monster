@@ -74,7 +74,7 @@
 
 <!-- 首頁外navbar -->
 <section>
-  <nav class="d-flex navbardown fixed-top align-items-center justify-content-between px-4 ">
+  <nav class="d-none navbardown fixed-top align-items-center justify-content-between px-4 ">
     <div class="logo d-flex justify-content-center align-items-center">
         <img src="./img/0-1 NAV/Logo.png"  width="70px" height="70px" alt="">
     </div>
@@ -236,14 +236,14 @@
             <img class="foodimg-p-img foodImg circle-4 " src="./img/1-3嚴選食材/bread.jpg">
           </div>
           <h1 class="foodImgTitle food-titlesize">麵包</h1>
-            <p class="foodImgText food-textsize font-weight-bold">天然酵母麵包 <br> 日本日清麵粉</p>
+            <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">天然酵母麵包 <br> 日本日清麵粉</p>
             <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/breadIcon.svg" alt="">
         </div>
       </div>
       <div class="col-6">
         <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox ">
-            <img class="foodimg-p-img foodIcon foodImg circle-4" src="./img/1-3嚴選食材/meat.jpg">
+          <div class="food_imgBox">
+            <img class="foodimg-p-img foodIcon foodImg circle-5" src="./img/1-3嚴選食材/meat.jpg">
           </div>
           <h1 class="foodImgTitle food-titlesize">肉品</h1>
           <p class="foodImgText food-textsize font-weight-bold foodTextAnimation position-absolute">澳洲草飼牛肉 <br> 國產LYD豬肉</p>
@@ -252,10 +252,10 @@
         </div>
         <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
           <div class="food_imgBox ">
-            <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/sauce.jpg">
+            <img class="foodimg-p-img foodImg circle-6" src="./img/1-3嚴選食材/sauce.jpg">
           </div>
           <h1 class="foodImgTitle food-titlesize">醬汁 </h1>
-          <p class="foodImgText food-textsize  font-weight-bold d-flex align-items-center">自製特製醬料 <br> 日本進口醬汁 </p>
+          <p class="foodImgText food-textsize  font-weight-bold d-flex align-items-center foodTextAnimation">自製特製醬料 <br> 日本進口醬汁 </p>
           <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/sauceIcon.svg" alt="">
         </div>
       </div>
@@ -264,10 +264,10 @@
       <div class="col-6">
         <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
           <div class="food_imgBox">
-            <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/egg.jpg">
+            <img class="foodimg-p-img foodImg circle-7" src="./img/1-3嚴選食材/egg.jpg">
           </div>
           <h1 class="foodImgTitle food-titlesize">雞蛋</h1>
-          <p class="foodImgText food-textsize font-weight-bold">有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
+          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
           </p>
           <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/eggIcon.svg" alt="">
         </div>
@@ -275,10 +275,10 @@
       <div class="col-6">
         <div class="foodImg2 foodImg foodImg-all d-flex align-items-center justify-content-center">
           <div class="food_imgBox ">
-            <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/milk.jpg">
+            <img class="foodimg-p-img foodImg circle-5" src="./img/1-3嚴選食材/milk.jpg">
           </div>
           <h1 class="foodImgTitle food-titlesize">牛奶</h1>
-          <p class="foodImgText food-textsize font-weight-bold">紐西蘭牛乳</p>
+          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">紐西蘭牛乳</p>
           <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/milkIcon.svg" alt="">
         </div>
         <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
@@ -286,7 +286,7 @@
             <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/veg.jfif">
           </div>
           <h1 class="foodImgTitle food-titlesize">蔬果 </h1>
-          <p class="foodImgText food-textsize font-weight-bold ">季節水果<br> 產銷履歷蔬菜<br> 小農蔬菜</p>
+          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">季節水果<br> 產銷履歷蔬菜<br> 小農蔬菜</p>
           <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/vegIcon.svg" alt="">
         </div>
       </div>
@@ -505,7 +505,6 @@
             <p class=" font-22 ">日式漢堡</p>
           </div>
           <div class="w-100 h-100 number2 overflow-hidden circle-2">
-            <!-- <img src="./img/1-5菜單/日式漢堡.jpg" width="100%" alt=""> -->
           </div>
         </div>
       </a>
@@ -666,7 +665,7 @@
   <script src="./js/cursor.js"></script>
   <script src="./js/bubbleCursor.js"></script>
   <script>
-    bubbleCursor()
+    // bubbleCursor()
   </script>
 
   <!-- Banner的 Swiper -->

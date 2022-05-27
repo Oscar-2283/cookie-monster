@@ -21,6 +21,7 @@ html {
 	border: 0;
 	transition: .3s;
 	cursor: none;
+
 }
 
 body {
@@ -1240,6 +1241,7 @@ h2 {
 	.newsTitle {
 		padding-top: 120px;
 		padding-left: 40px;
+		padding-bottom: 40px;;
 		@media (max-width:768px) {
 			padding-top:20% ;
 		}
@@ -1273,17 +1275,12 @@ h2 {
 		transition-delay: .3s;
 
 		.foodTextAnimation {
-			// transition-delay: 1s;
-			// animation: foodText 3s linear .5s;
-			// animation-fill-mode: forwards ;
+
 			transition-delay: .3s;
 			opacity: 1;
 		}
 
 		.food-animation {
-			// transition-delay: 1s;
-			// animation: foodIcon 1s linear ;
-			// animation-fill-mode: forwards;
 			opacity: 0;
 			transition-delay: .6s;
 		}
@@ -1978,8 +1975,10 @@ h2 {
 	.newsTitle {
 		padding-top: 120px;
 		padding-left: 100px;
+		padding-bottom: 40px;
 		@media (max-width:768px) {
 			padding-top: 10%;
+			padding-left: 40px;
 		}
 	}
 }

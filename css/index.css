@@ -1478,6 +1478,7 @@ h2 {
 #food .newsTitle {
   padding-top: 120px;
   padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 768px) {
@@ -2301,11 +2302,13 @@ h2 {
 #menu .newsTitle {
   padding-top: 120px;
   padding-left: 100px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 768px) {
   #menu .newsTitle {
     padding-top: 10%;
+    padding-left: 40px;
   }
 }
 

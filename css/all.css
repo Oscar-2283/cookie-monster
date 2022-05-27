@@ -102,9 +102,21 @@
     animation: border-animation4 8s infinite linear;
 }
 
+.circle-5 {
 
+    border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+    animation: border-animation5 7s infinite linear;
+}
 
+.circle-6 {
+    border-radius:50% 50% 60% 40% / 51% 47% 53% 49%  ;
+    animation: border-animation6 6s infinite linear;
+}
 
+.circle-7 {
+    border-radius:60% 40% 62% 38% / 56% 49% 51% 44% ;
+    animation: border-animation7 10s infinite linear;
+}
 
 @keyframes border-animation1 {
     0% { 
@@ -168,7 +180,28 @@
 }
 @keyframes border-animation4 {
     0% { 
-        transform: scale(1.2);
+        transform: scale(1.1);
+    }
+    25%{
+        border-radius: 41% 59% 45% 55% / 66% 66% 34% 34% ;
+    }
+    50%{
+        border-radius: 52% 48% 57% 43% / 47% 50% 50% 53% ;
+    }
+    70%{
+        border-radius: 63% 37% 39% 61% / 64% 63% 37% 36% ;
+        transform: scale(1.0.5);
+    }
+    100%{
+        border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
+        transform: scale(1.1);
+    }
+}
+
+
+@keyframes border-animation5 {
+    0% { 
+        transform: scale(1.05);
     }
     25%{
         border-radius: 41% 59% 45% 55% / 66% 66% 34% 34% ;
@@ -182,7 +215,49 @@
     }
     100%{
         border-radius: 57% 43% 57% 43% / 51% 58% 42% 49% ;
-        transform: scale(1.2);
+        transform: scale(1.05);
     }
 }
 
+@keyframes border-animation6 {
+    0% { 
+        transform: scale(1.03);
+    }
+    25%{
+        border-radius: 50% 50% 60% 40% / 35% 35% 65% 65% ;
+    }
+    50%{
+        border-radius: 50% 50% 47% 53% / 54% 35% 65% 46% ;
+        transform: scale(1.1);
+    }
+    75%{
+        border-radius: 50% 50% 47% 53% / 32% 40% 60% 68% ;
+        transform: scale(1.05);
+    }
+    100%{
+        border-radius: 50% 50% 60% 40% / 51% 47% 53% 49%     ;
+        transform: scale(1.03);
+    }
+}
+
+@keyframes border-animation7 {
+    0% { 
+        transform: scale(1.2);
+    }
+    25%{
+        border-radius: 28% 72% 71% 29% / 56% 62% 38% 44% ;
+    }
+    50%{
+
+        border-radius: 51% 49% 69% 31% / 56% 50% 50% 44% ;
+        transform: scale(1.12);
+    }
+    70%{
+        border-radius:29% 71% 58% 42% / 56% 50% 50% 44% ;
+        transform: scale(1.07);
+    }
+    100%{
+        border-radius: 60% 40% 62% 38% / 56% 49% 51% 44% ;
+        transform: scale(1.2);
+    }
+}
