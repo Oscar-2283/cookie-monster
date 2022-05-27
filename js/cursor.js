@@ -9,7 +9,7 @@ image.forEach(item=>{
     item.addEventListener('mouseenter',function(){
         cursorX.style.transform = 'scale(1.5)'
         cursorX.classList.add('bg')
-        cursorX.style.backgroundImage="url(../img/cursor/add-circle.svg)"
+        cursorX.style.backgroundImage="url../cookie-monster/img/cursor/add-circle.svg)"
     })
 })
 image.forEach(item=>{
