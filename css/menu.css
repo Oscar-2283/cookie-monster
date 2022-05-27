@@ -4,13 +4,13 @@
   height: 100vh;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 768px) {
   .menu-section {
-    height: 120vh;
+    height: 100%;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .menu-section {
     height: 150vh;
   }
@@ -23,6 +23,9 @@
 }
 
 @media (max-width: 768px) {
+  .menu-section {
+    height: unset;
+  }
   .menu-section .menu-container {
     padding: 0px 2rem;
   }
@@ -36,7 +39,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   #menu {
     overflow: hidden;
   }
@@ -48,11 +51,6 @@
   }
 }
 
-.menu-list {
-  height: 100%;
-  width: 100%;
-}
-
 .menu-list a {
   color: black !important;
 }
@@ -61,23 +59,35 @@
   text-decoration: none;
 }
 
+@media (max-width: 1200px) {
+  .menu-list .d-menu-none {
+    display: none !important;
+  }
+}
+
 .menu-list .font-22 {
   font-family: "MS Gothic";
   font-size: 22px;
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+.menu-list .d-menu-block {
+  display: block;
+}
+
+@media (min-width: 1200px) {
   .menu-list .position-md-absolute {
     position: absolute;
   }
+  .menu-list .d-none-sweet {
+    display: none;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list a {
     width: 50%;
     height: 50vw;
-    margin: 1rem 0;
     padding: 0 0.75rem;
   }
   .menu-list .tag {
@@ -93,12 +103,12 @@
     font-size: 1rem;
   }
   .menu-list .list {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 74%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list1 {
     width: 45.31%;
     height: 42.5vw;
@@ -122,7 +132,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list1 .tag1 {
     z-index: 3;
     width: 50%;
@@ -135,14 +145,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .list1 .tag1 {
     background-image: url(../img/1-5菜單/sticker/Group64.svg);
     background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list2 {
     width: 24.86%;
     height: 24.86vw;
@@ -166,7 +176,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list2 .tag2 {
     z-index: 3;
     width: 219.46px;
@@ -178,14 +188,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .list2 .tag2 {
     background-image: url(../img/1-5菜單/sticker/Group67.svg);
     background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list3 {
     width: 40.1%;
     height: 40.1vw;
@@ -208,7 +218,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list3 .tag3 {
     z-index: 3;
     width: 267.72px;
@@ -220,14 +230,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .list3 .tag3 {
     background-image: url(../img/1-5菜單/sticker/Group69.svg);
     background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list4 {
     width: 27.72%;
     height: 27.72vw;
@@ -251,7 +261,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list4 .tag4 {
     z-index: 3;
     width: 496.14px;
@@ -263,7 +273,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .list4 .tag4 {
     background-image: url(../img/1-5菜單/sticker/Group63.svg);
     background-repeat: no-repeat;
@@ -274,7 +284,7 @@
   z-index: 2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list5 {
     width: 18.69%;
     height: 18.69vw;
@@ -298,7 +308,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list5 .tag5 {
     z-index: 3;
     width: 238.67px;
@@ -310,14 +320,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .list5 .tag5 {
     background-image: url(../img/1-5菜單/sticker/Group65.svg);
     background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list6 {
     width: 27.66%;
     height: 27.66vw;
@@ -341,7 +351,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list6 .tag6 {
     z-index: 3;
     width: 243.66px;
@@ -353,7 +363,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list7 {
     width: 28.8%;
     height: 28.8vw;
@@ -377,7 +387,7 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .menu-list .list7 .tag7 {
     z-index: 3;
     width: 70%;
@@ -395,7 +405,7 @@
   background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .menu-list .tag8 {
     background-image: url(../img/1-5菜單/sticker/Group66.svg);
     background-repeat: no-repeat;
