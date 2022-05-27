@@ -1232,10 +1232,17 @@ h2 {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	padding-bottom: 10%;
+	@media (max-width:768px) {
+		padding-bottom: 26%;
+	}
 
 	.newsTitle {
 		padding-top: 120px;
 		padding-left: 40px;
+		@media (max-width:768px) {
+			padding-top:20% ;
+		}
 	}
 }
 
@@ -1967,9 +1974,15 @@ h2 {
 //最新消息區-----------------------
 
 #menu {
+	@media (max-width:768px) {
+		padding-bottom: 200%;
+	}
 	.newsTitle {
 		padding-top: 120px;
 		padding-left: 100px;
+		@media (max-width:768px) {
+			padding-top: 10%;
+		}
 	}
 }
 
@@ -2166,11 +2179,11 @@ li {
 		position: relative;
 		width: 100%;
 		padding: 0 5%;
-		background-color: #FFFAF7;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-position: 0 150%;
-		background-size: 100% 88%;
+		background-attachment: fixed;
+		background-position: 2% 150%;
+		background-size: 120% 88%;
 		font-weight: 500;
 
 		@media (max-width:1700px) {
