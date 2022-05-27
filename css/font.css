@@ -1,11 +1,10 @@
 @font-face {
-  font-family: 'KFhimaji';
+  font-family: "KFhimaji";
   src: local("KFhimaji"), url("../font/KFhimaji.woff") format("woff"), url("../font/KFhimaji.ttf") format("truetype"), url("../font/KFhimaji.otf") format("embedded-opentype");
-  font-family: 'MS Gothic';
+  font-family: "MS Gothic";
   src: local("MS Gothic"), url("../font/MS Gothic.woff") format("woff"), url("../font/MS Gothic.ttf") format("truetype"), url("../font/MS Gothic.otf") format("embedded-opentype");
-  font-family: 'Yu Gothic';
+  font-family: "Yu Gothic";
   src: local("Yu Gothic"), url("../font/Yu Gothic.woff") format("woff"), url("../font/Yu Gothic.ttf") format("truetype"), url("../font/Yu Gothic.otf") format("embedded-opentype");
-  font-family: 'Kristen ITC';
+  font-family: "Kristen ITC";
   src: local("Kristen ITC"), url("../font/Kristen ITC.woff") format("woff"), url("../font/Kristen ITC.ttf") format("truetype"), url("../font/Kristen ITC.otf") format("embedded-opentype");
-}
-/*# sourceMappingURL=font.css.map */
+}/*# sourceMappingURL=font.css.map */

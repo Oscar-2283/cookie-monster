@@ -15,20 +15,53 @@ nav {
 }
 
 .navbardown {
-    @media(max-width:1400px) {
-        display: none;
+    background: #CEB289;
+    @media(max-width:1200px) {
+        display: none!important;
     }
 
     p {
         color: black;
     }
 
-    background: #CEB289;
-
+    .logo {
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+    
+        &:hover img {
+            transform: translateZ(50px);
+        }
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        a {
+            display: flex;
+            align-items: center;
+            width: 220px;
+        }
+        .container1 {
+            overflow: hidden;
+            position: relative;
+            .menudown {
+                display: flex;
+                height: 100px;
+                position: relative;
+            
+                a {
+                    color: white !important;
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
     .media {
         .fa-brands {
             font-size: 50px;
-            color: black;
+            color: #375197;
 
             &:hover {
                 opacity: .5;
@@ -37,34 +70,18 @@ nav {
 
         .fa-instagram {
             margin-left: 20px;
+            background: -webkit-linear-gradient(-135deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
         }
     }
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    transform-style: preserve-3d;
 
-    &:hover img {
-        transform: translateZ(50px);
-    }
-}
 
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    a {
-        width: 220px;
-    }
-}
 
-.container {
-    overflow: hidden;
-    position: relative;
-}
+
 
 .snake {
     position: absolute;
@@ -114,16 +131,7 @@ nav {
     transition: none;
 }
 
-.menudown {
-    display: flex;
-    height: 100px;
-    position: relative;
 
-    a {
-        color: white !important;
-        text-decoration: none !important;
-    }
-}
 
 .item {
     align-items: center;
@@ -139,17 +147,6 @@ nav {
 .icon {
     width: 50px;
     margin-right: 10px;
-}
-
-a {
-    display: flex;
-    align-items: center;
-    color: black !important;
-    text-decoration: none !important;
-}
-
-a:hover {
-    text-decoration: none !important;
 }
 
 

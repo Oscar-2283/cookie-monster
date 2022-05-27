@@ -5,59 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- swiper用的link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- booststrap用的link -->
-  <link href="./css/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <!-- lightbox效果用的link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="./css/lightbox.css" rel="stylesheet" />
   <!-- font-awesome的link -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- AOS效果 -->
-  <link rel="shortcut icon" href="./img/0-2 icon/webicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!--分頁icon-->
+  <link rel="shortcut icon" href="./img/icon/webicon.ico">
   <!-- 主頁以外navbar用CSS -->
   <link rel="stylesheet" href="./css/navbardown.css">
-  <link rel="stylesheet" href="./css/index.css">
   <!-- 整個頁面用的CSS -->
-  <link rel="stylesheet" href="./css/menu.css">
-  <!-- phone-menu -->
-  <link rel="stylesheet" href="./css/phonemenu.css">
+  <link rel="stylesheet" href="./css/index.css">
   <!-- 菜單區域的CSS -->
-  <link rel="stylesheet" href="./css/titleparts.css">
+  <link rel="stylesheet" href="./css/menu.css">
   <!-- 頁面錨點Title的CSS -->
+  <link rel="stylesheet" href="./css/titleparts.css">
   <link rel="stylesheet" href="./css/all.css">
+  <!-- 游標的CSS -->
   <link rel="stylesheet" href="./css/cursor.css">
   <!-- 字形的CSS -->
   <link rel="stylesheet" href="../cookie-monster/css/font.css">
+  <!-- 手機/平板的 hamburger -->
+  <link rel="stylesheet" href="./css/bubleMenu.css">
   <title>一人一伴ともだち</title>
 </head>
 
 <body>
-<!-- cursor -->
+<!-- cursor 網頁游標 -->
 <div class="cursor"></div>
-<!-- phone-menu -->
-<div class="container-phone ">
-  <div class="menu-container-phone" id="toggle">
-      <a href="#" class="menu-phone"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+
+<!-- 手機/平板的 hamburger -->
+<div class="bubleMenu">
+  <div class="container-phone">
+      <div class="menuContainer" id="toggle">
+          <a href="#" class="menu-container-a"><i class="fa fa-bars bubble-menu-icon" aria-hidden="true"></i></a>
+      </div>
   </div>
-</div>
-<div class="overlay" id="overlay">
-  <div class="overlay-menu">
-      <ul>
-          <li><a href="#"><img src="./img/bear.png" alt="bear">關於我們</a></li>
-          <li><a href="#"><img src="./img/bear.png" alt="bear">最新消息</a></li>
-          <li><a href="#"><img src="./img/bear.png" alt="bear">&emsp;菜單&emsp;</a></li>
-          <li><a href="#"><img src="./img/bear.png" alt="bear">店家資訊</a></li>
-          <li><a href="#"><img src="./img/bear.png" alt="bear">預約訂位</a></li>
-          <div class="media-icon">
-              <a  href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i>
-              </a>&emsp;<a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-gradient"></i></a>
-          </div>
-      </ul>
+  <div class="overlay" id="overlay">
+      <nav class="overlay-menu" id="overlay-menu">
+          <ul class="overlay-menu-ul">
+              <li
+              class="overlay-menu-li"><a href="#aboutus"><img src="./img/icon/bear.png" alt="bear">關於我們</a></li>
+              <li
+              class="overlay-menu-li"><a href="#news"><img src="./img/icon/bear.png" alt="bear">最新消息</a></li>
+              <li
+              class="overlay-menu-li"><a href="#menu"><img src="./img/icon/bear.png" alt="bear">&emsp;菜單&emsp;</a></li>
+              <li
+              class="overlay-menu-li"><a href="#store_information"><img src="./img/icon/bear.png" alt="bear">店家資訊</a></li>
+              <li
+              class="overlay-menu-li"><a href="#"><img src="./img/icon/bear.png" alt="bear">預約訂位</a></li>
+              <div class="media-icon">
+                  <a  href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i>
+                  </a>&emsp;<a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-gradient"></i></a>
+              </div>
+          </ul>
+      </nav>
   </div>
+
 </div>
+<!-- 手機/平板的 hamburger -->
+
 
 <!-- 首頁外navbar -->
 <section>
@@ -629,8 +642,8 @@
 
 
 
-
-  
+  <script src="./js/bubleMenu.js"></script>
+  <!-- 手機/平板的menu JS檔案 -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- swiper的js連結 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -649,13 +662,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- aos效果的js連結 -->
   <script src="./js/vanilla-tilt.min.js"></script>
-  <script src="./js/navbar.js"></script>
+  <!-- <script src="./js/navbar.js"></script> -->
 
   <script src="./js/vanilla-tilt.min.js"></script>
-  <script src="./js/navbar.js"></script>
+  <!-- <script src="./js/navbar.js"></script> -->
   <!-- <script src="./js/bubbleCursor.js"></script> -->
   <script src="./js/cursor.js"></script>
-  <script src="./js/phonemenu.js"></script>
+  
 
   <!-- Banner的 Swiper -->
   <script>
@@ -667,6 +680,13 @@
       slidesPerView: 1,
       effect: "fade",
       loop: true,
+      breakpoints:{//banner swiper變版js
+        1199:{
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+      },
+      // direction:'horizontal' ,
       direction: getDirection(),
       autoplay: {
         delay: 3000,

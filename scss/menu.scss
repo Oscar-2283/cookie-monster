@@ -48,6 +48,12 @@ $font_4: "Kristen ITC";
 .menu-list {
     height: 100%;
     width: 100%;
+    a{
+        color: black!important;
+        &:hover{
+            text-decoration: none;
+        }
+    }
 
     // background-color: grey;
     .font-22 {
