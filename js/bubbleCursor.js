@@ -118,7 +118,7 @@ function bubbleCursor(options) {
 
     this.baseDimension = 4
 
-    var colors = ['#ccc','#6cf',"#e6f1f7"]
+    var colors = ['#FFD18E','#C5D0FF',"#FFFAF7"]
     var color = colors[Math.floor(Math.random()*colors.length)]
 
     this.update = function(context) {
