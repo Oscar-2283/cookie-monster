@@ -29,7 +29,6 @@ let banner = document.querySelector("#banner");
 
 let last = 0;
 var scrollTop = window.pageYOffset || document.body.scrollTop;
-console.log("eefefef" + scrollTop);
 function navbardown() {
   window.addEventListener("resize", function () {
     var currentWidth = window.innerWidth;
@@ -52,7 +51,7 @@ function scrolle() {
       if (Math.abs(currentPos - last) < 100) {
         return;
       }
-      console.log("dfdf" + currentPos);
+
       if (currentPos > last) {
         nav.style.top = "-200px";
       } else {
@@ -73,7 +72,6 @@ navbardown();
 ////////////////////////////////////////
 
 let mediaIcon = document.querySelectorAll(".media a");
-console.log(mediaIcon);
 let mediaBg = document.querySelector(".navbardown");
 let mediaColor = document.querySelectorAll(".navbardown p");
 
@@ -107,7 +105,7 @@ VanillaTilt.init(document.querySelector(".logo"), {
 
 let marker = document.querySelector("#marker");
 let item = document.querySelectorAll("ul li a");
-console.log(item);
+
 
 function Indicator(e) {
   marker.style.top = e.offsetTop + "px";

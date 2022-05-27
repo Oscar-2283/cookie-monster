@@ -675,12 +675,12 @@
 
 
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: auto,
+      slidesPerView: 1,
       effect: "fade",
       loop: true,
       breakpoints:{//banner swiper變版js
         1199:{
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 20
         }
       },
@@ -700,31 +700,30 @@
 
     });
       
-    function getDirection() {
-      var windowWidth = window.innerWidth;
-      var direction = window.innerWidth <= 1200 ? 'vertical' : 'horizontal';
 
-      return direction;
-    }
 
   </script>
 
   <!-- 最新消息 swiper -->
   <script>
     var swiper2 = new Swiper(".mySwiper1", {
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      mousewheel: true,
+      loop:true,
+      slidesPerView: 1,
       spaceBetween: 30,
-      direction: "vertical",
-      breakpoints:{//banner swiper變版js
+      mousewheel: true,
+      direction: 'horizontal',
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    
+      breakpoints:{
         1199:{
-          direction:"horizontal ",
+          direction: "vertical",
         }
       },
+
+
     });
     
   </script>
