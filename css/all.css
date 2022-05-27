@@ -261,3 +261,21 @@
         transform: scale(1.2);
     }
 }
+
+
+.circle-rotate {
+    border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;;
+    animation: border-rotate 5s infinite linear;
+  }
+.circle-rotate2{
+    border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+    animation: border-rotate 5s infinite linear;
+}
+
+  @keyframes border-rotate {
+    from{
+         transform: rotate(0deg) ; 
+    }
+    to { transform: rotate(360deg) ; }
+ 
+  }

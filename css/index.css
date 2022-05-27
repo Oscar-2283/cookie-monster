@@ -1034,6 +1034,16 @@ h2 {
   border: 5px solid #FFD18E;
 }
 
+.img1 .img1-border-rotate {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  z-index: -2;
+  background-color: #FFD18E;
+}
+
 @media (max-width: 1760px) {
   .img1 {
     left: 4.3%;
@@ -1169,7 +1179,7 @@ h2 {
   position: absolute;
   left: 36%;
   top: 72%;
-  background-image: url(../img/1-2關於我們/擺設.jpg);
+  background: url(../img/1-2關於我們/擺設.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
