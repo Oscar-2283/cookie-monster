@@ -1,4 +1,4 @@
-const menu = document.querySelector('#toggle');
+const menuPhone = document.querySelector('#toggle');
 const menuItems = document.querySelector('#overlay');
 const menuContainer = document.querySelector('.menuContainer');
 const menuIcon = document.querySelector('.bubble-menu-icon');
@@ -24,4 +24,4 @@ function toggleMenu(e) {
 }
 
 
-menu.addEventListener('click', toggleMenu, false);
+menuPhone.addEventListener('click', toggleMenu, false);

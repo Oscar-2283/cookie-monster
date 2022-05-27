@@ -59,6 +59,20 @@ nav {
         }
     }
     .media {
+        height: 100px;
+        width: 100px;
+        position: relative;
+        .fbIcon-navdown{
+            position: absolute;
+            top: 50%;
+            left: -50%;
+            transform: translateY(-50%);
+        }
+        .igIcon-navdown{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
         .fa-brands {
             font-size: 50px;
             color: #375197;
@@ -87,7 +101,7 @@ nav {
     position: absolute;
     transition: transform 500ms;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateX(-1%) translateY(49px);
     top: 82%;
     left: -3%;
 }
@@ -100,30 +114,29 @@ nav {
 }
 
 .pos1 .snake {
-    transform: translateX(19%) translateY(-50%);
+    transform: translateX(18.5%) translateY(-99%);
 }
 
 .pos2 .snake {
-    transform: translateX(38%) translateY(-50%);
+    transform: translateX(38%) translateY(-99%);
 }
 
 .pos3 .snake {
-    transform: translateX(58%) translateY(-50%);
+    transform: translateX(58%) translateY(-99%);
 }
 
 .pos4 .snake {
-    transform: translateX(77.5%) translateY(-50%);
+    transform: translateX(78.5%) translateY(-99%);
 }
-
 .left .snake path {
     stroke-dashoffset: 0;
-    transform: translateX(0);
+    transform: translateX(0) translateY(49px);
     transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
 }
 
 .right .snake path {
     stroke-dashoffset: -70px;
-    transform: translateX(-60%);
+    transform: translateX(-60%) translateY(49px);
     transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
 }
 

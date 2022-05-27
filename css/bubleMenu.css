@@ -7,6 +7,7 @@
   left: 0;
   z-index: 5;
 }
+
 @media (max-width: 1200px) {
   .bubleMenu {
     display: block;
@@ -19,8 +20,9 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
 .container-phone .menuContainer {
-  background-color: rgba(206, 178, 137, 0.8);
+  background-color: #CEB289CC;
   border-radius: 100%;
   color: white;
   cursor: pointer;
@@ -29,12 +31,15 @@
   height: 300px;
   left: -120px;
   top: -120px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .container-phone .menuContainer a:hover {
   text-decoration: none;
   color: white;
 }
+
 .container-phone .menuContainer.full-menu {
   border-radius: 0;
   padding: 0 !important;
@@ -43,6 +48,7 @@
   height: 100%;
   left: 0;
   top: 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -58,16 +64,23 @@
   top: 160px;
   left: 160px;
   z-index: 100;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .menu-container-a i {
   opacity: 0.7;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .menu-container-a i:hover {
   opacity: 1;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -81,77 +94,104 @@
   visibility: hidden;
   overflow: hidden;
 }
+
 .overlay.open {
-  opacity: 0.9;
+  opacity: .9;
   visibility: visible;
   height: 100%;
 }
+
 .overlay.open .overlay-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 45%;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul {
   position: relative;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin-top: 60px;
   margin-left: 70px;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a {
   text-decoration: none;
   z-index: 2;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a .fa-facebook {
   color: #375197;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a .fa-instagram {
   font-size: 52px;
-  background: -webkit-linear-gradient(-135deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  background: -webkit-linear-gradient(-135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a :hover {
   opacity: 1;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li {
-  -webkit-animation: fadeInRight 0.5s ease forwards;
-          animation: fadeInRight 0.5s ease forwards;
-  -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  -webkit-animation: fadeInRight .5s ease forwards;
+          animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li:nth-of-type(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li:nth-of-type(3) {
-  -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li:nth-of-type(4) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li a {
   letter-spacing: 10px;
 }
+
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li img {
   margin-right: 10px;
 }
+
 .overlay #overlay-menu {
   font-size: 3.2em;
   font-family: "Titan One", san-serif;
   position: relative;
   height: 70%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-weight: 400;
   text-align: center;
 }
+
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -160,6 +200,7 @@
   position: relative;
   height: 100%;
 }
+
 .overlay ul li {
   display: block;
   height: 20%;
@@ -167,6 +208,7 @@
   position: relative;
   opacity: 0;
 }
+
 .overlay ul li a {
   display: block;
   position: relative;
@@ -174,12 +216,17 @@
   text-decoration: none;
   overflow: hidden;
   opacity: 0.7;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
   opacity: 1;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -204,6 +251,7 @@
     left: 0;
   }
 }
+
 .blob {
   -webkit-animation: blobby 4s infinite;
           animation: blobby 4s infinite;
@@ -216,46 +264,61 @@
 
 @-webkit-keyframes blobby {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes blobby {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
 @-webkit-keyframes blobby2 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
+
 @keyframes blobby2 {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.18);
+    -webkit-transform: scale(1.18);
+            transform: scale(1.18);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
-}/*# sourceMappingURL=bubleMenu.css.map */
+}
+/*# sourceMappingURL=bubleMenu.css.map */
