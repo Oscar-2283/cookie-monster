@@ -664,9 +664,11 @@
   <script src="./js/vanilla-tilt.min.js"></script>
 
   <script src="./js/navbar.js"></script>
-  <!-- <script src="./js/bubbleCursor.js"></script> -->
   <script src="./js/cursor.js"></script>
-  
+  <script src="./js/bubbleCursor.js"></script>
+  <script>
+    bubbleCursor()
+  </script>
 
   <!-- Banner的 Swiper -->
   <script>
@@ -675,7 +677,7 @@
 
 
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: auto,
       effect: "fade",
       loop: true,
       breakpoints:{//banner swiper變版js
@@ -685,7 +687,6 @@
         }
       },
       // direction:'horizontal' ,
-      direction: getDirection(),
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -698,11 +699,7 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      on: {
-        resize: function () {
-          swiper.changeDirection(getDirection());
-        },
-      },
+
     });
       
     function getDirection() {
@@ -725,7 +722,13 @@
       mousewheel: true,
       spaceBetween: 30,
       direction: "vertical",
+      breakpoints:{//banner swiper變版js
+        1199:{
+          direction:"horizontal ",
+        }
+      },
     });
+    
   </script>
 
   <!-- menu lightbox -->

@@ -14,8 +14,8 @@ function bubbleCursor(options) {
     canvas = document.createElement("canvas")
     context = canvas.getContext("2d")
 
-    canvas.style.top = "30px"
-    canvas.style.left = "30px"
+    canvas.style.top = "10px"
+    canvas.style.left = "10px"
     canvas.style.pointerEvents = "none"
 
     if (hasWrapperEl) {

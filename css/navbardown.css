@@ -141,6 +141,12 @@ nav {
   stroke-width: .5px;
 }
 
+@media (max-width: 1300px) {
+  .snake path {
+    stroke-dasharray: 20 100;
+  }
+}
+
 .pos0 .snake {
   -webkit-transform: translateX(-1%) translateY(-99%);
           transform: translateX(-1%) translateY(-99%);

@@ -117,6 +117,9 @@ nav {
     stroke: #4a2b011c;
     stroke-dasharray: 16 100;
     stroke-width: .5px;
+    @media(max-width:1300px){
+        stroke-dasharray: 20 100;
+    }
 }
 
 .pos0 .snake {
