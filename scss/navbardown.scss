@@ -42,6 +42,9 @@ nav {
             display: flex;
             align-items: center;
             width: 220px;
+            @media(max-width:1350px){
+                width: 190px;
+            }
         }
         .container1 {
             overflow: hidden;
@@ -65,13 +68,16 @@ nav {
         .fbIcon-navdown{
             position: absolute;
             top: 50%;
-            left: -50%;
+            left: 0%;
             transform: translateY(-50%);
+
         }
         .igIcon-navdown{
             position: absolute;
             top: 50%;
+            left: 45%;
             transform: translateY(-50%);
+
         }
         .fa-brands {
             font-size: 50px;
@@ -113,6 +119,9 @@ nav {
     stroke-width: .5px;
 }
 
+.pos0 .snake {
+    transform: translateX(-1%) translateY(-99%);
+}
 .pos1 .snake {
     transform: translateX(18.5%) translateY(-99%);
 }
@@ -155,6 +164,7 @@ nav {
     font-family: $font_2;
     font-size: 30px;
     white-space: nowrap;
+
 }
 
 .icon {

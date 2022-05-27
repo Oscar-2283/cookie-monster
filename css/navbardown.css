@@ -59,6 +59,12 @@ nav {
   width: 220px;
 }
 
+@media (max-width: 1350px) {
+  .navbardown .links a {
+    width: 190px;
+  }
+}
+
 .navbardown .links .container1 {
   overflow: hidden;
   position: relative;
@@ -86,7 +92,7 @@ nav {
 .navbardown .media .fbIcon-navdown {
   position: absolute;
   top: 50%;
-  left: -50%;
+  left: 0%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -94,6 +100,7 @@ nav {
 .navbardown .media .igIcon-navdown {
   position: absolute;
   top: 50%;
+  left: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -132,6 +139,11 @@ nav {
   stroke: #4a2b011c;
   stroke-dasharray: 16 100;
   stroke-width: .5px;
+}
+
+.pos0 .snake {
+  -webkit-transform: translateX(-1%) translateY(-99%);
+          transform: translateX(-1%) translateY(-99%);
 }
 
 .pos1 .snake {
