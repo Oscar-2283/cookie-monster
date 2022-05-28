@@ -1,0 +1,375 @@
+@charset "UTF-8";
+* {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+html.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+html.fixWindow {
+  position: fixed;
+  width: 100%;
+}
+
+.modal-dialog {
+  padding: 1rem;
+  margin: 3rem auto;
+  width: 90%;
+}
+
+.modal-dialog .close-modal {
+  border: 3px solid white !important;
+  outline: 3px solid #ffffff;
+  outline-offset: -10px;
+  opacity: 1;
+  background-color: #4A2B0E !important;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  left: 94%;
+  top: -1.5%;
+}
+
+.modal-dialog .close-modal:hover {
+  opacity: .5;
+}
+
+.modal-dialog .modal-image {
+  width: 100%;
+}
+
+.modal-dialog .modal-title {
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #FFD18E;
+  border-radius: 10px;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.modal-dialog .modal-text {
+  font-size: 12px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    width: 650px !important;
+  }
+  .modal-dialog .modal-title {
+    font-size: 49px;
+  }
+  .modal-dialog .modal-text {
+    font-size: 20px;
+  }
+  .modal-dialog .close-modal {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: 95%;
+    top: -2%;
+  }
+  .modal-dialog .modal-image {
+    height: 487px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 650px !important;
+  }
+  .modal-dialog .modal-title {
+    font-size: 40px;
+  }
+  .modal-dialog .modal-text {
+    font-size: 20px;
+  }
+  .modal-dialog .close-modal {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    left: 94%;
+    top: -2%;
+  }
+  .modal-dialog .modal-image {
+    height: 487px;
+  }
+}
+
+@media (min-width: 1512px) {
+  .modal-dialog {
+    width: 750px !important;
+    height: 80vh !important;
+    max-width: 1500px !important;
+  }
+  .modal-dialog .modal-title {
+    font-size: 60px;
+  }
+  .modal-dialog .modal-text {
+    font-size: 30px;
+  }
+  .modal-dialog .close-modal {
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    left: 94.5%;
+    top: -3%;
+  }
+  .modal-dialog .modal-image {
+    height: 600px;
+  }
+}
+
+.mt-375rem {
+  margin-top: 3.75rem;
+}
+
+@media (max-width: 576px) {
+  .mt12-75-576px {
+    margin-top: 12.75rem;
+  }
+}
+
+div.loadScreen {
+  opacity: 1;
+  background: #FFFAF7;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.x {
+  width: 1000px;
+  height: 100px;
+  background-color: rebeccapurple;
+}
+
+.imgBox {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.egg {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-position: center center;
+  background-size: 100% 100%;
+  -webkit-animation: move 2s ease-in-out;
+          animation: move 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: egg 6s infinite;
+          animation: egg 6s infinite;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.roll {
+  -webkit-animation: roll 8s  infinite;
+          animation: roll 8s  infinite;
+}
+
+@-webkit-keyframes egg {
+  0% {
+    background-image: url("../img/loading/玉子燒-1.png");
+  }
+  7% {
+    background-image: url("../img/loading/玉子燒-9.png");
+  }
+  14% {
+    background-image: url("../img/loading/玉子燒-3.png");
+  }
+  21% {
+    background-image: url("../img/loading/玉子燒-4.png");
+  }
+  28% {
+    background-image: url("../img/loading/玉子燒-5.png");
+  }
+  35% {
+    background-image: url("../img/loading/玉子燒-6.png");
+  }
+  42% {
+    background-image: url("../img/loading/玉子燒-7.png");
+  }
+  49% {
+    background-image: url("../img/loading/玉子燒-1.png");
+  }
+  56% {
+    background-image: url("../img/loading/玉子燒-9.png");
+  }
+  63% {
+    background-image: url("../img/loading/玉子燒-3.png");
+  }
+  70% {
+    background-image: url("../img/loading/玉子燒-4.png");
+  }
+  77% {
+    background-image: url("../img/loading/玉子燒-5.png");
+  }
+  84% {
+    background-image: url("../img/loading/玉子燒-6.png");
+  }
+  91% {
+    background-image: url("../img/loading/玉子燒-7.png");
+  }
+}
+
+@keyframes egg {
+  0% {
+    background-image: url("../img/loading/玉子燒-1.png");
+  }
+  7% {
+    background-image: url("../img/loading/玉子燒-9.png");
+  }
+  14% {
+    background-image: url("../img/loading/玉子燒-3.png");
+  }
+  21% {
+    background-image: url("../img/loading/玉子燒-4.png");
+  }
+  28% {
+    background-image: url("../img/loading/玉子燒-5.png");
+  }
+  35% {
+    background-image: url("../img/loading/玉子燒-6.png");
+  }
+  42% {
+    background-image: url("../img/loading/玉子燒-7.png");
+  }
+  49% {
+    background-image: url("../img/loading/玉子燒-1.png");
+  }
+  56% {
+    background-image: url("../img/loading/玉子燒-9.png");
+  }
+  63% {
+    background-image: url("../img/loading/玉子燒-3.png");
+  }
+  70% {
+    background-image: url("../img/loading/玉子燒-4.png");
+  }
+  77% {
+    background-image: url("../img/loading/玉子燒-5.png");
+  }
+  84% {
+    background-image: url("../img/loading/玉子燒-6.png");
+  }
+  91% {
+    background-image: url("../img/loading/玉子燒-7.png");
+  }
+}
+
+@-webkit-keyframes roll {
+  from {
+    /* transform: translateX(0px); */
+    margin-left: 0;
+  }
+  to {
+    /* transform: translateX(100%); */
+    margin-left: 110%;
+  }
+}
+
+@keyframes roll {
+  from {
+    /* transform: translateX(0px); */
+    margin-left: 0;
+  }
+  to {
+    /* transform: translateX(100%); */
+    margin-left: 110%;
+  }
+}
+
+/* //////////////////////////////// */
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #F6EF61;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.big {
+  -webkit-animation: mega 0.8s linear 5.5s;
+          animation: mega 0.8s linear 5.5s;
+}
+
+@-webkit-keyframes mega {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+  }
+}
+
+@keyframes mega {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(200);
+            transform: scale(200);
+  }
+}
+
+.loadingText {
+  color: #CEB289;
+  font-size: 30px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: loadText .5s linear 6s;
+          animation: loadText .5s linear 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loadText {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loadText {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=loading.css.map */

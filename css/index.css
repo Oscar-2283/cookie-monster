@@ -13,6 +13,10 @@ html {
   cursor: none;
 }
 
+a {
+  cursor: none;
+}
+
 body {
   background: white;
   color: #000;
@@ -2806,5 +2810,28 @@ li {
   #store_information .footer_png2 img {
     width: 200px;
   }
+}
+
+.ginner-container {
+  background-image: url("../img/1-5菜單/background(1920x2160).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url("../img/add-circle.png") 16 16, auto;
+}
+
+.ginner-container img {
+  cursor: url("../img/add-circle.png") 16 16, auto;
+}
+
+.gnext.disabled, .gprev.disabled, .gclose.disabled {
+  opacity: 1.1;
+}
+
+.gnext.disabled svg, .gprev.disabled svg, .gclose.disabled svg {
+  cursor: pointer;
+}
+
+.glightbox-clean .gclose {
+  top: 50px;
 }
 /*# sourceMappingURL=index.css.map */

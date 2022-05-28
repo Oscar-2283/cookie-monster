@@ -77,7 +77,6 @@ let mediaColor = document.querySelectorAll(".navbardown p");
 
 mediaIcon.forEach((icon) => {
   icon.addEventListener("mouseenter", function (e) {
-    console.log(e);
     let color = e.target.getAttribute("data-color");
     mediaBg.style.backgroundColor = color;
     mediaColor.forEach((x) => {

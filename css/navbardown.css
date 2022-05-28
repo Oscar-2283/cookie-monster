@@ -83,6 +83,10 @@ nav {
   text-decoration: none !important;
 }
 
+.navbardown .links .container1 .menudown a .item {
+  cursor: none;
+}
+
 .navbardown .media {
   height: 100px;
   width: 100px;

@@ -8,13 +8,14 @@
   <!-- swiper用的link -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- booststrap用的link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <!-- lightbox效果用的link -->
-  <link href="./css/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <!-- font-awesome的link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- AOS效果 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- lightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
   <!--分頁icon-->
   <link rel="shortcut icon" href="./img/icon/webicon.ico">
   <!-- 主頁以外navbar用CSS -->
@@ -32,11 +33,40 @@
   <link rel="stylesheet" href="../cookie-monster/css/font.css">
   <!-- 手機/平板的 hamburger -->
   <link rel="stylesheet" href="./css/bubleMenu.css">
+  <link rel="stylesheet" href="./css/loading.css">
+
+  
   <title>一人一伴ともだち</title>
 </head>
 <body>
 
 <!-- loading畫面 -->
+<div class="loadScreen">
+  <div class="imgBox roll">
+      <div class="egg ">  
+      </div>
+  </div>
+  <div class="circle big"></div>
+  <p class="loadingText">遇見.&nbsp;&nbsp;一人一伴</p>   
+</div>
+
+  <div class="modal fade pl-0" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog mt-375rem mt12-75-576px ">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0  ">
+              <img class="modal-image rounded" src="https://scontent.frmq2-2.fna.fbcdn.net/v/t39.30808-6/279155784_2816872328615608_7463797870175743222_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=nSds1x5VV9kAX_nLQa1&_nc_ht=scontent.frmq2-2.fna&oh=00_AT8arLux2_FKbUQWcD2NkESLT7p1URBVDLdvFByNt28Prw&oe=62894796"  alt="">
+              <button type="button" class="close-modal text-white d-flex justify-content-center align-items-center position-absolute " data-dismiss="modal" aria-label="Close">
+                  <span><i class="fa-solid fa-xmark"></i></span> 
+                </button>
+          </div>
+          <div class="modal-body text-center  font-weight-bolder">
+            <h1 class="modal-title">本月公休</h1>
+            <p class="modal-text mt-2">每個月底公布， <br>
+              「開放預約時段」為平日，假日不接受預約</p>
+          </div>
+        </div>
+      </div>
+  </div>
 
 
 
@@ -135,7 +165,6 @@
   
   </nav>
 </section>
-
 <!-- 形象banner區  -->
   <section id="banner" class="index">
     <!-- Swiper -->
@@ -490,15 +519,17 @@
 
 
 <!-- 菜單區 -->
+
+
   <section id="menu" class=" menu-section position-relative">
     <div class="newsTitle d-flex title align-items-center">
-      <!-- 頁面錨點Title -->
+
       <img class="logoTag" src="./img/icon/bear.svg">
       <p class="titleTag">菜單</p>
       <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
     <div class="d-flex menu-list justify-content-center align-content-start flex-wrap menu-container">
-      <a class="d-flex justify-content-center"  href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="123">
+      <a class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-01.jpg" data-gallery="gallery1">
         <div class="position-md-absolute  list1 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"         data-aos-anchor-placement="top-center" >
           <div class="tag1 tag position-absolute d-flex align-items-center">
             <p class="p-md-5 font-22">日式三明治</p>
@@ -508,7 +539,7 @@
           </div>
         </div>
       </a>
-      <a class="d-flex justify-content-center" href="./img/menu/菜單頁面-01.jpg" data-lightbox="menuListPic" data-title="152753">
+      <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-01.jpg" data-gallery="gallery1">
         <div class="position-md-absolute  list2 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="800">
           <div class="tag2 tag position-absolute d-flex align-items-center justify-content-center">
             <p class=" font-22 ">日式漢堡</p>
@@ -517,7 +548,7 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center"  href="./img/menu/菜單頁面-02.jpg" data-lightbox="menuListPic"  data-title="12783">      
+      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1">      
         <div class="position-md-absolute  list3 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
           <div class="tag3 tag position-absolute d-flex align-items-center justify-content-center">
             <p class="font-22 ">極厚切丹麥</p>
@@ -527,16 +558,16 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center"  href="./img/menu/菜單頁面-02.jpg" data-lightbox="menuListPic"  data-title="17823">  
+      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1" >  
         <div class="position-md-absolute  list4 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
             <div class="tag4 tag position-absolute d-flex align-items-center justify-content-center ">
               <p class=" font-22 animation-none">主廚限定鹹派 (不定期供應)</p>
             </div>
-            <div class="w-100 h-100 number4 overflow-hidden circle-1">-->
+            <div class="w-100 h-100 number4 overflow-hidden circle-1">
             </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center"  href="./img/menu/菜單頁面-04.jpg" data-lightbox="menuListPic"  data-title="127853">  
+      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-04.jpg" data-gallery="gallery1">  
         <div class="position-md-absolute  list5 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
           <div class="tag5 tag position-absolute d-flex align-items-center">
             <p class="pl-5 font-22 ">飲品</p>
@@ -545,7 +576,7 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center d-menu-none " href="./img/menu/菜單頁面-03.jpg" data-lightbox="menuListPic"  data-title="1786623">    
+      <a  class="d-flex justify-content-center d-menu-none glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">    
         <div class="position-md-absolute  list6 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
           <div class="tag6 tag position-absolute d-flex align-items-center">
             <p class="pl-md-5 font-22">佐味小食</p>
@@ -554,7 +585,7 @@
           </div>
         </div>
       </a>
-      <a class="d-menu-none d-flex justify-content-center" href="./img/menu/菜單頁面-03.jpg" data-lightbox="menuListPic">     
+      <a class="d-menu-none d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">     
         <div class="position-md-absolute  list7 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" >
           <div class="tag7 tag position-absolute d-flex align-items-center justify-content-center ">
             <p class="font-22">限定甜點(可外帶)</p>
@@ -563,7 +594,7 @@
           </div>
         </div>
       </a>
-      <a class="d-menu-block d-none-sweet d-flex justify-content-center" href="./img/menu/菜單頁面-03.jpg" data-lightbox="menuListPic">     
+      <a class="d-menu-block d-none-sweet d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">     
         <div class="position-md-absolute  lis8 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" >
           <div class="tag8 tag position-absolute d-flex align-items-center justify-content-center ">
             <p class="font-22">佐味小食 & 限定甜點</p>
@@ -574,9 +605,12 @@
         </div>
       </a>
     </div>
-
   </section>
+ -->
 
+
+
+  
 <!-- 店家資訊區 -->
   <section id="store_information">
     <div class="newsTitle d-flex title align-items-center store-info-title">
@@ -652,17 +686,29 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- swiper的js連結 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+    var JQ=$.noConflict();//刪除「$」別名並且用新別名「JQ」當作JQuery
+    //取代「$」符號的別名後，如果要使用JQuery就要用自己宣告的新別名「JQ」當別名
+    JQ(function(){
+        //程式碼內容
+    });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
     integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
     crossorigin="anonymous"></script>
+    
   <!-- boostrap的js連結 -->
-  <script src="./js/lightbox-plus-jquery.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
   <!-- lightbox的js連結 -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- aos效果的js連結 -->
@@ -671,15 +717,14 @@
   <script src="./js/navbar.js"></script>
   <script src="./js/cursor.js"></script>
   <script src="./js/bubbleCursor.js"></script>
+  <script src="./js/loading.js"></script>
   <script>
     // bubbleCursor()
   </script>
 
-  <!-- Banner的 Swiper -->
+
+<!-- Banner的 Swiper -->
   <script>
-
-
-
 
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
@@ -734,22 +779,26 @@
     });
     
   </script>
+<script>
+  const lightbox = GLightbox({
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true,
+    openEffect: 'zoom',
+   closeEffect: 'fade',
+    cssEfects: {
+    // This are some of the animations included, no need to overwrite
+    fade: { in: 'fadeIn', out: 'fadeOut' },
+    zoom: { in: 'zoomIn', out: 'zoomOut' }
+  }
+});
 
-  <!-- menu lightbox -->
-  <script>
-      lightbox.option({
-        'resizeDuration': 500,
-        'wrapAround': true,
-        'fadeDuration':300,
-        'disableScrolling':true,
-      })
-  </script>
+</script>
 
   <!-- AOS -->
   <script>
   AOS.init();
 
-  // bubbleCursor()
   </script>
 
 

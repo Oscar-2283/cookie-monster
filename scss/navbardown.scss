@@ -53,10 +53,12 @@ nav {
                 display: flex;
                 height: 100px;
                 position: relative;
-            
                 a {
                     color: white !important;
                     text-decoration: none !important;
+                    .item{
+                        cursor: none;
+                    }
                 }
             }
         }
