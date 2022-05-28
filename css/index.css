@@ -2812,12 +2812,8 @@ li {
   }
 }
 
-.ginner-container {
-  cursor: url("../img/add-circle.png") 16 16, auto;
-}
-
-.ginner-container img {
-  cursor: url("../img/add-circle.png") 16 16, auto;
+.glightbox-container {
+  z-index: 30 !important;
 }
 
 .gnext.disabled, .gprev.disabled, .gclose.disabled {
