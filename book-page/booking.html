@@ -76,18 +76,18 @@
                     <div class="b-main-s-input">
                         <form>
                             <!-- 訂位表格區 -->
-                            <input type="text" class="book-input" id="" placeholder="姓名" maxlength="5">
-                            <input type="text" class="book-input" id="" placeholder="電話" maxlength="10">
-                            <input type="date" class="book-input" id="" value="2022-05-01">
+                            <input type="text" class="book-input" id="reservation-name" placeholder="姓名" maxlength="5">
+                            <input type="text" class="book-input" id="reservation-phone" placeholder="電話" maxlength="10">
+                            <input type="date" class="book-input" id="reservation-date" value="2022-06-01">
 
-                            <select class="book-input">
+                            <select class="book-input" id="reservation-time">
                                 <option>9:00</option>
                                 <option>10:30</option>
                                 <option>12:00</option>
                                 <option>13:30</option>
                             </select>
                             <textarea class="book-input2" maxlength="120" cols="30" rows="10"
-                                placeholder="請留人數 (若有帶寵物請先告知)"></textarea>
+                                placeholder="請留人數 (若有帶寵物請先告知)" id="reservation-content"></textarea>
 
                         </form>
                     </div>
@@ -110,7 +110,23 @@
     <script src="./js/button.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function submitData() {
+            let Name = document.querySelector("#reservation-name")
+            let Phone = document.querySelector("#reservation-phone")
+            let rDate = document.querySelector("#reservation-date")
+            let Time = document.querySelector("#reservation-time")
+            let Content = document.querySelector("#reservation-content")
+            let rowData = {
+            name : Name.value,
+            phone : Phone.value,
+            date : rDate.value,
+            time : Time.value,
+            content : Content.value,
+            }
+            console.log(rowData);
+        }
         function btnAlert() {
+            submitData()
             Swal.fire({
                 icon: 'warning',
                 title: '位置僅保留10分鐘<br>(人數到齊才能入座)',

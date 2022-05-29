@@ -8,12 +8,13 @@
   <!-- swiper用的link -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <!-- booststrap用的link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <!-- font-awesome的link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <!-- AOS效果 -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- lightbox -->
+  <!-- lightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
   <!--分頁icon-->
@@ -35,157 +36,153 @@
   <link rel="stylesheet" href="./css/bubleMenu.css">
   <link rel="stylesheet" href="./css/loading.css">
 
-  
+
   <title>一人一伴ともだち</title>
 </head>
+
 <body>
 
-<!-- loading畫面 -->
-<div class="loadScreen">
-  <div class="imgBox roll">
-      <div class="egg ">  
+  <!-- loading畫面 -->
+  <div class="loadScreen">
+    <div class="imgBox roll">
+      <div class="egg ">
       </div>
+    </div>
+    <div class="circle big"></div>
+    <p class="loadingText">遇見.&nbsp;&nbsp;一人一伴</p>
   </div>
-  <div class="circle big"></div>
-  <p class="loadingText">遇見.&nbsp;&nbsp;一人一伴</p>   
-</div>
 
-  <div class="modal fade pl-0" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog mt-375rem mt12-75-576px ">
-        <div class="modal-content">
-          <div class="modal-header border-bottom-0  ">
-              <img class="modal-image rounded" src="https://scontent.frmq2-2.fna.fbcdn.net/v/t39.30808-6/279155784_2816872328615608_7463797870175743222_n.jpg?_nc_cat=103&ccb=1-6&_nc_sid=8bfeb9&_nc_ohc=nSds1x5VV9kAX_nLQa1&_nc_ht=scontent.frmq2-2.fna&oh=00_AT8arLux2_FKbUQWcD2NkESLT7p1URBVDLdvFByNt28Prw&oe=62894796"  alt="">
-              <button type="button" class="close-modal text-white d-flex justify-content-center align-items-center position-absolute " data-dismiss="modal" aria-label="Close">
-                  <span><i class="fa-solid fa-xmark"></i></span> 
-                </button>
-          </div>
-          <div class="modal-body text-center  font-weight-bolder">
-            <h1 class="modal-title">本月公休</h1>
-            <p class="modal-text mt-2">每個月底公布， <br>
-              「開放預約時段」為平日，假日不接受預約</p>
-          </div>
+  <div class="modal fade pl-0" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog mt-375rem mt12-75-576px ">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0  ">
+          <img class="modal-image rounded"
+            src="./img/month-off/month-off.jpg"
+            alt="每月不定時休息日">
+          <button type="button"
+            class="close-modal text-white d-flex justify-content-center align-items-center position-absolute "
+            data-dismiss="modal" aria-label="Close">
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </button>
+        </div>
+        <div class="modal-body text-center  font-weight-bolder">
+          <h1 class="modal-title">本月公休</h1>
+          <p class="modal-text mt-2">每個月底公布， <br>
+            「開放預約時段」為平日，假日不接受預約</p>
         </div>
       </div>
+    </div>
   </div>
 
 
 
 
 
-<!-- cursor 網頁游標 -->
-<div class="cursor"></div>
+  <!-- cursor 網頁游標 -->
+  <div class="cursor"></div>
 
 
-<!-- 手機/平板的 hamburger -->
-<div class="bubleMenu">
-  <div class="container-phone">
+  <!-- 手機/平板的 hamburger -->
+  <div class="bubleMenu">
+    <div class="container-phone">
       <div class="menuContainer" id="toggle">
-          <a href="#" class="menu-container-a"><i class="fa fa-bars bubble-menu-icon" aria-hidden="true"></i></a>
+        <a href="#" class="menu-container-a"><i class="fa fa-bars bubble-menu-icon" aria-hidden="true"></i></a>
       </div>
-  </div>
-  <div class="overlay" id="overlay">
+    </div>
+    <div class="overlay" id="overlay">
       <div class="overlay-menu" id="overlay-menu">
-          <ul class="overlay-menu-ul">
-              <li
-              class="overlay-menu-li"><a href="#aboutus"><img src="./img/icon/bear.png" alt="bear">關於我們</a></li>
-              <li
-              class="overlay-menu-li"><a href="#news"><img src="./img/icon/bear.png" alt="bear">最新消息</a></li>
-              <li
-              class="overlay-menu-li"><a href="#menu"><img src="./img/icon/bear.png" alt="bear">&emsp;菜單&emsp;</a></li>
-              <li
-              class="overlay-menu-li"><a href="#store_information"><img src="./img/icon/bear.png" alt="bear">店家資訊</a></li>
-              <li
-              class="overlay-menu-li"><a href="./book-page/booking.html" target="_blank"><img src="./img/icon/bear.png" alt="bear">預約訂位</a></li>
-              <div class="media-icon">
-                  <a  href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i>
-                  </a>&emsp;<a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-gradient"></i></a>
-              </div>
-          </ul>
+        <ul class="overlay-menu-ul">
+          <li class="overlay-menu-li"><a href="#aboutus"><img src="./img/icon/bear.png" alt="bear">關於我們</a></li>
+          <li class="overlay-menu-li"><a href="#news"><img src="./img/icon/bear.png" alt="bear">最新消息</a></li>
+          <li class="overlay-menu-li"><a href="#menu"><img src="./img/icon/bear.png" alt="bear">&emsp;菜單&emsp;</a></li>
+          <li class="overlay-menu-li"><a href="#store_information"><img src="./img/icon/bear.png" alt="bear">店家資訊</a>
+          </li>
+          <li class="overlay-menu-li"><a href="./book-page/booking.html" target="_blank"><img src="./img/icon/bear.png"
+                alt="bear">預約訂位</a></li>
+          <div class="media-icon">
+            <a href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i>
+            </a>&emsp;<a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                class="fa-brands fa-instagram fa-gradient"></i></a>
+          </div>
+        </ul>
       </div>
+    </div>
+
   </div>
-
-</div>
-<!-- 手機/平板的 hamburger -->
+  <!-- 手機/平板的 hamburger -->
 
 
-<!-- 首頁外navbar -->
-<section>
-  <nav class="d-none navbardown fixed-top align-items-center justify-content-between px-4 ">
-    <div class="logo d-flex justify-content-center align-items-center">
-        <img src="./img/0-1 NAV/Logo.png"  width="70px" height="70px" alt="">
-    </div>
-    <div class="links">
+  <!-- 首頁外navbar -->
+  <section>
+    <nav class="d-none navbardown fixed-top align-items-center justify-content-between px-4 ">
+      <div class="logo d-flex justify-content-center align-items-center">
+        <img src="./img/0-1 NAV/Logo.png" width="70px" height="70px" alt="">
+      </div>
+      <div class="links">
         <div class="container1">
-            <svg class="snake" viewBox="0 0 100 100">
-                      <path d="M 5,50.000015 H 35 C 35,50.000015 35.966338,49.750005 36.875001,49.750005 C 37.783664,49.750005 38.749998,50.000015 38.749998,50.000015 C 38.749998,50.000015 39.622117,50.500015 40.624999,50.500015 C 41.627882,50.500015 42.5,50.000015 42.5,50.000015 C 42.5,50.000015 43.476418,48.5 44.374997,48.5 C 45.273576,48.5 46.249998,50.000015 46.249998,50.000015 C 46.249998,50.000015 47.22755,53 48.124999,53 C 49.022448,53 50,50.000015 50,50.000015 C 50,50.000015 50.977541,47 51.875001,47 C 52.772461,47 53.749998,50.000015 53.749998,50.000015 C 53.749998,50.000015 54.726428,51.5 55.624999,51.5 C 56.52357,51.5 57.5,50.000015 57.5,50.000015 C 57.5,50.000015 58.486661,49.500025 59.375001,49.500025 C 60.263341,49.500025 61.249998,50.000015 61.249998,50.000015 C 61.249998,50.000015 62.232702,50.249995 63.124999,50.249995 C 64.017296,50.249995 65,50.000015 65,50.000015 H 95"/>
-                  </svg>
-            <div class="menudown">
-                <a href="#aboutus">
-                    <div class="item">
-                        <img class="icon" src="./img/icon/bear.svg" alt="">
-                        <p class="m-0">關於我們</p>
-                    </div>
-                </a>
-                <a href="#news">
-                    <div class="item">
-                        <img  class="icon" src="./img/icon/bear.svg" alt="">
-                        <p class="m-0">最新消息</p>
-                    </div>
-                </a>
-                <a href="#menu">
-                    <div class="item">
-                        <img  class="icon" src="./img/icon/bear.svg" alt="">
-                        <p class="m-0">&emsp;菜&nbsp;單&emsp;</p>
-                    </div>
-                </a>
-                <a href="#store_information">
-                    <div class="item">
-                        <img  class="icon" src="./img/icon/bear.svg" alt="">
-                        <p class="m-0">店家資訊</p>
-                    </div>
-                </a>
-                <a href="./book-page/booking.html" target="_blank">
-                    <div class="item mr-0">
-                        <img  class="icon" src="./img/icon/bear.svg" alt="">
-                        <p class="m-0">預約訂位</p>
-                    </div>
-                </a>
-              
-            </div>
+          <svg class="snake" viewBox="0 0 100 100">
+            <path
+              d="M 5,50.000015 H 35 C 35,50.000015 35.966338,49.750005 36.875001,49.750005 C 37.783664,49.750005 38.749998,50.000015 38.749998,50.000015 C 38.749998,50.000015 39.622117,50.500015 40.624999,50.500015 C 41.627882,50.500015 42.5,50.000015 42.5,50.000015 C 42.5,50.000015 43.476418,48.5 44.374997,48.5 C 45.273576,48.5 46.249998,50.000015 46.249998,50.000015 C 46.249998,50.000015 47.22755,53 48.124999,53 C 49.022448,53 50,50.000015 50,50.000015 C 50,50.000015 50.977541,47 51.875001,47 C 52.772461,47 53.749998,50.000015 53.749998,50.000015 C 53.749998,50.000015 54.726428,51.5 55.624999,51.5 C 56.52357,51.5 57.5,50.000015 57.5,50.000015 C 57.5,50.000015 58.486661,49.500025 59.375001,49.500025 C 60.263341,49.500025 61.249998,50.000015 61.249998,50.000015 C 61.249998,50.000015 62.232702,50.249995 63.124999,50.249995 C 64.017296,50.249995 65,50.000015 65,50.000015 H 95" />
+          </svg>
+          <div class="menudown">
+            <a href="#aboutus">
+              <div class="item">
+                <img class="icon" src="./img/icon/bear.svg" alt="">
+                <p class="m-0">關於我們</p>
+              </div>
+            </a>
+            <a href="#news">
+              <div class="item">
+                <img class="icon" src="./img/icon/bear.svg" alt="">
+                <p class="m-0">最新消息</p>
+              </div>
+            </a>
+            <a href="#menu">
+              <div class="item">
+                <img class="icon" src="./img/icon/bear.svg" alt="">
+                <p class="m-0">&emsp;菜&nbsp;單&emsp;</p>
+              </div>
+            </a>
+            <a href="#store_information">
+              <div class="item">
+                <img class="icon" src="./img/icon/bear.svg" alt="">
+                <p class="m-0">店家資訊</p>
+              </div>
+            </a>
+            <a href="./book-page/booking.html" target="_blank">
+              <div class="item mr-0">
+                <img class="icon" src="./img/icon/bear.svg" alt="">
+                <p class="m-0">預約訂位</p>
+              </div>
+            </a>
+
+          </div>
         </div>
-    </div>
-    <div class="media d-flex">
+      </div>
+      <div class="media d-flex">
         <a class="fbIcon-navdown" href="https://www.facebook.com/tomohalf2020/" target="_blank" data-color="#89B5CE">
           <i class="fa-brands fa-facebook"></i>
         </a>
-        <a class="igIcon-navdown" href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank" data-color="#CE9589">
+        <a class="igIcon-navdown" href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"
+          data-color="#CE9589">
           <i class="fa-brands fa-instagram"></i>
         </a>
-    </div>
-  
-  </nav>
-</section>
-<!-- 形象banner區  -->
+      </div>
+
+    </nav>
+  </section>
+  <!-- 形象banner區  -->
   <section id="banner" class="index">
     <!-- Swiper -->
     <div class="d-flex">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img
-              src="./img/1-1 Banner/門面.jpg"
-              alt="門面.jpg"></div>
-          <div class="swiper-slide"><img
-              src="./img/1-1 Banner/內部裝潢.jpg"
-              alt="內部裝潢.jpg"></div>
-          <div class="swiper-slide"><img
-              src="./img/1-1 Banner/內部裝潢-2.jpg"
-              alt="內部裝潢-2.jpg"></div>
-          <div class="swiper-slide"><img
-              src="./img/1-1 Banner/內部裝潢-3.jpg"
-              alt="內部裝潢-3.jpg"></div>
-          <div class="swiper-slide"><img
-              src="./img/1-1 Banner/食物.jpg"
-              alt="食物.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1-1 Banner/門面.jpg" alt="門面.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1-1 Banner/內部裝潢.jpg" alt="內部裝潢.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1-1 Banner/內部裝潢-2.jpg" alt="內部裝潢-2.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1-1 Banner/內部裝潢-3.jpg" alt="內部裝潢-3.jpg"></div>
+          <div class="swiper-slide"><img src="./img/1-1 Banner/食物.jpg" alt="食物.jpg"></div>
 
         </div>
       </div>
@@ -216,15 +213,17 @@
               <a class="py-3" href="./book-page/booking.html"><span class="target booking">預約訂位</span></a>
             </li>
           </ul>
-          <div class="navbar_icon"><!-- banner icon區域(用font awesome放) -->
+          <div class="navbar_icon">
+            <!-- banner icon區域(用font awesome放) -->
             <a href="https://www.facebook.com/tomohalf2020/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-gradient"></i></a>
+            <a href="https://instagram.com/tomo_half?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                class="fa-brands fa-instagram fa-gradient"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-<!-- 關於我們區 -->
+  <!-- 關於我們區 -->
   <section id="aboutus" class="profile">
     <div class="newsTitle d-flex title1 align-items-center">
       <!-- 頁面錨點Title -->
@@ -232,7 +231,8 @@
       <p class="titleTag">關於我們</p>
       <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
-    <div class="profile_text z-2"><!-- 三明治照片 -->
+    <div class="profile_text z-2">
+      <!-- 三明治照片 -->
       <p class="profile_p1">
         一人一伴、<br>
         <span class="twoman">兩人共用一撇，象徵「共有」</span><br>
@@ -258,267 +258,238 @@
     <div class="img4"></div><!-- 右下角插圖 -->
 
   </section>
-<!-- 嚴選食材區 -->
-<section id="food" class="food px-375rem">
-  <div class="newsTitle d-flex title align-items-center">
-    <!-- 頁面錨點Title -->
-    <img class="logoTag" src="./img/icon/bear.svg">
-    <p class="titleTag">嚴選食材</p>
-    <img class="circle-line" src="./img/icon/circle-line.svg">
-  </div>
-  <div class="row foodImageSection justify-content-between d-none d-md-flex">
-    <div class="col-6 row align-items-center">
-      <div class="col-6">
-        <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox foodImg">
-            <img class="foodimg-p-img foodImg circle-4 " src="./img/1-3嚴選食材/bread.jpg">
-          </div>
-          <h1 class="foodImgTitle food-titlesize">麵包</h1>
+  <!-- 嚴選食材區 -->
+  <section id="food" class="food px-375rem">
+    <div class="newsTitle d-flex title align-items-center">
+      <!-- 頁面錨點Title -->
+      <img class="logoTag" src="./img/icon/bear.svg">
+      <p class="titleTag">嚴選食材</p>
+      <img class="circle-line" src="./img/icon/circle-line.svg">
+    </div>
+    <div class="row foodImageSection justify-content-between d-none d-md-flex">
+      <div class="col-6 row align-items-center">
+        <div class="col-6">
+          <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox foodImg">
+              <img class="foodimg-p-img foodImg circle-4 " src="./img/1-3嚴選食材/bread.jpg">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">麵包</h1>
             <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">天然酵母麵包 <br> 日本日清麵粉</p>
             <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/breadIcon.svg" alt="">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox">
+              <img class="foodimg-p-img foodIcon foodImg circle-5" src="./img/1-3嚴選食材/meat.jpg">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">肉品</h1>
+            <p class="foodImgText food-textsize font-weight-bold foodTextAnimation position-absolute">澳洲草飼牛肉 <br>
+              國產LYD豬肉</p>
+            <img class="position-absolute meatIcon food-animation" src="./img/1-3嚴選食材/oxIcon.svg" alt="">
+            <img class="position-absolute meatIcon2 food-animation" src="./img/1-3嚴選食材/pigIcon.svg" alt="">
+          </div>
+          <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox ">
+              <img class="foodimg-p-img foodImg circle-6" src="./img/1-3嚴選食材/sauce.jpg">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">醬汁 </h1>
+            <p class="foodImgText food-textsize  font-weight-bold d-flex align-items-center foodTextAnimation">自製特製醬料
+              <br> 日本進口醬汁 </p>
+            <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/sauceIcon.svg" alt="">
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox">
-            <img class="foodimg-p-img foodIcon foodImg circle-5" src="./img/1-3嚴選食材/meat.jpg">
+      <div class="col-6 row align-items-center">
+        <div class="col-6">
+          <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox">
+              <img class="foodimg-p-img foodImg circle-7" src="./img/1-3嚴選食材/egg.jpg">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">雞蛋</h1>
+            <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
+            </p>
+            <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/eggIcon.svg" alt="">
           </div>
-          <h1 class="foodImgTitle food-titlesize">肉品</h1>
-          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation position-absolute">澳洲草飼牛肉 <br> 國產LYD豬肉</p>
-          <img class="position-absolute meatIcon food-animation" src="./img/1-3嚴選食材/oxIcon.svg" alt="">
-          <img class="position-absolute meatIcon2 food-animation" src="./img/1-3嚴選食材/pigIcon.svg" alt="">
         </div>
-        <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox ">
-            <img class="foodimg-p-img foodImg circle-6" src="./img/1-3嚴選食材/sauce.jpg">
+        <div class="col-6">
+          <div class="foodImg2 foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox ">
+              <img class="foodimg-p-img foodImg circle-5" src="./img/1-3嚴選食材/milk.jpg">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">牛奶</h1>
+            <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">紐西蘭牛乳</p>
+            <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/milkIcon.svg" alt="">
           </div>
-          <h1 class="foodImgTitle food-titlesize">醬汁 </h1>
-          <p class="foodImgText food-textsize  font-weight-bold d-flex align-items-center foodTextAnimation">自製特製醬料 <br> 日本進口醬汁 </p>
-          <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/sauceIcon.svg" alt="">
+          <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
+            <div class="food_imgBox">
+              <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/veg.jfif">
+            </div>
+            <h1 class="foodImgTitle food-titlesize">蔬果 </h1>
+            <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">季節水果<br> 產銷履歷蔬菜<br> 小農蔬菜</p>
+            <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/vegIcon.svg" alt="">
+          </div>
         </div>
       </div>
+
     </div>
-    <div class="col-6 row align-items-center">
-      <div class="col-6">
-        <div class="foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox">
-            <img class="foodimg-p-img foodImg circle-7" src="./img/1-3嚴選食材/egg.jpg">
-          </div>
-          <h1 class="foodImgTitle food-titlesize">雞蛋</h1>
-          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
+    <div class=" wood  d-md-none d-block  p-4 mx-auto justify-content-center position-relative ">
+      <div class="d-flex justify-content-center">
+        <img class="z-1 position-absolute p-4 wood-max-height" src="./img/1-3嚴選食材/RWD/木板.svg" alt="">
+      </div>
+      <div class=" wood-hover row w-100 justify-content-center align-items-center mt30 mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage ` ">
+          <div class="col-6 font-wood w-100 text-center">麵包</div>
+          <img src="./img/1-3嚴選食材/RWD/icon-1/麵包.svg" class="col-6 woodImgSize food-icon1">
+          <img src="./img/1-3嚴選食材/RWD/icon-2/bread.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
+        </div>
+        <div class="col-6 d-flex justify-content-center ">
+          <p class="open">
+            天然酵母麵包 <br> 日本日清麵粉
           </p>
-          <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/eggIcon.svg" alt="">
         </div>
       </div>
-      <div class="col-6">
-        <div class="foodImg2 foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox ">
-            <img class="foodimg-p-img foodImg circle-5" src="./img/1-3嚴選食材/milk.jpg">
-          </div>
-          <h1 class="foodImgTitle food-titlesize">牛奶</h1>
-          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">紐西蘭牛乳</p>
-          <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/milkIcon.svg" alt="">
+      <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
+          <div class="col-6 font-wood w-100 text-center">醬汁</div>
+          <img src="./img/1-3嚴選食材/RWD/icon-1/醬汁.svg" class="col-6 woodImgSize food-icon1">
+          <img src="./img/1-3嚴選食材/RWD/icon-2/sauce.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
         </div>
-        <div class="foodImg3 foodImg foodImg-all d-flex align-items-center justify-content-center">
-          <div class="food_imgBox">
-            <img class="foodimg-p-img foodImg circle-4" src="./img/1-3嚴選食材/veg.jfif">
-          </div>
-          <h1 class="foodImgTitle food-titlesize">蔬果 </h1>
-          <p class="foodImgText food-textsize font-weight-bold foodTextAnimation">季節水果<br> 產銷履歷蔬菜<br> 小農蔬菜</p>
-          <img class="position-absolute foodIcon food-animation" src="./img/1-3嚴選食材/vegIcon.svg" alt="">
+        <div class="col-6 d-flex justify-content-center">
+          <p class=" open">
+            自製特製醬料 <br> 日本進口醬汁
+          </p>
         </div>
       </div>
-    </div>
+      <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
+          <div class="col-6 font-wood w-100 text-center">肉品</div>
+          <img src="./img/1-3嚴選食材/RWD/icon-1/肉.svg" class="col-6 woodImgSize food-icon1">
+          <img src="./img/1-3嚴選食材/RWD/icon-2/meat.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <p class="open">
+            澳洲草飼牛肉 <br> 國產LYD豬肉
+          </p>
+        </div>
+      </div>
+      <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
+          <div class="col-6 font-wood w-100 text-center">蔬果</div>
+          <img src="./img/1-3嚴選食材/RWD/icon-1/蔬果.svg" class="col-6 woodImgSize food-icon1"></img>
+          <img src="./img/1-3嚴選食材/RWD/icon-2/veg.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute"></img>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <p class="open">
+            季節水果 <br>產銷履歷蔬菜
+          </p>
+        </div>
+      </div>
+      <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
+          <div class="col-6 font-wood w-100 text-center">雞蛋</div>
+          <img src="./img/1-3嚴選食材/RWD/icon-1/雞蛋.svg" class="col-6 woodImgSize food-icon1">
+          <img src="./img/1-3嚴選食材/RWD/icon-2/egg.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <p class="open">
+            有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
+          </p>
+        </div>
+      </div>
+      <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
+        <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
+          <div class="col-6 font-wood w-100 text-center">牛奶</div>
+          <div>
 
-  </div>
-  <div class=" wood  d-md-none d-block  p-4 mx-auto justify-content-center position-relative ">
-    <div class="d-flex justify-content-center" >
-      <img class="z-1 position-absolute p-4 wood-max-height" src="./img/1-3嚴選食材/RWD/木板.svg" alt="">
-    </div>
-    <div class=" wood-hover row w-100 justify-content-center align-items-center mt30 mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage ` ">
-        <div class="col-6 font-wood w-100 text-center">麵包</div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/麵包.svg" class="col-6 woodImgSize food-icon1">
-        <img src="./img/1-3嚴選食材/RWD/icon-2/bread.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
-      </div>
-      <div class="col-6 d-flex justify-content-center ">
-        <p class="open">
-          天然酵母麵包 <br> 日本日清麵粉
-        </p>
-      </div>
-    </div>
-    <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
-        <div class="col-6 font-wood w-100 text-center">醬汁</div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/醬汁.svg" class="col-6 woodImgSize food-icon1">
-        <img src="./img/1-3嚴選食材/RWD/icon-2/sauce.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
-      </div>
-      <div class="col-6 d-flex justify-content-center">
-        <p class=" open">
-        自製特製醬料 <br> 日本進口醬汁
-      </p>
-      </div>
-    </div>
-    <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
-        <div class="col-6 font-wood w-100 text-center">肉品</div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/肉.svg" class="col-6 woodImgSize food-icon1">
-        <img src="./img/1-3嚴選食材/RWD/icon-2/meat.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
-      </div>
-      <div class="col-6 d-flex justify-content-center">
-        <p class="open">
-          澳洲草飼牛肉 <br> 國產LYD豬肉
-        </p>
-      </div>
-    </div>
-    <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
-        <div class="col-6 font-wood w-100 text-center">蔬果</div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/蔬果.svg" class="col-6 woodImgSize food-icon1"></img>
-        <img src="./img/1-3嚴選食材/RWD/icon-2/veg.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute"></img>
-      </div>
-      <div class="col-6 d-flex justify-content-center">
-        <p class="open">
-          季節水果 <br>產銷履歷蔬菜
-        </p>
-      </div>
-    </div>
-    <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
-        <div class="col-6 font-wood w-100 text-center">雞蛋</div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/雞蛋.svg" class="col-6 woodImgSize food-icon1">
-        <img src="./img/1-3嚴選食材/RWD/icon-2/egg.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
-      </div>
-      <div class="col-6 d-flex justify-content-center">
-        <p class="open">
-          有心肉舖子雞蛋 <br> 勤億葉黃素雞蛋
-        </p>
-      </div>
-    </div>
-    <div class="wood-hover row w-100 justify-content-center align-items-center wood-mt  mx-auto text-white">
-      <div class="col-6 row justify-content-center align-items-center w-100 flex-grow-1 changeImage `">
-        <div class="col-6 font-wood w-100 text-center">牛奶</div>
-        <div>
-
-        </div>
-        <img src="./img/1-3嚴選食材/RWD/icon-1/牛奶.svg" class="col-6 woodImgSize food-icon1">
-        <img src="./img/1-3嚴選食材/RWD/icon-2/milk.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
-      </div>
-      <div class="col-6 d-flex justify-content-center">
-        <p class="open">
-          紐西蘭牛乳 
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 最新消息區 -->
-<section id="news" class="newsArea infor sectionSize">
-    
-  <!-- 虛線BOX -->
-  <div class="swiper-news-border-lineL">
-    <div class="swiper-news-border-lineR">
-      <div class="swiper-news-border-lineT">
-        <div class="swiper-news-border-lineB">
-          <!-- 板塊標題 -->
-          <div class="newsTitle d-flex title align-items-center">
-            <!-- 頁面錨點Title -->
-            <img class="logoTag" src="./img/icon/bear.svg">
-            <p class="titleTag">最新消息</p>
-            <img class="circle-line" src="./img/icon/circle-line.svg">
           </div>
-          <div class="swiper mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
-                    <p class="blogCardText zzz font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統一回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div><div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
-                    <p class="blogCardText zzz font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div><div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
-                    <p class="blogCardText zzz font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30">一人一伴ともだち</p>
-                    <p class="blogCardText font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30">一人一伴ともだち</p>
-                    <p class="blogCardText font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide blog">
-                <div class="blogCard d-flex">
-                  <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
-                  <div class="blogCardContent d-flex flex-column justify-content-center">
-                    <p class="blogCardTitle font-30">一人一伴ともだち</p>
-                    <p class="blogCardText font-20">| 2022.05.11</p>
-                    <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
-                    <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
-                  </div>
-                </div>
-              </div> -->
-              
-              <!-- <div class="swiper-slide blog">Slide 2</div>
-              <div class="swiper-slide blog">Slide 3</div> -->
+          <img src="./img/1-3嚴選食材/RWD/icon-1/牛奶.svg" class="col-6 woodImgSize food-icon1">
+          <img src="./img/1-3嚴選食材/RWD/icon-2/milk.svg" class="col-6 woodImgSize p-0 food-icon2 position-absolute">
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <p class="open">
+            紐西蘭牛乳
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 最新消息區 -->
+  <section id="news" class="newsArea infor sectionSize">
+
+    <!-- 虛線BOX -->
+    <div class="swiper-news-border-lineL">
+      <div class="swiper-news-border-lineR">
+        <div class="swiper-news-border-lineT">
+          <div class="swiper-news-border-lineB">
+            <!-- 板塊標題 -->
+            <div class="newsTitle d-flex title align-items-center">
+              <!-- 頁面錨點Title -->
+              <img class="logoTag" src="./img/icon/bear.svg">
+              <p class="titleTag">最新消息</p>
+              <img class="circle-line" src="./img/icon/circle-line.svg">
             </div>
-            <div class="swiper-pagination swiper-p1"></div>
-          </div>
-          <div class="more-circle-btn">
-            <div class="moreCircle">
-              <div class="moreCircle_min">
-              詳細內容
+            <div class="swiper mySwiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide blog">
+                  <div class="blogCard d-flex">
+                    <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
+                    <div class="blogCardContent d-flex flex-column justify-content-center">
+                      <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span
+                          class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
+                      <p class="blogCardText zzz font-20">| 2022.05.11</p>
+                      <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統一回覆：去年在疫情</p>
+                      <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide blog">
+                  <div class="blogCard d-flex">
+                    <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
+                    <div class="blogCardContent d-flex flex-column justify-content-center">
+                      <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span
+                          class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
+                      <p class="blogCardText zzz font-20">| 2022.05.11</p>
+                      <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
+                      <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide blog">
+                  <div class="blogCard d-flex">
+                    <img class="blogCardImg" src="./img/1-4最新消息swiper/Maskgroup.png" alt="">
+                    <div class="blogCardContent d-flex flex-column justify-content-center">
+                      <p class="blogCardTitle font-30 d-flex justify-content-between">一人一伴ともだち<span
+                          class="hiddenTitle1">|</span><span class="hiddenTitle2">2022.05.11</span></p>
+                      <p class="blogCardText zzz font-20">| 2022.05.11</p>
+                      <p class="blogCardText font-20">最近天氣炎熱很多人都在詢問冰品的販售問題 這邊決定統ㄧ回覆：去年在疫情</p>
+                      <p class="blogCardText font-20">尚未擴散前，我們沒有外帶服務...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-p1"></div>
+            </div>
+            <div class="more-circle-btn">
+              <div class="moreCircle">
+                <div class="moreCircle_min">
+                  詳細內容
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-    
-  </div>
-  <!-- 詳細內容圈圈 -->
-  <!-- swiper -->
-  
-</section>
+    <!-- 詳細內容圈圈 -->
+    <!-- swiper -->
+
+  </section>
 
 
 
-<!-- 菜單區 -->
+  <!-- 菜單區 -->
 
 
   <section id="menu" class=" menu-section position-relative">
@@ -529,8 +500,9 @@
       <img class="circle-line" src="./img/icon/circle-line.svg">
     </div>
     <div class="d-flex menu-list justify-content-center align-content-start flex-wrap menu-container">
-      <a class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-01.jpg" data-gallery="gallery1">
-        <div class="position-md-absolute  list1 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"         data-aos-anchor-placement="top-center" >
+      <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-01.jpg" data-gallery="gallery1">
+        <div class="position-md-absolute  list1 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
           <div class="tag1 tag position-absolute d-flex align-items-center">
             <p class="p-md-5 font-22">日式三明治</p>
           </div>
@@ -540,7 +512,8 @@
         </div>
       </a>
       <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-01.jpg" data-gallery="gallery1">
-        <div class="position-md-absolute  list2 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="800">
+        <div class="position-md-absolute  list2 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-delay="800">
           <div class="tag2 tag position-absolute d-flex align-items-center justify-content-center">
             <p class=" font-22 ">日式漢堡</p>
           </div>
@@ -548,8 +521,9 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1">      
-        <div class="position-md-absolute  list3 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
+      <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1">
+        <div class="position-md-absolute  list3 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-delay="300">
           <div class="tag3 tag position-absolute d-flex align-items-center justify-content-center">
             <p class="font-22 ">極厚切丹麥</p>
           </div>
@@ -558,17 +532,19 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1" >  
-        <div class="position-md-absolute  list4 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
-            <div class="tag4 tag position-absolute d-flex align-items-center justify-content-center ">
-              <p class=" font-22 animation-none">主廚限定鹹派 (不定期供應)</p>
-            </div>
-            <div class="w-100 h-100 number4 overflow-hidden circle-1">
-            </div>
+      <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-02.jpg" data-gallery="gallery1">
+        <div class="position-md-absolute  list4 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-delay="400">
+          <div class="tag4 tag position-absolute d-flex align-items-center justify-content-center ">
+            <p class=" font-22 animation-none">主廚限定鹹派 (不定期供應)</p>
+          </div>
+          <div class="w-100 h-100 number4 overflow-hidden circle-1">
+          </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center glightbox"  href="./img/menu/菜單頁面-04.jpg" data-gallery="gallery1">  
-        <div class="position-md-absolute  list5 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
+      <a class="d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-04.jpg" data-gallery="gallery1">
+        <div class="position-md-absolute  list5 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-delay="300">
           <div class="tag5 tag position-absolute d-flex align-items-center">
             <p class="pl-5 font-22 ">飲品</p>
           </div>
@@ -576,8 +552,10 @@
           </div>
         </div>
       </a>
-      <a  class="d-flex justify-content-center d-menu-none glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">    
-        <div class="position-md-absolute  list6 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="400">
+      <a class="d-flex justify-content-center d-menu-none glightbox" href="./img/menu/菜單頁面-03.jpg"
+        data-gallery="gallery1">
+        <div class="position-md-absolute  list6 list " data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"
+          data-aos-delay="400">
           <div class="tag6 tag position-absolute d-flex align-items-center">
             <p class="pl-md-5 font-22">佐味小食</p>
           </div>
@@ -585,8 +563,9 @@
           </div>
         </div>
       </a>
-      <a class="d-menu-none d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">     
-        <div class="position-md-absolute  list7 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" >
+      <a class="d-menu-none d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg"
+        data-gallery="gallery1">
+        <div class="position-md-absolute  list7 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
           <div class="tag7 tag position-absolute d-flex align-items-center justify-content-center ">
             <p class="font-22">限定甜點(可外帶)</p>
           </div>
@@ -594,8 +573,9 @@
           </div>
         </div>
       </a>
-      <a class="d-menu-block d-none-sweet d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg" data-gallery="gallery1">     
-        <div class="position-md-absolute  lis8 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" >
+      <a class="d-menu-block d-none-sweet d-flex justify-content-center glightbox" href="./img/menu/菜單頁面-03.jpg"
+        data-gallery="gallery1">
+        <div class="position-md-absolute  lis8 list" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
           <div class="tag8 tag position-absolute d-flex align-items-center justify-content-center ">
             <p class="font-22">佐味小食 & 限定甜點</p>
           </div>
@@ -606,12 +586,11 @@
       </a>
     </div>
   </section>
- -->
 
 
 
-  
-<!-- 店家資訊區 -->
+
+  <!-- 店家資訊區 -->
   <section id="store_information">
     <div class="newsTitle d-flex title align-items-center store-info-title">
       <!-- 頁面錨點Title -->
@@ -639,9 +618,9 @@
         <div class="ifmblock2 col-12">
           <div class="col-12">
             <li class="block_title">注意事項</li>
-            <li class="block_text">1.店內因環境空間受限且古物居多,暫不接待10歲以下孩童(除非認識)。</li>
+            <li class="block_text">1.店內因環境空間受限且古物居多,暫不接待10歲以下孩童。</li>
             <li class="block_text">2.店內座位數不多,4人以上團體請提前來電詢問是否有足夠的空間位置</li>
-            <li class="block_text">3.小店為2人作業,顧及餐點品質,餐點均現點現做,若趕時間者請自行評估用餐意願再前來。</li>
+            <li class="block_text">3.小店為2人作業,顧及餐點品質,餐點均現點現做,請自行評估用餐意願再前來。</li>
             <li class="block_text">4.我們是寵物友善可攜帶毛小孩,但請細繩或放包包,不影響他人,若有便溺煩請家長自行清理。</li>
             <li class="block_text">5.目前無提供外帶、打包服務(可自行自備容器)。</li>
           </div>
@@ -653,7 +632,8 @@
               <img class="logoPic" src="./img/1-7footer-img/logo.png" alt="">
             </div>
             <li class="block_text">台中市西區向上路一段17巷1弄10號</li>
-            <li class="block_text"><a href="https://goo.gl/maps/7jYhJdASHZMb93Kt5" target="_blank">Google Map&nbsp;<i class="fa-solid fa-location-dot"></i></a></li>
+            <li class="block_text"><a href="https://goo.gl/maps/7jYhJdASHZMb93Kt5" target="_blank">Google Map&nbsp;<i
+                  class="fa-solid fa-location-dot"></i></a></li>
 
           </div>
           <div class="ifmblock3Right col-6">
@@ -689,21 +669,22 @@
 
 
   <script type="text/javascript">
-    var JQ=$.noConflict();//刪除「$」別名並且用新別名「JQ」當作JQuery
+    var JQ = $.noConflict();//刪除「$」別名並且用新別名「JQ」當作JQuery
     //取代「$」符號的別名後，如果要使用JQuery就要用自己宣告的新別名「JQ」當別名
-    JQ(function(){
-        //程式碼內容
+    JQ(function () {
+      //程式碼內容
     });
-    </script>
+  </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
     integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
     crossorigin="anonymous"></script>
-    
+
   <!-- boostrap的js連結 -->
 
 
@@ -723,15 +704,15 @@
   </script>
 
 
-<!-- Banner的 Swiper -->
+  <!-- Banner的 Swiper -->
   <script>
 
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       effect: "fade",
       loop: true,
-      breakpoints:{//banner swiper變版js
-        1199:{
+      breakpoints: {//banner swiper變版js
+        1199: {
           slidesPerView: 1,
           spaceBetween: 20
         }
@@ -751,7 +732,7 @@
       },
 
     });
-      
+
 
 
   </script>
@@ -759,45 +740,46 @@
   <!-- 最新消息 swiper -->
   <script>
     var swiper2 = new Swiper(".mySwiper1", {
-      loop:true,
+      loop: true,
       slidesPerView: 1,
       spaceBetween: 30,
       mousewheel: true,
       direction: 'horizontal',
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-    
-      breakpoints:{
-        1199:{
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      breakpoints: {
+        1199: {
           direction: "vertical",
         }
       },
 
 
     });
-    
-  </script>
-<script>
-  const lightbox = GLightbox({
-    touchNavigation: true,
-    loop: true,
-    autoplayVideos: true,
-    openEffect: 'zoom',
-   closeEffect: 'fade',
-    cssEfects: {
-    // This are some of the animations included, no need to overwrite
-    fade: { in: 'fadeIn', out: 'fadeOut' },
-    zoom: { in: 'zoomIn', out: 'zoomOut' }
-  }
-});
 
-</script>
+  </script>
+  <!-- lightbox  -->
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true,
+      openEffect: 'zoom',
+      closeEffect: 'fade',
+      cssEfects: {
+        // This are some of the animations included, no need to overwrite
+        fade: { in: 'fadeIn', out: 'fadeOut' },
+        zoom: { in: 'zoomIn', out: 'zoomOut' }
+      }
+    });
+
+  </script>
 
   <!-- AOS -->
   <script>
-  AOS.init();
+    AOS.init();
 
   </script>
 

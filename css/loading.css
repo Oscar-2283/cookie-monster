@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 html.noscroll {
@@ -20,9 +19,8 @@ html.fixWindow {
   margin: 3rem auto;
   width: 90%;
 }
-
 .modal-dialog .close-modal {
-  border: 3px solid white !important;
+  border: 3px solid rgb(255, 255, 255) !important;
   outline: 3px solid #ffffff;
   outline-offset: -10px;
   opacity: 1;
@@ -34,15 +32,12 @@ html.fixWindow {
   left: 94%;
   top: -1.5%;
 }
-
 .modal-dialog .close-modal:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
-
 .modal-dialog .modal-image {
   width: 100%;
 }
-
 .modal-dialog .modal-title {
   font-size: 24px;
   border-radius: 50%;
@@ -50,11 +45,9 @@ html.fixWindow {
   border-radius: 10px;
   text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
-
 .modal-dialog .modal-text {
   font-size: 12px;
 }
-
 @media (min-width: 576px) {
   .modal-dialog {
     width: 650px !important;
@@ -76,7 +69,6 @@ html.fixWindow {
     height: 487px;
   }
 }
-
 @media (min-width: 768px) {
   .modal-dialog {
     width: 650px !important;
@@ -98,7 +90,6 @@ html.fixWindow {
     height: 487px;
   }
 }
-
 @media (min-width: 1512px) {
   .modal-dialog {
     width: 750px !important;
@@ -132,7 +123,6 @@ html.fixWindow {
     margin-top: 12.75rem;
   }
 }
-
 div.loadScreen {
   opacity: 1;
   background: #FFFAF7;
@@ -154,8 +144,7 @@ div.loadScreen {
   position: absolute;
   top: 50%;
   left: 0%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .egg {
@@ -172,14 +161,13 @@ div.loadScreen {
           animation-fill-mode: forwards;
   -webkit-animation: egg 6s infinite;
           animation: egg 6s infinite;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 2;
 }
 
 .roll {
-  -webkit-animation: roll 8s  infinite;
-          animation: roll 8s  infinite;
+  -webkit-animation: roll 8s infinite;
+          animation: roll 8s infinite;
 }
 
 @-webkit-keyframes egg {
@@ -271,7 +259,6 @@ div.loadScreen {
     background-image: url("../img/loading/玉子燒-7.png");
   }
 }
-
 @-webkit-keyframes roll {
   from {
     /* transform: translateX(0px); */
@@ -282,7 +269,6 @@ div.loadScreen {
     margin-left: 110%;
   }
 }
-
 @keyframes roll {
   from {
     /* transform: translateX(0px); */
@@ -293,7 +279,6 @@ div.loadScreen {
     margin-left: 110%;
   }
 }
-
 /* //////////////////////////////// */
 .circle {
   width: 50px;
@@ -303,8 +288,7 @@ div.loadScreen {
   position: absolute;
   right: -50px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 2;
 }
 
@@ -315,36 +299,30 @@ div.loadScreen {
 
 @-webkit-keyframes mega {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(200);
-            transform: scale(200);
+    transform: scale(200);
   }
 }
 
 @keyframes mega {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(200);
-            transform: scale(200);
+    transform: scale(200);
   }
 }
-
 .loadingText {
   color: #CEB289;
   font-size: 30px;
   position: absolute;
   top: 60%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: loadText .5s linear 6s;
-          animation: loadText .5s linear 6s;
+  transform: translateX(-50%);
+  -webkit-animation: loadText 0.5s linear 6s;
+          animation: loadText 0.5s linear 6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -371,5 +349,4 @@ div.loadScreen {
   100% {
     opacity: 0;
   }
-}
-/*# sourceMappingURL=loading.css.map */
+}/*# sourceMappingURL=loading.css.map */
