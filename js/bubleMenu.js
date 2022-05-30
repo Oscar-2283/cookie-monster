@@ -10,13 +10,7 @@ console.log(menuLock)
 function toggleMenu(e) {
 
 
-    menuLock.addEventListener('mouseleave',function(){
-        if ($(document).height() > $(window).height()) {
-            $("html").addClass("noscroll");
-          }else{
-            $("html").addClass("fixWindow"); 
-          }
-    })
+
     menuLock.addEventListener('click',function(){
         if ($(document).height() > $(window).height()) {
             $("html").removeClass("noscroll");
