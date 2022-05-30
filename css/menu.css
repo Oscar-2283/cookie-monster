@@ -95,6 +95,7 @@
   }
   .menu-list .tag {
     width: 90%;
+    height: 20%;
     top: 100%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -135,6 +136,12 @@
   background-size: cover;
 }
 
+.menu-list .list1 .tag1 {
+  background-image: url(../img/1-5菜單/sticker/Group64.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 1200px) {
   .menu-list .list1 .tag1 {
     z-index: 3;
@@ -143,15 +150,6 @@
     margin-left: 50%;
     margin-top: 75%;
     font-size: 22px;
-    background-image: url(../img/1-5菜單/sticker/Group64.svg);
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu-list .list1 .tag1 {
-    background-image: url(../img/1-5菜單/sticker/Group64.svg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -179,6 +177,12 @@
   background-size: cover;
 }
 
+.menu-list .list2 .tag2 {
+  background-image: url(../img/1-5菜單/sticker/Group63.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 1200px) {
   .menu-list .list2 .tag2 {
     z-index: 3;
@@ -186,13 +190,6 @@
     height: 64.56px;
     left: -20%;
     margin-top: 1rem;
-    background-image: url(../img/1-5菜單/sticker/Group67.svg);
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu-list .list2 .tag2 {
     background-image: url(../img/1-5菜單/sticker/Group67.svg);
     background-repeat: no-repeat;
   }
@@ -218,6 +215,10 @@
 
 .menu-list .list3 .number3 {
   background-image: url("../img/1-5菜單/極厚切丹麥.jpg");
+  background-size: cover;
+}
+
+.menu-list .list3 .tag3 {
   background-size: cover;
 }
 
@@ -264,6 +265,12 @@
   background-size: cover;
 }
 
+.menu-list .list4 .tag4 {
+  background-size: cover;
+  background-image: url(../img/1-5菜單/sticker/Group63.svg);
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 1200px) {
   .menu-list .list4 .tag4 {
     z-index: 3;
@@ -272,14 +279,6 @@
     left: -67%;
     top: 71%;
     background-image: url(../img/1-5菜單/sticker/Group70.svg);
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu-list .list4 .tag4 {
-    background-image: url(../img/1-5菜單/sticker/Group63.svg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -311,6 +310,12 @@
   background-size: cover;
 }
 
+.menu-list .list5 .tag5 {
+  background-image: url(../img/1-5菜單/sticker/Group63.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 1200px) {
   .menu-list .list5 .tag5 {
     z-index: 3;
@@ -318,15 +323,6 @@
     height: 60.18px;
     left: 42%;
     top: 70%;
-    background-image: url(../img/1-5菜單/sticker/Group65.svg);
-    background-repeat: no-repeat;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu-list .list5 .tag5 {
-    background-image: url(../img/1-5菜單/sticker/Group65.svg);
-    background-repeat: no-repeat;
   }
 }
 
@@ -412,6 +408,7 @@
   .menu-list .tag8 {
     background-image: url(../img/1-5菜單/sticker/Group66.svg);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

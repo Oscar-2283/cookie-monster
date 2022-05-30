@@ -36,7 +36,7 @@ html.fixWindow {
 }
 
 .modal-dialog .close-modal:hover {
-  opacity: .5;
+  background-color: #c56a15 !important;
 }
 
 .modal-dialog .modal-image {
@@ -309,8 +309,8 @@ div.loadScreen {
 }
 
 .big {
-  -webkit-animation: mega 0.8s linear 5.5s;
-          animation: mega 0.8s linear 5.5s;
+  -webkit-animation: mega 0.8s linear 6s;
+          animation: mega 0.8s linear 6s;
 }
 
 @-webkit-keyframes mega {

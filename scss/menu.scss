@@ -96,10 +96,10 @@ $font_4: "Kristen ITC";
 
         .tag {
             width: 90%;
+            height: 20%;
             top: 100%;
             left: 50%;
             transform: translate(-50%, -50%);
-            // background-color: bisque;
             padding: 0 1em;
             z-index: 3;
 
@@ -140,23 +140,20 @@ $font_4: "Kristen ITC";
         }
 
         .tag1 {
+            background-image: url(../img/1-5菜單/sticker/Group64.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
             @media (min-width:1200px) {
                 z-index: 3;
                 width: 50%;
                 height: 83.86px;
                 margin-left: 50%;
                 margin-top: 75%;
-                // background-color: darkgray;
                 font-size: 22px;
-                background-image: url(../img/1-5菜單/sticker/Group64.svg);
-                background-repeat: no-repeat;
+
 
             }
 
-            @media (max-width:1200px) {
-                background-image: url(../img/1-5菜單/sticker/Group64.svg);
-                background-repeat: no-repeat;
-            }
         }
     }
 
@@ -182,6 +179,9 @@ $font_4: "Kristen ITC";
         }
 
         .tag2 {
+            background-image: url(../img/1-5菜單/sticker/Group63.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
             @media (min-width:1200px) {
                 z-index: 3;
                 width: 219.46px;
@@ -193,10 +193,6 @@ $font_4: "Kristen ITC";
 
             }
 
-            @media (max-width:1200px) {
-                background-image: url(../img/1-5菜單/sticker/Group67.svg);
-                background-repeat: no-repeat;
-            }
         }
 
     }
@@ -224,6 +220,7 @@ $font_4: "Kristen ITC";
         }
 
         .tag3 {
+            background-size: cover;
             @media (min-width:1200px) {
                 z-index: 3;
                 width: 267.72px;
@@ -265,6 +262,9 @@ $font_4: "Kristen ITC";
         }
 
         .tag4 {
+            background-size: cover;
+            background-image: url(../img/1-5菜單/sticker/Group63.svg);
+            background-repeat: no-repeat;
             @media (min-width:1200px) {
                 z-index: 3;
                 width: 496.14px;
@@ -272,13 +272,8 @@ $font_4: "Kristen ITC";
                 left: -67%;
                 top: 71%;
                 background-image: url(../img/1-5菜單/sticker/Group70.svg);
-                background-repeat: no-repeat;
 
-            }
 
-            @media (max-width:1200px) {
-                background-image: url(../img/1-5菜單/sticker/Group63.svg);
-                background-repeat: no-repeat;
             }
         }
 
@@ -308,21 +303,19 @@ $font_4: "Kristen ITC";
         }
 
         .tag5 {
+            background-image: url(../img/1-5菜單/sticker/Group63.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
             @media (min-width:1200px) {
                 z-index: 3;
                 width: 238.67px;
                 height: 60.18px;
                 left: 42%;
                 top: 70%;
-                background-image: url(../img/1-5菜單/sticker/Group65.svg);
-                background-repeat: no-repeat;
+  
 
             }
 
-            @media (max-width:1200px) {
-                background-image: url(../img/1-5菜單/sticker/Group65.svg);
-                background-repeat: no-repeat;
-            }
         }
 
     }
@@ -409,6 +402,7 @@ $font_4: "Kristen ITC";
         @media (max-width:1200px) {
             background-image: url(../img/1-5菜單/sticker/Group66.svg);
             background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }

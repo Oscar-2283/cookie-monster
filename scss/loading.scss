@@ -36,7 +36,7 @@ html.fixWindow {
         left: 94%;
         top: -1.5%;
         &:hover {
-            opacity: .5;
+            background-color: #c56a15!important;
         }
     }
 
@@ -261,7 +261,7 @@ div.loadScreen {
       
     }
     .big{
-        animation: mega 0.8s linear 5.5s ;
+        animation: mega 0.8s linear 6s ;
     }
     @keyframes mega{
         0%{
