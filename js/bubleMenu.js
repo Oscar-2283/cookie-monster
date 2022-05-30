@@ -4,7 +4,6 @@ const menuContainer = document.querySelector('.menuContainer');
 const menuIcon = document.querySelector('.bubble-menu-icon');
 const bubleMenu = document.querySelector('.bubleMenu');
 const menuLock = document.querySelector('.overlay-menu-ul')
-console.log(menuLock)
 
 
 function toggleMenu(e) {
@@ -22,7 +21,6 @@ function toggleMenu(e) {
     menuIcon.classList.toggle('fa-bars');
     menuIcon.classList.toggle('fa-times');
     e.preventDefault();
-    console.log(e);
     
     if (menuIcon.classList == 'fa bubble-menu-icon fa-times') {
         bubleMenu.classList.add('w-100')
