@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .block {
@@ -10,7 +11,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .block__cell {
@@ -50,7 +51,7 @@
 }
 
 .btn .btn__icon:before {
-  content: "";
+  content: '';
   left: 0px;
   top: 0px;
   position: absolute;
@@ -71,7 +72,7 @@
 }
 
 .btn .btn__icon:after {
-  content: "";
+  content: '';
   top: 0px;
   left: 0px;
   position: absolute;
@@ -123,6 +124,7 @@
   border-radius: 50%;
   -webkit-animation: rotation infinite linear 0.5s;
           animation: rotation infinite linear 0.5s;
+  -webkit-transition: none;
   transition: none;
   border-top: 2px solid transparent;
   border-left: 2px solid #fff;
@@ -198,21 +200,26 @@
 
 @-webkit-keyframes rotation {
   0% {
-    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 @keyframes rotation {
   0% {
-    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
+
 @-webkit-keyframes activated {
   0% {
     background-position-y: 34px;
@@ -221,6 +228,7 @@
     background-position-y: center;
   }
 }
+
 @keyframes activated {
   0% {
     background-position-y: 34px;
@@ -228,4 +236,5 @@
   100% {
     background-position-y: center;
   }
-}/*# sourceMappingURL=button.css.map */
+}
+/*# sourceMappingURL=button.css.map */

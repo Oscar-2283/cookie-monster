@@ -9,11 +9,15 @@
   pointer-events: none;
   background-image: url("../img/cursor/abc.ico");
   background-position: 3% 2%;
-  transition: transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   z-index: 10000;
   -o-object-fit: contain;
      object-fit: contain;
-  transform: scale(0.6) translate(-50%, -50%);
+  -webkit-transform: scale(0.6) translate(-50%, -50%);
+          transform: scale(0.6) translate(-50%, -50%);
 }
 
 .bg {
@@ -22,4 +26,5 @@
 
 .bg-scroll {
   background-size: cover;
-}/*# sourceMappingURL=cursor.css.map */
+}
+/*# sourceMappingURL=cursor.css.map */
