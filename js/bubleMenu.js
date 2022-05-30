@@ -8,9 +8,6 @@ console.log(menuLock)
 
 
 function toggleMenu(e) {
-
-
-
     menuLock.addEventListener('click',function(){
         if ($(document).height() > $(window).height()) {
             $("html").removeClass("noscroll");
@@ -18,6 +15,7 @@ function toggleMenu(e) {
            $("html").removeClass("fixWindow");
        }
     })
+
 
     menuItems.classList.toggle('open');
     menuContainer.classList.toggle('full-menu');
