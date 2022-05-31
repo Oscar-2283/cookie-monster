@@ -218,6 +218,12 @@ nav {
   white-space: nowrap;
 }
 
+@media (max-width: 1512px) {
+  .item {
+    font-size: 23px;
+  }
+}
+
 .icon {
   width: 50px;
   margin-right: 10px;

@@ -650,8 +650,7 @@ h2 {
 
 @media (max-width: 1078px) {
   .profile_text .profile_p1 {
-    font-size: 22px;
-    margin-left: -10%;
+    margin-left: -15%;
   }
 }
 
@@ -949,7 +948,7 @@ h2 {
 }
 
 .profile_text .profile_p3 {
-  font-family: "KFhimaji";
+  font-family: 'Mochiy Pop One', sans-serif;
   margin-top: 42.9px;
   margin-left: 240px;
   line-height: 65.55px;
@@ -1120,17 +1119,24 @@ h2 {
 
 .img1 {
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: transparent;
   width: 750px;
   height: 750px;
   position: absolute;
   left: 4.5%;
   top: 21%;
+}
+
+.img1 .img1-in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
   background-image: url(../img/1-2關於我們/老闆娘.jpg);
   background-repeat: no-repeat;
   background-size: 160%;
   background-position: 50% 50%;
-  border: 5px solid #FFD18E;
 }
 
 .img1 .img1-border-rotate {
@@ -1272,17 +1278,35 @@ h2 {
 
 .img2 {
   border-radius: 50%;
-  background-color: #C4C4C4;
+  background-color: transparent;
   width: 300px;
   height: 300px;
   position: absolute;
   left: 36%;
   top: 72%;
-  background: url(../img/1-2關於我們/擺設.jpg);
-  background-size: 100%;
+  z-index: 1;
+}
+
+.img2 .img2-in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-image: url(../img/1-2關於我們/擺設.jpg);
   background-repeat: no-repeat;
+  background-size: 160%;
   background-position: 50% 50%;
-  border: 5px solid white;
+}
+
+.img2 .img2-border-rotate {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  z-index: -2;
+  background-color: #ffffff;
 }
 
 @media (max-width: 1760px) {

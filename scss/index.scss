@@ -905,17 +905,24 @@ h2 {
 .img1 {
 	//兩位老闆的照片
 	border-radius: 50%;
-	background-color: $background-color_3;
+	background-color: transparent;
 	width: 750px;
 	height: 750px;
 	position: absolute;
 	left: 4.5%;
 	top: 21%;
-	background-image: url(../img/1-2關於我們/老闆娘.jpg);
-	background-repeat: no-repeat;
-	background-size: 160%;
-	background-position: 50% 50%;
-	border: 5px solid #FFD18E;
+	.img1-in{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		background-image: url(../img/1-2關於我們/老闆娘.jpg);
+		background-repeat: no-repeat;
+		background-size: 160%;
+		background-position: 50% 50%;
+	}
+
 	.img1-border-rotate{
 		width: 110%;
 		height: 110%;
@@ -1038,17 +1045,34 @@ h2 {
 .img2 {
 	//店內一角照片
 	border-radius: 50%;
-	background-color: $background-color_3;
+	background-color: transparent;
 	width: 300px;
 	height: 300px;
 	position: absolute;
 	left: 36%;
 	top: 72%;
-	background: url(../img/1-2關於我們/擺設.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	border: 5px solid white;
+	z-index: 1;
+	.img2-in{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		background-image: url(../img/1-2關於我們/擺設.jpg);
+		background-repeat: no-repeat;
+		background-size: 160%;
+		background-position: 50% 50%;
+	}
+
+	.img2-border-rotate{
+		width: 110%;
+		height: 110%;
+		position: absolute;
+		left: -5%;
+		top: -5%;
+		z-index: -2;
+		background-color:#ffffff;;
+	}
 
 	@media (max-width:1760px) {
 		top: 75%;
