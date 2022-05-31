@@ -278,6 +278,7 @@ ul li, ol li {
 .container .book-main .b-main-f .b-main-f-text .book-text-ul .book-text-1 {
   line-height: 35px;
   text-align: center;
+  font-family: "Yu Gothic";
   font-size: 17px;
   font-weight: 400;
 }
@@ -519,6 +520,7 @@ ul li, ol li {
 }
 
 .container .book-main .b-main-s .b-main-s-text .book-text-ul-2 .book-text-title {
+  font-family: "MS Gothic";
   font-size: 40px;
   margin-bottom: 15px;
 }
@@ -536,6 +538,7 @@ ul li, ol li {
 }
 
 .container .book-main .b-main-s .b-main-s-text .book-text-ul-2 .book-text-2 {
+  font-family: "Yu Gothic";
   font-size: 20px;
   line-height: 40px;
   letter-spacing: 3px;
@@ -543,7 +546,7 @@ ul li, ol li {
 
 @media (max-width: 1300px) {
   .container .book-main .b-main-s .b-main-s-text .book-text-ul-2 .book-text-2 {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -616,6 +619,8 @@ ul li, ol li {
 }
 
 .container .book-main .b-main-s .b-main-s-text .b-main-s-input form .book-input {
+  font-size: 15px;
+  font-family: "Yu Gothic";
   width: 200px;
   height: 3em;
   border: 1px solid black;
@@ -675,6 +680,8 @@ ul li, ol li {
 }
 
 .container .book-main .b-main-s .b-main-s-text .b-main-s-input form .book-input2 {
+  font-size: 15px;
+  font-family: "MS Gothic";
   margin-top: 15px;
   padding: 10px;
   padding-bottom: 0;

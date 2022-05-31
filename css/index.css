@@ -650,8 +650,7 @@ h2 {
 
 @media (max-width: 1078px) {
   .profile_text .profile_p1 {
-    font-size: 22px;
-    margin-left: -10%;
+    margin-left: -15%;
   }
 }
 
@@ -949,7 +948,7 @@ h2 {
 }
 
 .profile_text .profile_p3 {
-  font-family: "KFhimaji";
+  font-family: 'Mochiy Pop One', sans-serif;
   margin-top: 42.9px;
   margin-left: 240px;
   line-height: 65.55px;

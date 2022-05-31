@@ -191,6 +191,7 @@ ul,ol {
                     .book-text-1 {
                         line-height: 35px;
                         text-align: center;
+                        font-family: $font_3;
                         font-size: 17px;
                         font-weight: 400;
 
@@ -370,6 +371,7 @@ ul,ol {
 
                 .book-text-ul-2 {
                     .book-text-title {
+                        font-family: $font_2;
                         font-size: 40px;
                         margin-bottom: 15px;
                         
@@ -383,12 +385,13 @@ ul,ol {
                     }
 
                     .book-text-2 {
+                        font-family: $font_3;
                         font-size: 20px;
                         line-height: 40px;
                         letter-spacing: 3px;
 
                         @media (max-width:1300px) {
-                            font-size: 17px;
+                            font-size: 20px;
                         }
                         
                         @media (max-width:950px) {
@@ -447,6 +450,8 @@ ul,ol {
                     form {
                         caret-color: rgb(20, 137, 233);
                         .book-input {
+                            font-size: 15px;
+                            font-family: $font_3;
                             width: 200px;
                             height: 3em;
                             border: 1px solid black;
@@ -510,6 +515,8 @@ ul,ol {
                         }
 
                         .book-input2 {
+                            font-size: 15px;
+                            font-family: $font_2;
                             margin-top: 15px;
                             padding: 10px;
                             padding-bottom: 0;

@@ -1,5 +1,9 @@
 $background-color_1: #4A2B0E;
 $background-color_2: #FFD18E;
+$font_1: "KFhimaji";
+$font_2: "MS Gothic";
+$font_3: "Yu Gothic";
+$font_4: "Kristen ITC";
 *{
     transition: .3s;
 }
@@ -273,6 +277,7 @@ div.loadScreen {
     }
     .loadingText{
         color: #CEB289;
+        font-family: $font_2;
         font-size: 30px;
         position: absolute;
         top: 60%;
@@ -280,6 +285,9 @@ div.loadScreen {
         transform: translateX(-50%);
         animation: loadText .5s linear 6s ;
         animation-fill-mode: forwards;
+        @media (max-width:375px) {
+            font-size: 15px;
+        }
         
     }
     @keyframes loadText{

@@ -337,6 +337,7 @@ div.loadScreen {
 
 .loadingText {
   color: #CEB289;
+  font-family: "MS Gothic";
   font-size: 30px;
   position: absolute;
   top: 60%;
@@ -347,6 +348,12 @@ div.loadScreen {
           animation: loadText .5s linear 6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+@media (max-width: 375px) {
+  .loadingText {
+    font-size: 15px;
+  }
 }
 
 @-webkit-keyframes loadText {

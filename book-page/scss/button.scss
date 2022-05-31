@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
+$font_1: "KFhimaji";
+$font_2: "MS Gothic";
+$font_3: "Yu Gothic";
+$font_4: "Kristen ITC";
 
 * {
   box-sizing: border-box;
@@ -31,7 +35,8 @@
   color: black;
   font-weight: 400;
   border-radius: 23px;
-  font-size: 16px;
+  font-family: $font_3;
+  font-size: 20px;
   transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
