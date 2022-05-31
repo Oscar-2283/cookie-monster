@@ -187,6 +187,11 @@ nav {
     @media(max-width:1512px) {
         font-size: 23px;
     }
+    img{
+        @media(max-width:1512px) {
+            width: 43px;
+        }
+    }
 
 }
 
