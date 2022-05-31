@@ -279,6 +279,32 @@ h2 {
 //形象banner區------------------
 //關於我們區域-------------------
 
+#aboutus{
+	height: 100vh;
+	margin-bottom: 5%;
+	@media (max-width:1420px) {
+		margin-bottom: 3%;
+	}
+	@media (max-width:1340px) {
+		margin-bottom: 1%;
+		height: 100vh;
+	}
+	@media (max-width:1280px) {
+		// height: 1024px;
+		margin-bottom: 0;
+		padding-bottom: 5%;
+	}
+	@media (max-width:768px){
+		margin-top: 5%;
+	}
+	@media (max-width:645px){
+		margin-top: 15%;
+		padding-bottom: 10%;
+	}
+	@media (max-width:375px) {
+		height: 667px;
+	}
+}
 .title1 {
 	padding-left: 100px;
 	padding-top: 120px;
@@ -368,6 +394,32 @@ h2 {
 
 //關於我們區內文字體--------------
 
+#aboutus{
+	height: 100vh;
+	margin-bottom: 5%;
+	@media (max-width:1420px) {
+		margin-bottom: 3%;
+	}
+	@media (max-width:1340px) {
+		margin-bottom: 1%;
+		height: 100vh;
+	}
+	@media (max-width:1280px) {
+		// height: 1024px;
+		margin-bottom: 0;
+		padding-bottom: 5%;
+	}
+	@media (max-width:768px){
+		margin-top: 5%;
+	}
+	@media (max-width:645px){
+		margin-top: 15%;
+		padding-bottom: 10%;
+	}
+	@media (max-width:375px) {
+		height: 667px;
+	}
+}
 .profile_text {
 	position: absolute;
 	margin-top: 60px;
