@@ -17,6 +17,10 @@
   <!-- lightbox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
+  <!-- google字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
   <!--分頁icon-->
   <link rel="shortcut icon" href="./img/icon/webicon.ico">
   <!-- 主頁以外navbar用CSS -->
@@ -734,6 +738,12 @@
       loop: true,
       slidesPerView: 1,
       spaceBetween: 30,
+      breakpoints: {//banner swiper變版js
+        1199: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+      },
       mousewheel: true,
       direction: 'horizontal',
       pagination: {
