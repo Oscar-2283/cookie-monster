@@ -1138,6 +1138,10 @@ h2 {
 	background-repeat: no-repeat;
 	background-size: 120%;
 	background-position: 99% 96%;
+	transition: .5s;
+	&:hover{
+		transform: scale(1.1);
+	}
 
 	@media (max-width:1760px) {
 		top: 16%;
@@ -2635,7 +2639,6 @@ li {
 		padding: 0 5%;
 		background-image: url(../img/1-7footer-img/background.png);
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 		background-position: 2% 150%;
 		background-size: 120% 88%;
 		font-weight: 500;
