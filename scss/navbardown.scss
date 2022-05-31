@@ -16,8 +16,9 @@ nav {
 
 .navbardown {
     background: #CEB289;
+
     @media(max-width:1200px) {
-        display: none!important;
+        display: none !important;
     }
 
     p {
@@ -28,59 +29,69 @@ nav {
         width: 100px;
         height: 100px;
         transform-style: preserve-3d;
-    
+
         &:hover img {
             transform: translateZ(50px);
         }
     }
+
     .links {
         display: flex;
         align-items: center;
         justify-content: center;
-    
+
         a {
             display: flex;
             align-items: center;
             width: 220px;
-            @media(max-width:1350px){
+
+            @media(max-width:1350px) {
                 width: 190px;
             }
         }
+
         .container1 {
             overflow: hidden;
             position: relative;
+
             .menudown {
                 display: flex;
                 height: 100px;
                 position: relative;
+
                 a {
                     color: white !important;
                     text-decoration: none !important;
-                    .item{
+
+                    .item {
                         cursor: none;
                     }
                 }
             }
         }
     }
+
     .media {
         height: 100px;
         width: 100px;
         position: relative;
-        .fbIcon-navdown{
+
+        .fbIcon-navdown {
             position: absolute;
             top: 50%;
             left: 0%;
             transform: translateY(-50%);
 
         }
-        .igIcon-navdown{
+
+        .igIcon-navdown {
             position: absolute;
             top: 50%;
             left: 45%;
             transform: translateY(-50%);
 
         }
+
         .fa-brands {
             font-size: 50px;
             color: #375197;
@@ -93,8 +104,8 @@ nav {
         .fa-instagram {
             margin-left: 20px;
             background: -webkit-linear-gradient(-135deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }
@@ -119,7 +130,8 @@ nav {
     stroke: #4a2b011c;
     stroke-dasharray: 16 100;
     stroke-width: .5px;
-    @media(max-width:1300px){
+
+    @media(max-width:1300px) {
         stroke-dasharray: 20 100;
     }
 }
@@ -127,6 +139,7 @@ nav {
 .pos0 .snake {
     transform: translateX(-1%) translateY(-99%);
 }
+
 .pos1 .snake {
     transform: translateX(18.5%) translateY(-99%);
 }
@@ -142,6 +155,7 @@ nav {
 .pos4 .snake {
     transform: translateX(78.5%) translateY(-99%);
 }
+
 .left .snake path {
     stroke-dashoffset: 0;
     transform: translateX(0) translateY(49px);
@@ -169,6 +183,15 @@ nav {
     font-family: $font_2;
     font-size: 30px;
     white-space: nowrap;
+
+    @media(max-width:1512px) {
+        font-size: 23px;
+    }
+    img{
+        @media(max-width:1512px) {
+            width: 43px;
+        }
+    }
 
 }
 
