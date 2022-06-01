@@ -3013,6 +3013,12 @@ li {
   white-space: nowrap;
 }
 
+@media (max-width: 400px) {
+  .ifmblock3Left .storelogo img {
+    width: 300px;
+  }
+}
+
 .ifmblock3Left .block_title {
   font-size: 20px;
   font-family: "Yu Gothic";
