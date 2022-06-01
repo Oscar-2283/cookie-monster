@@ -22,7 +22,7 @@ $font_4: "Kristen ITC";
 
     @media(max-width:768px) {
         .menu-container {
-            padding: 0px 2rem;
+            padding: 0px 1rem;
         }
         height: unset;
     }
@@ -104,7 +104,7 @@ $font_4: "Kristen ITC";
             z-index: 3;
 
             p {
-                font-size: 1rem;
+                font-size: .75rem;
             }
         }
 

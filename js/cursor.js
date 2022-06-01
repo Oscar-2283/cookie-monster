@@ -7,9 +7,9 @@ document.addEventListener("mousemove",e=>{
 let image = document.querySelectorAll('.list')
 image.forEach(item=>{
     item.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(1.5)'
+        cursorX.style.transform = 'scale(1.2)'
         cursorX.classList.add('bg')
-        cursorX.style.backgroundImage="url(./img/cursor/add-circle.svg)"
+        cursorX.style.backgroundImage="url(./img/cursor/plusiconwhite.svg)"
     })
 })
 image.forEach(item=>{
