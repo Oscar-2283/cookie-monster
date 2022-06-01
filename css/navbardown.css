@@ -224,6 +224,12 @@ nav {
   }
 }
 
+@media (max-width: 1512px) {
+  .item img {
+    width: 43px;
+  }
+}
+
 .icon {
   width: 50px;
   margin-right: 10px;
