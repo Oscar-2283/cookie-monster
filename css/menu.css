@@ -51,6 +51,11 @@
   }
 }
 
+#menu .newsTitle {
+  padding-top: 120px;
+  padding-left: 100px;
+}
+
 .menu-list a {
   color: black !important;
 }
