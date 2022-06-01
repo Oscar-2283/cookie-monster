@@ -24,7 +24,7 @@ image.forEach(item=>{
 let scrolldown =document.querySelector('.swiper-news-border-lineL')
 
 scrolldown.addEventListener('mouseenter',function(){
-    cursorX.style.transform = 'scale(1.2)'
+    cursorX.style.transform = 'scale(1.2) translate(-50%, -50%)'
     cursorX.classList.add('bg-scroll')
     cursorX.style.backgroundImage="url(./img/cursor/scroll1.svg)"
 })
@@ -37,7 +37,7 @@ scrolldown.addEventListener('mouseleave',function(){
 let meidaIcons =document.querySelectorAll('.navbar_icon')
 meidaIcons.forEach(item=>{
     item.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(0.8)'
+        cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
         cursorX.classList.add('bg')
         cursorX.style.backgroundImage="url(./img/cursor/add-circle.svg)"
     })
@@ -54,7 +54,7 @@ meidaIcons.forEach(item=>{
 let lock =document.querySelectorAll('.navbar ul')
 lock.forEach(item=>{
     item.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(0.8)'
+        cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
         cursorX.classList.add('bg-scroll')
         cursorX.style.backgroundImage="url(./img/cursor/scrolllight1.svg)"
     })
@@ -75,7 +75,7 @@ lock.forEach(item=>{
 let navbardownMeidaIcons =document.querySelectorAll('.media a')
 navbardownMeidaIcons.forEach(item=>{
     item.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(0.8)'
+        cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
         cursorX.classList.add('bg')
         cursorX.style.backgroundImage="url(./img/cursor/add-circle.svg)"
     })
@@ -92,7 +92,7 @@ navbardownMeidaIcons.forEach(item=>{
 let lockNavdown =document.querySelector('.links')
 
     lockNavdown.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(0.8)'
+        cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
         cursorX.classList.add('bg-scroll')
         cursorX.style.backgroundImage="url(./img/cursor/scrolllight1.svg)"
     })
@@ -109,7 +109,7 @@ let lockNavdown =document.querySelector('.links')
 let hamMeidaIcons =document.querySelectorAll('.overlay-menu ul .media-icon a')
 hamMeidaIcons.forEach(item=>{
     item.addEventListener('mouseenter',function(){
-        cursorX.style.transform = 'scale(0.8)'
+        cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
         cursorX.classList.add('bg')
         cursorX.style.backgroundImage="url(./img/cursor/add-circle.svg)"
     })
@@ -127,7 +127,7 @@ let hamlock =document.querySelectorAll('.overlay-menu ul li')
     hamlock.forEach(item =>{
 
         item.addEventListener('mouseenter',function(){
-            cursorX.style.transform = 'scale(0.8)'
+            cursorX.style.transform = 'scale(0.8) translate(-50%, -50%)'
             cursorX.classList.add('bg-scroll')
             cursorX.style.backgroundImage="url(./img/cursor/scrolllight1.svg)"
         })
