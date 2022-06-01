@@ -27,7 +27,7 @@
     height: unset;
   }
   .menu-section .menu-container {
-    padding: 0px 2rem;
+    padding: 0px 1rem;
   }
 }
 
@@ -109,7 +109,7 @@
     z-index: 3;
   }
   .menu-list .tag p {
-    font-size: 1rem;
+    font-size: .75rem;
   }
   .menu-list .list {
     width: 90%;

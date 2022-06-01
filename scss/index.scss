@@ -2494,6 +2494,13 @@ li {
 
 //下排文字
 .ifmblock3Left {
+	.storelogo{
+		img{
+			@media(max-width:400px){
+				width: 300px;
+			}
+		}
+	}
 	//左邊
 	white-space: nowrap;
 
