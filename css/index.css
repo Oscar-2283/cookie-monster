@@ -403,7 +403,7 @@ h2 {
 
 @media (max-width: 385px) {
   .profile {
-    height: 100vh;
+    height: 75vh;
   }
 }
 
