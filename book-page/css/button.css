@@ -134,6 +134,24 @@
   z-index: 0;
 }
 
+@media (max-width: 1600px) {
+  .btn--waiting .btn__icon:after {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn--waiting .btn__icon:after {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn--waiting .btn__icon:after {
+    font-size: 11px;
+  }
+}
+
 .btn--activated {
   background-color: #FFD18E;
 }

@@ -42,6 +42,10 @@ san-serif;
         left: -120px;
         top: -120px;
         transition: all 0.3s;
+        @media (max-width:600px) {
+            width: 250px;
+            height: 250px;
+        }
         a{
             &:hover{
                 text-decoration: none;
@@ -77,6 +81,11 @@ san-serif;
     left: 160px;
     z-index: 100;
     transition: all 0.3s;
+    @media (max-width:600px) {
+        font-size: 2em;
+        top: 150px;
+        left: 150px;
+    }
 
     i {
         opacity: 0.7;
@@ -122,6 +131,7 @@ san-serif;
                         z-index: 2;
                         .fa-facebook{
                             color: #375197;
+                            font-size: 51px;
                         }
                         .fa-instagram{
                             font-size: 52px;
@@ -156,7 +166,11 @@ san-serif;
                         letter-spacing: 10px;
                     }
                     img{
-                        margin-right: 10px
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        @media (max-width:600px) {
+                            width: 70px;
+                        }
                     }
                 }
             }
@@ -172,6 +186,10 @@ san-serif;
         transform: translateY(-50%);
         font-weight: 400;
         text-align: center;
+        @media (max-width:600px) {
+            @include base-font(2em);
+            
+        }
     }
 
     ul {

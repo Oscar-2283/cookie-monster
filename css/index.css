@@ -87,9 +87,10 @@ h2 {
 }
 
 .nav .navbar .navbar_title {
-  width: 180px;
+  font-family: "Yu Gothic";
   font-weight: 700;
   white-space: nowrap;
+  text-align: center;
 }
 
 .nav .navbar .navbar_title a {
@@ -111,12 +112,12 @@ h2 {
 }
 
 .nav .navbar .navbar_title a .title_p:nth-child(1) {
-  margin-right: 60px;
+  margin-right: 115px;
 }
 
 .nav .navbar .navbar_title a .title_p:nth-child(2) {
   margin-top: -15px;
-  margin-left: 100px;
+  margin-left: 52px;
 }
 
 .nav .navbar .navbar_content {
@@ -338,14 +339,14 @@ h2 {
 
 @media (max-width: 538px) {
   .title1 {
-    padding-left: 65px;
+    padding-left: 55px;
     padding-top: 40px;
   }
 }
 
 @media (max-width: 386px) {
   .title1 {
-    padding-left: 45px;
+    padding-left: 40px;
   }
 }
 
@@ -396,13 +397,13 @@ h2 {
 
 @media (max-width: 460px) {
   .profile {
-    height: 75vh;
+    height: 78vh;
   }
 }
 
 @media (max-width: 385px) {
   .profile {
-    height: 65vh;
+    height: 100vh;
   }
 }
 
@@ -499,7 +500,7 @@ h2 {
 @media (max-width: 989px) {
   .profile_text {
     margin-left: 15%;
-    margin-top: 17%;
+    margin-top: 18%;
   }
 }
 
@@ -512,7 +513,7 @@ h2 {
 
 @media (max-width: 768px) {
   .profile_text {
-    margin-top: 35%;
+    margin-top: 40%;
   }
 }
 
@@ -1257,7 +1258,7 @@ h2 {
   top: 0%;
   background-image: url(../img/1-2關於我們/擺設.jpg);
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 120%;
   background-position: 50% 50%;
 }
 
@@ -1487,7 +1488,7 @@ h2 {
     width: 130px;
     height: 130px;
     left: 8%;
-    top: 72%;
+    top: 73%;
   }
 }
 
@@ -2553,7 +2554,7 @@ h2 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .mySwiper1 .swiper-wrapper .swiper-slide .blogCard .blogCardContent .blogCardText {
     font-size: 11px;
     text-align: justify;
@@ -2902,6 +2903,11 @@ h2 {
     left: -7px;
     font-weight: bolder;
   }
+}
+
+.newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .more-circle-btn .moreCircle .moreCircle_min a, .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .more-circle-btn .moreCircle .moreCircle_min a:link, .newsArea .swiper-news-border-lineL .swiper-news-border-lineR .swiper-news-border-lineT .more-circle-btn .moreCircle .moreCircle_min a:visited {
+  color: #4A2B0E;
+  text-decoration: none;
 }
 
 li {

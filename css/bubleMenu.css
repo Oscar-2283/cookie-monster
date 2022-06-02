@@ -35,6 +35,13 @@
   transition: all 0.3s;
 }
 
+@media (max-width: 600px) {
+  .container-phone .menuContainer {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .container-phone .menuContainer a:hover {
   text-decoration: none;
   color: white;
@@ -66,6 +73,14 @@
   z-index: 100;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+  .menu-container-a {
+    font-size: 2em;
+    top: 150px;
+    left: 150px;
+  }
 }
 
 .menu-container-a i {
@@ -134,6 +149,7 @@
 
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a .fa-facebook {
   color: #375197;
+  font-size: 51px;
 }
 
 .overlay.open .overlay-menu .overlay-menu-ul .media-icon a .fa-instagram {
@@ -179,6 +195,13 @@
 
 .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li img {
   margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .overlay.open .overlay-menu .overlay-menu-ul .overlay-menu-li img {
+    width: 70px;
+  }
 }
 
 .overlay #overlay-menu {
@@ -190,6 +213,13 @@
           transform: translateY(-50%);
   font-weight: 400;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .overlay #overlay-menu {
+    font-size: 2em;
+    font-family: "Titan One", san-serif;
+  }
 }
 
 .overlay ul {
